@@ -101,7 +101,7 @@
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
         <!-- Left Copy -->
-        <div class="lg:col-span-7 space-y-6">
+        <div class="lg:col-span-7 space-y-6 hero-animate-1">
           <div class="inline-flex items-center gap-2.5 text-xs font-semibold tracking-[0.22em] uppercase text-gold">
             <span class="w-8 h-[1px] bg-gold"></span>
             <span>Home &amp; Villa Interiors • Ghaziabad &amp; Delhi NCR</span>
@@ -117,7 +117,7 @@
 
           <!-- Primary Hero CTAs -->
           <div class="flex flex-wrap items-center gap-3.5 pt-1">
-            <button type="button" data-scroll-form="Full Home Interior" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-gold hover:bg-goldDark text-espresso font-semibold text-sm sm:text-base transition shadow-lg shadow-gold/20 min-h-[48px]">
+            <button type="button" data-scroll-form="Full Home Interior" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-full btn-sheen bg-gold hover:bg-goldDark text-espresso font-semibold text-sm sm:text-base transition shadow-lg shadow-gold/20 min-h-[48px]">
               <span>Get a Free Design Quote</span>
               <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-7-7 7 7-7 7"/></svg>
             </button>
@@ -150,7 +150,7 @@
 
         <!-- Right Consultation Form -->
         <div class="lg:col-span-5">
-          <div id="consultationFormCard" class="bg-white text-ink rounded-2xl shadow-2xl overflow-hidden border border-gold/25">
+          <div id="consultationFormCard" class="hero-animate-2 bg-white text-ink rounded-2xl shadow-2xl overflow-hidden border border-gold/25">
             <div class="bg-gradient-to-r from-[#B88940] to-[#986D2B] px-6 py-5 text-white">
               <div class="flex items-center justify-between gap-2">
                 <h2 class="font-serif text-2xl font-semibold text-white">Book Your Free Consultation</h2>
@@ -210,7 +210,7 @@
 
               <div id="formError" class="hidden text-xs font-medium text-red-700 bg-red-50 border border-red-200 rounded-lg px-3 py-2"></div>
 
-              <button type="submit" class="w-full py-3.5 px-6 rounded-full bg-gold hover:bg-goldDark text-espresso font-semibold text-sm sm:text-base transition shadow-md flex items-center justify-center gap-2 min-h-[48px]">
+              <button type="submit" class="w-full py-3.5 px-6 rounded-full btn-sheen bg-gold hover:bg-goldDark text-espresso font-semibold text-sm sm:text-base transition shadow-md flex items-center justify-center gap-2 min-h-[48px]">
                 <span>Get My Free Quote</span>
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-7-7 7 7-7 7"/></svg>
               </button>
@@ -231,15 +231,15 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-7">
       <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 text-center divide-y lg:divide-y-0 lg:divide-x divide-white/10">
         <div class="pt-2 lg:pt-0">
-          <div class="font-serif text-3xl sm:text-4xl font-bold text-gold">250+</div>
+          <div class="stat-num font-serif text-3xl sm:text-4xl font-bold text-gold" data-target="250" data-suffix="+">250+</div>
           <div class="text-xs sm:text-sm text-white/75 mt-1">Projects completed</div>
         </div>
         <div class="pt-2 lg:pt-0">
-          <div class="font-serif text-3xl sm:text-4xl font-bold text-gold">55+</div>
+          <div class="stat-num font-serif text-3xl sm:text-4xl font-bold text-gold" data-target="55" data-suffix="+">55+</div>
           <div class="text-xs sm:text-sm text-white/75 mt-1">Expert team members</div>
         </div>
         <div class="pt-2 lg:pt-0">
-          <div class="font-serif text-3xl sm:text-4xl font-bold text-gold">300+</div>
+          <div class="stat-num font-serif text-3xl sm:text-4xl font-bold text-gold" data-target="300" data-suffix="+">300+</div>
           <div class="text-xs sm:text-sm text-white/75 mt-1">3D renders delivered</div>
         </div>
         <div class="pt-2 lg:pt-0">
@@ -253,7 +253,7 @@
   <!-- Services Section -->
   <section id="services" class="py-16 sm:py-20 bg-cream">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="max-w-3xl mx-auto text-center mb-12">
+      <div class="reveal max-w-3xl mx-auto text-center mb-12">
         <span class="text-xs font-semibold tracking-[0.22em] uppercase text-goldDark">What We Do</span>
         <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-ink mt-2">Interiors, Modular &amp; Renovation Under One Roof</h2>
         <p class="text-muted text-sm sm:text-base mt-3">From a single modular kitchen to a complete turnkey villa — with 3D visualization so you see every detail before work begins.</p>
@@ -261,7 +261,7 @@
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
         <!-- Service Card 1 -->
-        <article class="bg-white rounded-2xl overflow-hidden border border-stone-200/80 shadow-sm hover:shadow-xl transition flex flex-col">
+        <article class="reveal card-lift bg-white rounded-2xl overflow-hidden border border-stone-200/80 shadow-sm hover:shadow-xl flex flex-col">
           <div class="relative aspect-[4/3] overflow-hidden">
             <img src="images/living-dining.jpg" alt="Full Home and Villa Interior concept" class="w-full h-full object-cover hover:scale-105 transition duration-500" />
             <span class="absolute top-3.5 left-3.5 px-3 py-1 rounded-full bg-espresso/85 text-gold text-[11px] font-semibold tracking-wider uppercase backdrop-blur-sm">Residential</span>
@@ -283,7 +283,7 @@
                 <span>Bespoke furniture, soft furnishings &amp; styling</span>
               </li>
             </ul>
-            <button type="button" data-scroll-form="Full Home Interior" class="mt-6 w-full py-3 px-5 rounded-full bg-gold hover:bg-goldDark text-espresso font-semibold text-sm transition inline-flex items-center justify-center gap-2 min-h-[44px]">
+            <button type="button" data-scroll-form="Full Home Interior" class="mt-6 w-full py-3 px-5 rounded-full btn-sheen bg-gold hover:bg-goldDark text-espresso font-semibold text-sm transition inline-flex items-center justify-center gap-2 min-h-[44px]">
               <span>Explore Service</span>
               <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-7-7 7 7-7 7"/></svg>
             </button>
@@ -291,7 +291,7 @@
         </article>
 
         <!-- Service Card 2 -->
-        <article class="bg-white rounded-2xl overflow-hidden border border-stone-200/80 shadow-sm hover:shadow-xl transition flex flex-col">
+        <article class="reveal card-lift bg-white rounded-2xl overflow-hidden border border-stone-200/80 shadow-sm hover:shadow-xl flex flex-col">
           <div class="relative aspect-[4/3] overflow-hidden">
             <img src="images/modular-kitchen.jpg" alt="Modular Kitchen and Wardrobe concept" class="w-full h-full object-cover hover:scale-105 transition duration-500" />
             <span class="absolute top-3.5 left-3.5 px-3 py-1 rounded-full bg-espresso/85 text-gold text-[11px] font-semibold tracking-wider uppercase backdrop-blur-sm">Modular</span>
@@ -313,7 +313,7 @@
                 <span>Bedroom storage, crockery &amp; loft units</span>
               </li>
             </ul>
-            <button type="button" data-scroll-form="Modular Kitchen & Wardrobe" class="mt-6 w-full py-3 px-5 rounded-full bg-gold hover:bg-goldDark text-espresso font-semibold text-sm transition inline-flex items-center justify-center gap-2 min-h-[44px]">
+            <button type="button" data-scroll-form="Modular Kitchen & Wardrobe" class="mt-6 w-full py-3 px-5 rounded-full btn-sheen bg-gold hover:bg-goldDark text-espresso font-semibold text-sm transition inline-flex items-center justify-center gap-2 min-h-[44px]">
               <span>Explore Service</span>
               <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-7-7 7 7-7 7"/></svg>
             </button>
@@ -321,7 +321,7 @@
         </article>
 
         <!-- Service Card 3 -->
-        <article class="bg-white rounded-2xl overflow-hidden border border-stone-200/80 shadow-sm hover:shadow-xl transition flex flex-col md:col-span-2 lg:col-span-1">
+        <article class="reveal card-lift bg-white rounded-2xl overflow-hidden border border-stone-200/80 shadow-sm hover:shadow-xl flex flex-col md:col-span-2 lg:col-span-1">
           <div class="relative aspect-[4/3] overflow-hidden">
             <img src="images/designer-foyer.jpg" alt="Renovation and Architectural Build concept" class="w-full h-full object-cover hover:scale-105 transition duration-500" />
             <span class="absolute top-3.5 left-3.5 px-3 py-1 rounded-full bg-espresso/85 text-gold text-[11px] font-semibold tracking-wider uppercase backdrop-blur-sm">Build</span>
@@ -343,7 +343,7 @@
                 <span>Building design &amp; photorealistic 3D views</span>
               </li>
             </ul>
-            <button type="button" data-scroll-form="Renovation & Construction" class="mt-6 w-full py-3 px-5 rounded-full bg-gold hover:bg-goldDark text-espresso font-semibold text-sm transition inline-flex items-center justify-center gap-2 min-h-[44px]">
+            <button type="button" data-scroll-form="Renovation & Construction" class="mt-6 w-full py-3 px-5 rounded-full btn-sheen bg-gold hover:bg-goldDark text-espresso font-semibold text-sm transition inline-flex items-center justify-center gap-2 min-h-[44px]">
               <span>Explore Service</span>
               <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-7-7 7 7-7 7"/></svg>
             </button>
@@ -356,7 +356,7 @@
   <!-- Portfolio / Projects Section -->
   <section id="projects" class="py-16 sm:py-20 bg-espresso text-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-8">
+      <div class="reveal flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-8">
         <div>
           <span class="text-xs font-semibold tracking-[0.22em] uppercase text-gold">Our Projects &amp; Design Concepts</span>
           <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold mt-2">Expert Design Services That Shape Beautiful Spaces</h2>
@@ -380,7 +380,7 @@
 
       <!-- Bottom CTA -->
       <div class="text-center mt-10">
-        <button type="button" data-scroll-form="Full Home Interior" class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-gold hover:bg-goldDark text-espresso font-semibold text-sm sm:text-base transition shadow-lg min-h-[48px]">
+        <button type="button" data-scroll-form="Full Home Interior" class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full btn-sheen bg-gold hover:bg-goldDark text-espresso font-semibold text-sm sm:text-base transition shadow-lg min-h-[48px]">
           <span>Get a Design Like This For Your Home</span>
           <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-7-7 7 7-7 7"/></svg>
         </button>
@@ -418,45 +418,59 @@
     </div>
   </section>
 
-  <!-- How It Works Section (Uniform Step Styling) -->
+  <!-- How It Works Section (Architectural Timeline Flow) -->
   <section id="how-it-works" class="py-16 sm:py-20 bg-cream">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="max-w-3xl mx-auto text-center mb-14">
+      <div class="reveal max-w-3xl mx-auto text-center mb-16">
         <span class="text-xs font-semibold tracking-[0.22em] uppercase text-goldDark">How It Works</span>
         <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-ink mt-2">Design, Production &amp; Execution By Just One Company</h2>
         <p class="text-muted text-sm sm:text-base mt-3">No contractors to chase, no blame games. Design, production, and execution are handled by one team from start to finish.</p>
       </div>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
-        <!-- Step 1 -->
-        <div class="bg-white rounded-2xl p-6 border border-stone-200/80 shadow-sm text-center flex flex-col items-center">
-          <div class="w-12 h-12 rounded-full bg-espresso text-gold font-serif text-xl font-bold flex items-center justify-center mb-4 border-2 border-gold/40">1</div>
-          <h3 class="font-semibold text-sm sm:text-base text-ink leading-snug">Talk to our Interior Designer &amp; Get an Estimate</h3>
-          <p class="text-xs text-muted mt-2">Share your floor plan and requirements for a transparent cost ballpark.</p>
-        </div>
-        <!-- Step 2 -->
-        <div class="bg-white rounded-2xl p-6 border border-stone-200/80 shadow-sm text-center flex flex-col items-center">
-          <div class="w-12 h-12 rounded-full bg-espresso text-gold font-serif text-xl font-bold flex items-center justify-center mb-4 border-2 border-gold/40">2</div>
-          <h3 class="font-semibold text-sm sm:text-base text-ink leading-snug">Detailed Drawing and Approval</h3>
-          <p class="text-xs text-muted mt-2">Review 2D layouts, 3D renders, and material samples before sign-off.</p>
-        </div>
-        <!-- Step 3 -->
-        <div class="bg-white rounded-2xl p-6 border border-stone-200/80 shadow-sm text-center flex flex-col items-center">
-          <div class="w-12 h-12 rounded-full bg-espresso text-gold font-serif text-xl font-bold flex items-center justify-center mb-4 border-2 border-gold/40">3</div>
-          <h3 class="font-semibold text-sm sm:text-base text-ink leading-snug">Production at Our Own Factory</h3>
-          <p class="text-xs text-muted mt-2">Modular units crafted with precision machinery and quality checks.</p>
-        </div>
-        <!-- Step 4 -->
-        <div class="bg-white rounded-2xl p-6 border border-stone-200/80 shadow-sm text-center flex flex-col items-center">
-          <div class="w-12 h-12 rounded-full bg-espresso text-gold font-serif text-xl font-bold flex items-center justify-center mb-4 border-2 border-gold/40">4</div>
-          <h3 class="font-semibold text-sm sm:text-base text-ink leading-snug">Material Delivery &amp; Execution</h3>
-          <p class="text-xs text-muted mt-2">Supervised site installation by our in-house engineering crew.</p>
-        </div>
-        <!-- Step 5 -->
-        <div class="bg-white rounded-2xl p-6 border border-stone-200/80 shadow-sm text-center flex flex-col items-center sm:col-span-2 lg:col-span-1">
-          <div class="w-12 h-12 rounded-full bg-espresso text-gold font-serif text-xl font-bold flex items-center justify-center mb-4 border-2 border-gold/40">5</div>
-          <h3 class="font-semibold text-sm sm:text-base text-ink leading-snug">On Time Project Hand Over</h3>
-          <p class="text-xs text-muted mt-2">Final walkthrough, snag clearance, and ready-to-move-in keys.</p>
+      <div class="relative pt-6">
+        <!-- Desktop Connecting Gold Timeline Line -->
+        <div class="hidden lg:block absolute top-6 left-[10%] right-[10%] h-[2px] bg-gradient-to-r from-gold/30 via-gold to-gold/30 pointer-events-none"></div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-y-10 gap-x-5 relative">
+          <!-- Step 1 -->
+          <div class="reveal card-lift group bg-white rounded-2xl px-5 pb-6 pt-10 border border-stone-200/90 hover:border-gold shadow-sm hover:shadow-xl text-center flex flex-col items-center relative">
+            <div class="absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 rounded-full bg-espresso text-gold font-serif text-lg font-bold flex items-center justify-center border-2 border-gold shadow-md group-hover:bg-gold group-hover:text-espresso group-hover:scale-110 transition duration-300">01</div>
+            <span class="text-[10px] font-semibold uppercase tracking-[0.18em] text-goldDark bg-cream px-2.5 py-0.5 rounded-full border border-gold/25 mb-2.5">Consultation</span>
+            <h3 class="font-semibold text-sm text-ink leading-snug">Talk to our Interior Designer &amp; Get an Estimate</h3>
+            <p class="text-xs text-muted mt-2 leading-relaxed">Share your floor plan and requirements for a transparent cost ballpark.</p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="reveal card-lift group bg-white rounded-2xl px-5 pb-6 pt-10 border border-stone-200/90 hover:border-gold shadow-sm hover:shadow-xl text-center flex flex-col items-center relative">
+            <div class="absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 rounded-full bg-espresso text-gold font-serif text-lg font-bold flex items-center justify-center border-2 border-gold shadow-md group-hover:bg-gold group-hover:text-espresso group-hover:scale-110 transition duration-300">02</div>
+            <span class="text-[10px] font-semibold uppercase tracking-[0.18em] text-goldDark bg-cream px-2.5 py-0.5 rounded-full border border-gold/25 mb-2.5">3D Approval</span>
+            <h3 class="font-semibold text-sm text-ink leading-snug">Detailed Drawing and Approval</h3>
+            <p class="text-xs text-muted mt-2 leading-relaxed">Review 2D layouts, 3D renders, and material samples before sign-off.</p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="reveal card-lift group bg-white rounded-2xl px-5 pb-6 pt-10 border border-stone-200/90 hover:border-gold shadow-sm hover:shadow-xl text-center flex flex-col items-center relative">
+            <div class="absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 rounded-full bg-espresso text-gold font-serif text-lg font-bold flex items-center justify-center border-2 border-gold shadow-md group-hover:bg-gold group-hover:text-espresso group-hover:scale-110 transition duration-300">03</div>
+            <span class="text-[10px] font-semibold uppercase tracking-[0.18em] text-goldDark bg-cream px-2.5 py-0.5 rounded-full border border-gold/25 mb-2.5">Manufacturing</span>
+            <h3 class="font-semibold text-sm text-ink leading-snug">Production at Our Own Factory</h3>
+            <p class="text-xs text-muted mt-2 leading-relaxed">Modular units crafted with precision machinery and quality checks.</p>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="reveal card-lift group bg-white rounded-2xl px-5 pb-6 pt-10 border border-stone-200/90 hover:border-gold shadow-sm hover:shadow-xl text-center flex flex-col items-center relative">
+            <div class="absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 rounded-full bg-espresso text-gold font-serif text-lg font-bold flex items-center justify-center border-2 border-gold shadow-md group-hover:bg-gold group-hover:text-espresso group-hover:scale-110 transition duration-300">04</div>
+            <span class="text-[10px] font-semibold uppercase tracking-[0.18em] text-goldDark bg-cream px-2.5 py-0.5 rounded-full border border-gold/25 mb-2.5">Site Execution</span>
+            <h3 class="font-semibold text-sm text-ink leading-snug">Material Delivery &amp; Execution</h3>
+            <p class="text-xs text-muted mt-2 leading-relaxed">Supervised site installation by our in-house engineering crew.</p>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="reveal card-lift group bg-white rounded-2xl px-5 pb-6 pt-10 border border-stone-200/90 hover:border-gold shadow-sm hover:shadow-xl text-center flex flex-col items-center relative sm:col-span-2 lg:col-span-1">
+            <div class="absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 rounded-full bg-espresso text-gold font-serif text-lg font-bold flex items-center justify-center border-2 border-gold shadow-md group-hover:bg-gold group-hover:text-espresso group-hover:scale-110 transition duration-300">05</div>
+            <span class="text-[10px] font-semibold uppercase tracking-[0.18em] text-goldDark bg-cream px-2.5 py-0.5 rounded-full border border-gold/25 mb-2.5">Handover</span>
+            <h3 class="font-semibold text-sm text-ink leading-snug">On Time Project Hand Over</h3>
+            <p class="text-xs text-muted mt-2 leading-relaxed">Final walkthrough, snag clearance, and ready-to-move-in keys.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -464,7 +478,7 @@
 
   <!-- Mid-Page CTA Banner -->
   <section class="bg-gradient-to-r from-espresso via-charcoal to-espresso text-white py-14">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-5">
+    <div class="reveal max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-5">
       <h2 class="font-serif text-3xl sm:text-4xl font-semibold">Your Dream Home Starts With One Free Call</h2>
       <p class="text-sm sm:text-base text-white/80 max-w-2xl mx-auto">Talk to our interior designer, see your space in 3D, and get an estimate — with no obligation to proceed.</p>
       <div class="flex flex-wrap items-center justify-center gap-3.5 pt-2">
@@ -479,128 +493,151 @@
     </div>
   </section>
 
-  <!-- Why Jain Signature Studio -->
-  <section id="why-us" class="py-16 sm:py-20 bg-cream">
+  <!-- Why Jain Signature Studio (Elevated 3x2 Bento Cards) -->
+  <section id="why-us" class="py-16 sm:py-20 bg-sand/60">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="max-w-3xl mx-auto text-center mb-12">
+      <div class="reveal max-w-3xl mx-auto text-center mb-12">
         <span class="text-xs font-semibold tracking-[0.22em] uppercase text-goldDark">Why Jain Signature Studio</span>
         <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-ink mt-2">One Company, Start to Finish</h2>
         <p class="text-muted text-sm sm:text-base mt-3">The reasons homeowners and villa clients choose our integrated team over fragmented contractors.</p>
       </div>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 bg-white rounded-2xl border border-stone-200/90 shadow-sm divide-y sm:divide-y-0 sm:divide-x divide-stone-200/80 overflow-hidden">
-        <div class="p-7 border-b border-stone-200/80">
-          <div class="w-11 h-11 rounded-full border border-gold/50 bg-cream flex items-center justify-center text-goldDark mb-4">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="reveal card-lift group relative bg-white rounded-2xl p-7 border border-stone-200/90 hover:border-gold shadow-sm hover:shadow-xl overflow-hidden">
+          <span class="absolute top-4 right-5 font-serif text-4xl font-bold text-stone-100 group-hover:text-gold/20 transition select-none">01</span>
+          <div class="w-12 h-12 rounded-xl border border-gold/40 bg-cream flex items-center justify-center text-goldDark mb-5 group-hover:bg-gold group-hover:text-espresso group-hover:scale-110 transition duration-300">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v18m9-9H3"/></svg>
           </div>
-          <h3 class="font-serif text-xl font-semibold text-ink">Design to Execution</h3>
-          <p class="text-sm text-muted mt-1.5">Single-point accountability from initial floor planning to final site handover.</p>
+          <h3 class="font-serif text-2xl font-semibold text-ink">Design to Execution</h3>
+          <p class="text-sm text-muted mt-2 leading-relaxed">Single-point accountability from initial floor planning to final site handover.</p>
         </div>
-        <div class="p-7 border-b border-stone-200/80">
-          <div class="w-11 h-11 rounded-full border border-gold/50 bg-cream flex items-center justify-center text-goldDark mb-4">
+
+        <div class="reveal card-lift group relative bg-white rounded-2xl p-7 border border-stone-200/90 hover:border-gold shadow-sm hover:shadow-xl overflow-hidden">
+          <span class="absolute top-4 right-5 font-serif text-4xl font-bold text-stone-100 group-hover:text-gold/20 transition select-none">02</span>
+          <div class="w-12 h-12 rounded-xl border border-gold/40 bg-cream flex items-center justify-center text-goldDark mb-5 group-hover:bg-gold group-hover:text-espresso group-hover:scale-110 transition duration-300">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
           </div>
-          <h3 class="font-serif text-xl font-semibold text-ink">300+ 3D Renders Delivered</h3>
-          <p class="text-sm text-muted mt-1.5">Walk through photorealistic 3D views of your home before a single board is cut.</p>
+          <h3 class="font-serif text-2xl font-semibold text-ink">300+ 3D Renders Delivered</h3>
+          <p class="text-sm text-muted mt-2 leading-relaxed">Walk through photorealistic 3D views of your home before a single board is cut.</p>
         </div>
-        <div class="p-7 border-b border-stone-200/80">
-          <div class="w-11 h-11 rounded-full border border-gold/50 bg-cream flex items-center justify-center text-goldDark mb-4">
+
+        <div class="reveal card-lift group relative bg-white rounded-2xl p-7 border border-stone-200/90 hover:border-gold shadow-sm hover:shadow-xl overflow-hidden">
+          <span class="absolute top-4 right-5 font-serif text-4xl font-bold text-stone-100 group-hover:text-gold/20 transition select-none">03</span>
+          <div class="w-12 h-12 rounded-xl border border-gold/40 bg-cream flex items-center justify-center text-goldDark mb-5 group-hover:bg-gold group-hover:text-espresso group-hover:scale-110 transition duration-300">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path stroke-linecap="round" stroke-linejoin="round" d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
           </div>
-          <h3 class="font-serif text-xl font-semibold text-ink">55+ Expert Team</h3>
-          <p class="text-sm text-muted mt-1.5">Dedicated interior architects, project managers, and skilled site technicians.</p>
+          <h3 class="font-serif text-2xl font-semibold text-ink">55+ Expert Team</h3>
+          <p class="text-sm text-muted mt-2 leading-relaxed">Dedicated interior architects, project managers, and skilled site technicians.</p>
         </div>
-        <div class="p-7">
-          <div class="w-11 h-11 rounded-full border border-gold/50 bg-cream flex items-center justify-center text-goldDark mb-4">
+
+        <div class="reveal card-lift group relative bg-white rounded-2xl p-7 border border-stone-200/90 hover:border-gold shadow-sm hover:shadow-xl overflow-hidden">
+          <span class="absolute top-4 right-5 font-serif text-4xl font-bold text-stone-100 group-hover:text-gold/20 transition select-none">04</span>
+          <div class="w-12 h-12 rounded-xl border border-gold/40 bg-cream flex items-center justify-center text-goldDark mb-5 group-hover:bg-gold group-hover:text-espresso group-hover:scale-110 transition duration-300">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
           </div>
-          <h3 class="font-serif text-xl font-semibold text-ink">4.9/5 Across 4200+ Reviews</h3>
-          <p class="text-sm text-muted mt-1.5">Consistent client satisfaction across residential and commercial projects.</p>
+          <h3 class="font-serif text-2xl font-semibold text-ink">4.9/5 Across 4200+ Reviews</h3>
+          <p class="text-sm text-muted mt-2 leading-relaxed">Consistent client satisfaction across residential and commercial projects.</p>
         </div>
-        <div class="p-7">
-          <div class="w-11 h-11 rounded-full border border-gold/50 bg-cream flex items-center justify-center text-goldDark mb-4">
+
+        <div class="reveal card-lift group relative bg-white rounded-2xl p-7 border border-stone-200/90 hover:border-gold shadow-sm hover:shadow-xl overflow-hidden">
+          <span class="absolute top-4 right-5 font-serif text-4xl font-bold text-stone-100 group-hover:text-gold/20 transition select-none">05</span>
+          <div class="w-12 h-12 rounded-xl border border-gold/40 bg-cream flex items-center justify-center text-goldDark mb-5 group-hover:bg-gold group-hover:text-espresso group-hover:scale-110 transition duration-300">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6l4 2"/></svg>
           </div>
-          <h3 class="font-serif text-xl font-semibold text-ink">Timely Project Delivery</h3>
-          <p class="text-sm text-muted mt-1.5">Milestone-tracked schedules with clear weekly progress updates.</p>
+          <h3 class="font-serif text-2xl font-semibold text-ink">Timely Project Delivery</h3>
+          <p class="text-sm text-muted mt-2 leading-relaxed">Milestone-tracked schedules with clear weekly progress updates.</p>
         </div>
-        <div class="p-7">
-          <div class="w-11 h-11 rounded-full border border-gold/50 bg-cream flex items-center justify-center text-goldDark mb-4">
+
+        <div class="reveal card-lift group relative bg-white rounded-2xl p-7 border border-stone-200/90 hover:border-gold shadow-sm hover:shadow-xl overflow-hidden">
+          <span class="absolute top-4 right-5 font-serif text-4xl font-bold text-stone-100 group-hover:text-gold/20 transition select-none">06</span>
+          <div class="w-12 h-12 rounded-xl border border-gold/40 bg-cream flex items-center justify-center text-goldDark mb-5 group-hover:bg-gold group-hover:text-espresso group-hover:scale-110 transition duration-300">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/></svg>
           </div>
-          <h3 class="font-serif text-xl font-semibold text-ink">250+ Material Partners</h3>
-          <p class="text-sm text-muted mt-1.5">Curated hardware, laminates, glass, and stone from trusted national brands.</p>
+          <h3 class="font-serif text-2xl font-semibold text-ink">250+ Material Partners</h3>
+          <p class="text-sm text-muted mt-2 leading-relaxed">Curated hardware, laminates, glass, and stone from trusted national brands.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Client Reviews Section (Fixed Duplicate Quote Bug) -->
+  <!-- Client Reviews Section (Elevated Editorial Cards) -->
   <section id="reviews" class="py-16 sm:py-20 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="max-w-3xl mx-auto text-center mb-12">
+      <div class="reveal max-w-3xl mx-auto text-center mb-12">
         <span class="text-xs font-semibold tracking-[0.22em] uppercase text-goldDark">Client Reviews</span>
         <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-ink mt-2">Rated 4.9/5 Across 4200+ Reviews</h2>
         <p class="text-muted text-sm sm:text-base mt-3">98% client satisfaction across 250+ completed residential and commercial projects.</p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <article class="bg-cream/60 rounded-2xl p-6 border border-stone-200 flex flex-col justify-between">
+        <article class="reveal card-lift relative bg-cream/70 rounded-2xl p-7 border border-stone-200 hover:border-gold hover:shadow-xl flex flex-col justify-between">
           <div>
-            <div class="flex items-center justify-between mb-3">
+            <div class="flex items-center justify-between mb-4">
               <div class="text-gold text-sm tracking-widest">★★★★★</div>
-              <span class="text-[11px] font-medium px-2.5 py-0.5 rounded-full bg-white border border-stone-200 text-muted">Full Home</span>
+              <span class="text-[11px] font-semibold px-3 py-1 rounded-full bg-white border border-stone-200 text-goldDark">Full Home</span>
             </div>
-            <p class="text-sm text-ink/90 leading-relaxed italic">
-              "From the initial 3D walkthrough to the final wardrobe fittings, having one team manage everything saved us months of follow-up."
+            <div class="font-serif text-5xl leading-none text-gold/35 select-none mb-1">&ldquo;</div>
+            <p class="text-sm text-ink/90 leading-relaxed">
+              From the initial 3D walkthrough to the final wardrobe fittings, having one team manage everything saved us months of follow-up.
             </p>
           </div>
-          <div class="mt-5 pt-4 border-t border-stone-200/80">
-            <div class="font-semibold text-sm text-ink">Mr. Shailendra</div>
-            <div class="text-xs text-muted">Homeowner • Residential Project</div>
+          <div class="mt-6 pt-4 border-t border-stone-200/80 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-espresso text-gold font-serif font-bold text-sm flex items-center justify-center shrink-0">MS</div>
+            <div>
+              <div class="font-semibold text-sm text-ink">Mr. Shailendra</div>
+              <div class="text-xs text-muted">Homeowner • Residential Project</div>
+            </div>
           </div>
         </article>
 
-        <article class="bg-cream/60 rounded-2xl p-6 border border-stone-200 flex flex-col justify-between">
+        <article class="reveal card-lift relative bg-cream/70 rounded-2xl p-7 border border-stone-200 hover:border-gold hover:shadow-xl flex flex-col justify-between">
           <div>
-            <div class="flex items-center justify-between mb-3">
+            <div class="flex items-center justify-between mb-4">
               <div class="text-gold text-sm tracking-widest">★★★★★</div>
-              <span class="text-[11px] font-medium px-2.5 py-0.5 rounded-full bg-white border border-stone-200 text-muted">Modular Kitchen</span>
+              <span class="text-[11px] font-semibold px-3 py-1 rounded-full bg-white border border-stone-200 text-goldDark">Modular Kitchen</span>
             </div>
-            <p class="text-sm text-ink/90 leading-relaxed italic">
-              "The factory-finished kitchen and lighting layout matched the approved 3D renders closely, and handover stayed right on schedule."
+            <div class="font-serif text-5xl leading-none text-gold/35 select-none mb-1">&ldquo;</div>
+            <p class="text-sm text-ink/90 leading-relaxed">
+              The factory-finished kitchen and lighting layout matched the approved 3D renders closely, and handover stayed right on schedule.
             </p>
           </div>
-          <div class="mt-5 pt-4 border-t border-stone-200/80">
-            <div class="font-semibold text-sm text-ink">Ms. Charu Sahani</div>
-            <div class="text-xs text-muted">Homeowner • Residential Project</div>
+          <div class="mt-6 pt-4 border-t border-stone-200/80 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-espresso text-gold font-serif font-bold text-sm flex items-center justify-center shrink-0">CS</div>
+            <div>
+              <div class="font-semibold text-sm text-ink">Ms. Charu Sahani</div>
+              <div class="text-xs text-muted">Homeowner • Residential Project</div>
+            </div>
           </div>
         </article>
 
-        <article class="bg-cream/60 rounded-2xl p-6 border border-stone-200 flex flex-col justify-between">
+        <article class="reveal card-lift relative bg-cream/70 rounded-2xl p-7 border border-stone-200 hover:border-gold hover:shadow-xl flex flex-col justify-between">
           <div>
-            <div class="flex items-center justify-between mb-3">
+            <div class="flex items-center justify-between mb-4">
               <div class="text-gold text-sm tracking-widest">★★★★★</div>
-              <span class="text-[11px] font-medium px-2.5 py-0.5 rounded-full bg-white border border-stone-200 text-muted">Commercial &amp; Build</span>
+              <span class="text-[11px] font-semibold px-3 py-1 rounded-full bg-white border border-stone-200 text-goldDark">Commercial &amp; Build</span>
             </div>
-            <p class="text-sm text-ink/90 leading-relaxed italic">
-              "Clear drawings, reliable material sourcing, and disciplined site supervision made coordinating our project straightforward."
+            <div class="font-serif text-5xl leading-none text-gold/35 select-none mb-1">&ldquo;</div>
+            <p class="text-sm text-ink/90 leading-relaxed">
+              Clear drawings, reliable material sourcing, and disciplined site supervision made coordinating our project straightforward.
             </p>
           </div>
-          <div class="mt-5 pt-4 border-t border-stone-200/80">
-            <div class="font-semibold text-sm text-ink">Mr. Vikas Mishra</div>
-            <div class="text-xs text-muted">Baba Construction • Partner Client</div>
+          <div class="mt-6 pt-4 border-t border-stone-200/80 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-espresso text-gold font-serif font-bold text-sm flex items-center justify-center shrink-0">VM</div>
+            <div>
+              <div class="font-semibold text-sm text-ink">Mr. Vikas Mishra</div>
+              <div class="text-xs text-muted">Baba Construction • Partner Client</div>
+            </div>
           </div>
         </article>
       </div>
-      <p class="text-center text-[11px] text-muted mt-5">* Sample review summaries shown for layout demonstration; full verified client references are available during consultation.</p>
+      <p class="text-center text-[11px] text-muted mt-6">* Sample review summaries shown for layout demonstration; full verified client references are available during consultation.</p>
     </div>
   </section>
 
   <!-- FAQs Section -->
   <section id="faqs" class="py-16 sm:py-20 bg-cream">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-10">
+      <div class="reveal text-center mb-10">
         <span class="text-xs font-semibold tracking-[0.22em] uppercase text-goldDark">FAQs</span>
         <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-ink mt-2">Questions Before You Start</h2>
         <p class="text-muted text-sm sm:text-base mt-2">Straight answers on cost, timelines, and what is actually covered.</p>
@@ -612,11 +649,11 @@
 
   <!-- Pre-Footer Banner -->
   <section class="bg-espresso text-white py-14 border-b border-white/10">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-5">
+    <div class="reveal max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-5">
       <h2 class="font-serif text-3xl sm:text-4xl font-semibold">Ready to start your interior project?</h2>
       <p class="text-sm sm:text-base text-white/75 max-w-xl mx-auto">Talk to our interior designer, see your space in 3D, and get an estimate — with no obligation.</p>
       <div class="flex flex-wrap items-center justify-center gap-3.5 pt-2">
-        <button type="button" data-scroll-form="Full Home Interior" class="px-6 py-3.5 rounded-full bg-gold hover:bg-goldDark text-espresso font-semibold text-sm sm:text-base transition inline-flex items-center gap-2 min-h-[48px]">
+        <button type="button" data-scroll-form="Full Home Interior" class="px-6 py-3.5 rounded-full btn-sheen bg-gold hover:bg-goldDark text-espresso font-semibold text-sm sm:text-base transition inline-flex items-center gap-2 min-h-[48px]">
           <span>Book Free Consultation</span>
           <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-7-7 7 7-7 7"/></svg>
         </button>
@@ -720,7 +757,7 @@
       <div id="drawerBody" class="p-6 flex-1 overflow-y-auto space-y-5 text-sm"></div>
 
       <div class="p-5 border-t border-stone-200 bg-cream">
-        <button id="drawerCtaBtn" type="button" class="w-full py-3.5 rounded-full bg-gold hover:bg-goldDark text-espresso font-semibold text-sm transition">
+        <button id="drawerCtaBtn" type="button" class="w-full py-3.5 rounded-full btn-sheen bg-gold hover:bg-goldDark text-espresso font-semibold text-sm transition">
           Book a Free Consultation
         </button>
       </div>
@@ -730,7 +767,7 @@
   <!-- Project Lightbox Modal -->
   <div id="projectModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4">
     <div id="projectModalBackdrop" class="absolute inset-0 bg-black/75 backdrop-blur-xs"></div>
-    <div class="relative bg-white rounded-2xl max-w-xl w-full overflow-hidden shadow-2xl">
+    <div class="modal-animate relative bg-white rounded-2xl max-w-xl w-full overflow-hidden shadow-2xl">
       <button id="closeProjectModal" type="button" class="absolute top-3 right-3 z-10 w-9 h-9 rounded-full bg-espresso/80 text-white flex items-center justify-center hover:bg-gold hover:text-espresso transition" aria-label="Close preview">&times;</button>
       <div class="aspect-[4/3] bg-espresso">
         <img id="modalProjectImg" src="" alt="" class="w-full h-full object-cover" />
@@ -740,7 +777,7 @@
         <h3 id="modalProjectTitle" class="font-serif text-2xl font-semibold text-ink mt-1"></h3>
         <p id="modalProjectDesc" class="text-sm text-muted mt-2"></p>
         <div class="mt-5 flex flex-wrap gap-3">
-          <button id="modalQuoteBtn" type="button" class="flex-1 py-3 px-5 rounded-full bg-gold hover:bg-goldDark text-espresso font-semibold text-sm transition">
+          <button id="modalQuoteBtn" type="button" class="flex-1 py-3 px-5 rounded-full btn-sheen bg-gold hover:bg-goldDark text-espresso font-semibold text-sm transition">
             Get a Quote Like This
           </button>
         </div>
@@ -751,7 +788,7 @@
   <!-- Form Confirmation Modal (Dummy Lead Submission) -->
   <div id="successModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4">
     <div id="successBackdrop" class="absolute inset-0 bg-black/70 backdrop-blur-xs"></div>
-    <div class="relative bg-white rounded-2xl max-w-md w-full p-6 sm:p-7 text-center shadow-2xl border border-gold/30">
+    <div class="modal-animate relative bg-white rounded-2xl max-w-md w-full p-6 sm:p-7 text-center shadow-2xl border border-gold/30">
       <div class="w-14 h-14 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center mx-auto mb-4">
         <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4 4L19 7"/></svg>
       </div>

@@ -90,7 +90,7 @@ function renderProjects() {
   const grid = document.getElementById('projectGrid');
   const items = activeCat === 'all' ? PROJECTS : PROJECTS.filter(p => p.cat === activeCat);
   grid.innerHTML = items.map(p => `
-    <article data-project-id="${p.id}" class="project-card group relative rounded-2xl overflow-hidden bg-charcoal border border-white/10 cursor-pointer shadow-md hover:border-gold/50 transition">
+    <article data-project-id="${p.id}" class="project-card card-lift group relative rounded-2xl overflow-hidden bg-charcoal border border-white/10 cursor-pointer shadow-md hover:border-gold/50">
       <div class="aspect-[4/3] overflow-hidden">
         <img src="${p.img}" alt="${p.title}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
       </div>
@@ -289,3 +289,44 @@ document.querySelectorAll('[data-policy]').forEach(btn => {
 
 renderProjects();
 renderFaqs();
+
+
+// Scroll-Reveal & Stats Counter Animations
+(function initAnimations() {
+  const revealEls = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    const revObs = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          entry.target.style.transitionDelay = `${(i % 4) * 70}ms`;
+          entry.target.classList.add('revealed');
+          revObs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    revealEls.forEach(el => revObs.observe(el));
+
+    const statEls = document.querySelectorAll('.stat-num');
+    const statObs = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const el = entry.target;
+        const target = Number(el.dataset.target || 0);
+        const suffix = el.dataset.suffix || '';
+        const duration = 900;
+        const start = performance.now();
+        function step(now) {
+          const p = Math.min((now - start) / duration, 1);
+          const eased = 1 - Math.pow(1 - p, 3);
+          el.textContent = Math.round(target * eased) + suffix;
+          if (p < 1) requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+        statObs.unobserve(el);
+      });
+    }, { threshold: 0.4 });
+    statEls.forEach(el => statObs.observe(el));
+  } else {
+    revealEls.forEach(el => el.classList.add('revealed'));
+  }
+})();
