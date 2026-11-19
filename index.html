@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jain Signature Studio LLP — Bespoke Home &amp; Villa Interiors</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            espresso: '#181411',
+            charcoal: '#231D18',
+            cream: '#FAF6F0',
+            sand: '#F2EAE0',
+            gold: '#C89D54',
+            goldDark: '#A87F3A',
+            ink: '#221C17',
+            muted: '#6B6259'
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Inter"', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="pb-16 lg:pb-0">
+
+  <!-- Sticky Header -->
+  <header id="siteHeader" class="sticky top-0 z-40 bg-espresso/95 backdrop-blur-md border-b border-white/10 text-white transition-shadow">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between gap-3">
+      <!-- Brand Logo -->
+      <a href="#hero" class="flex items-center gap-3 shrink-0 group">
+        <div class="w-10 h-10 rounded-lg border border-gold/60 bg-gold/10 flex items-center justify-center font-serif text-lg font-bold text-gold tracking-wider">
+          JSI
+        </div>
+        <div class="leading-tight">
+          <div class="font-serif text-base sm:text-lg font-semibold tracking-wide text-white group-hover:text-gold transition">JAIN SIGNATURE STUDIO</div>
+          <div class="text-[10px] tracking-[0.2em] uppercase text-white/60">LLP • Home &amp; Villa Interiors</div>
+        </div>
+      </a>
+
+      <!-- Center Nav Links (Desktop) -->
+      <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-white/85" aria-label="Primary Navigation">
+        <a href="#services" class="nav-link relative hover:text-gold transition py-1" data-section="services">Services</a>
+        <a href="#projects" class="nav-link relative hover:text-gold transition py-1" data-section="projects">Our Projects</a>
+        <a href="#how-it-works" class="nav-link relative hover:text-gold transition py-1" data-section="how-it-works">How It Works</a>
+        <a href="#why-us" class="nav-link relative hover:text-gold transition py-1" data-section="why-us">Why Us</a>
+        <a href="#reviews" class="nav-link relative hover:text-gold transition py-1" data-section="reviews">Reviews</a>
+        <a href="#faqs" class="nav-link relative hover:text-gold transition py-1" data-section="faqs">FAQs</a>
+      </nav>
+
+      <!-- Right Actions -->
+      <div class="flex items-center gap-2 sm:gap-3">
+        <a href="tel:+919643431551" class="hidden md:inline-flex items-center gap-1.5 text-sm font-medium text-white/90 hover:text-gold transition px-2.5 py-2 rounded-full">
+          <svg class="w-4 h-4 text-gold" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>+91 96434 31551</span>
+        </a>
+        <button id="openDrawerBtn" type="button" class="inline-flex items-center gap-2 px-3.5 sm:px-4 py-2 rounded-full border border-gold/50 text-xs sm:text-sm font-medium text-gold hover:bg-gold hover:text-espresso transition min-h-[40px]">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+          <span>Explore More</span>
+        </button>
+        <button id="mobileMenuBtn" type="button" class="lg:hidden inline-flex items-center justify-center w-10 h-10 rounded-lg border border-white/15 text-white hover:border-gold hover:text-gold transition" aria-label="Open menu">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Dropdown -->
+    <div id="mobileNav" class="hidden lg:hidden border-t border-white/10 bg-charcoal px-4 py-4 space-y-1">
+      <a href="#services" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-sm font-medium text-white/90 hover:bg-white/5 hover:text-gold">Services</a>
+      <a href="#projects" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-sm font-medium text-white/90 hover:bg-white/5 hover:text-gold">Our Projects</a>
+      <a href="#how-it-works" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-sm font-medium text-white/90 hover:bg-white/5 hover:text-gold">How It Works</a>
+      <a href="#why-us" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-sm font-medium text-white/90 hover:bg-white/5 hover:text-gold">Why Us</a>
+      <a href="#reviews" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-sm font-medium text-white/90 hover:bg-white/5 hover:text-gold">Reviews</a>
+      <a href="#faqs" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-sm font-medium text-white/90 hover:bg-white/5 hover:text-gold">FAQs</a>
+      <div class="pt-2 border-t border-white/10 flex items-center justify-between px-3">
+        <a href="tel:+919643431551" class="text-sm font-semibold text-gold">+91 96434 31551</a>
+        <button type="button" data-scroll-form="Full Home Interior" class="text-xs font-semibold bg-gold text-espresso px-3.5 py-2 rounded-full">Free Quote</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section & Consultation Form -->
+  <section id="hero" class="relative bg-espresso text-white overflow-hidden">
+    <div class="absolute inset-0">
+      <img src="images/hero-villa.jpg" alt="Luxury modern villa living room concept" class="w-full h-full object-cover opacity-35" />
+      <div class="absolute inset-0 bg-gradient-to-r from-espresso via-espresso/85 to-espresso/60"></div>
+    </div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+        <!-- Left Copy -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2.5 text-xs font-semibold tracking-[0.22em] uppercase text-gold">
+            <span class="w-8 h-[1px] bg-gold"></span>
+            <span>Home &amp; Villa Interiors • Ghaziabad &amp; Delhi NCR</span>
+          </div>
+
+          <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-semibold leading-[1.08] tracking-tight">
+            Bespoke Home &amp; Villa Interiors, <span class="text-gold italic font-normal">Designed &amp; Built</span> Under One Roof
+          </h1>
+
+          <p class="text-base sm:text-lg text-white/80 max-w-2xl leading-relaxed">
+            Full home interiors, modular kitchens, wardrobes, and turnkey renovation for villas, independent homes, and luxury apartments across Ghaziabad and Delhi NCR—with 3D visualization before execution begins.
+          </p>
+
+          <!-- Primary Hero CTAs -->
+          <div class="flex flex-wrap items-center gap-3.5 pt-1">
+            <button type="button" data-scroll-form="Full Home Interior" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-gold hover:bg-goldDark text-espresso font-semibold text-sm sm:text-base transition shadow-lg shadow-gold/20 min-h-[48px]">
+              <span>Get a Free Design Quote</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-7-7 7 7-7 7"/></svg>
+            </button>
+            <button type="button" id="heroWhatsappBtn" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-full border border-white/25 bg-white/5 hover:bg-white/10 text-white font-medium text-sm sm:text-base transition min-h-[48px]">
+              <svg class="w-4 h-4 text-emerald-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12.03 2a9.97 9.97 0 0 0-8.46 15.27L2 22l4.86-1.53A9.97 9.97 0 1 0 12.03 2Zm5.82 14.12c-.24.68-1.4 1.3-1.94 1.38-.5.08-1.13.11-1.82-.11-.42-.14-.96-.32-1.65-.62-2.9-1.25-4.78-4.18-4.93-4.38-.14-.2-1.18-1.57-1.18-3s.75-2.13 1.02-2.42c.27-.3.59-.37.78-.37h.56c.18 0 .42-.07.66.5.24.58.82 2 .9 2.15.07.15.12.33.02.53-.1.2-.15.32-.3.5-.15.17-.31.39-.44.52-.15.15-.3.31-.13.6.17.3.76 1.25 1.63 2.02 1.12 1 2.06 1.31 2.36 1.46.3.15.47.12.64-.07.17-.2.74-.86.94-1.15.2-.3.4-.25.66-.15.27.1 1.7.8 2 .95.3.15.49.22.56.34.07.12.07.7-.17 1.38Z"/></svg>
+              <span>WhatsApp Us</span>
+            </button>
+          </div>
+
+          <!-- Trust Strip -->
+          <div class="pt-5 border-t border-white/15 grid grid-cols-2 sm:grid-cols-4 gap-4 text-xs sm:text-sm text-white/80">
+            <div>
+              <span class="block text-gold font-semibold text-base">4.9/5 Rating</span>
+              <span>4200+ client reviews</span>
+            </div>
+            <div>
+              <span class="block text-gold font-semibold text-base">250+ Projects</span>
+              <span>Homes &amp; villas delivered</span>
+            </div>
+            <div>
+              <span class="block text-gold font-semibold text-base">55+ Experts</span>
+              <span>In-house design &amp; build</span>
+            </div>
+            <div>
+              <span class="block text-gold font-semibold text-base">98% Satisfaction</span>
+              <span>On-time handover focus</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Consultation Form -->
+        <div class="lg:col-span-5">
+          <div id="consultationFormCard" class="bg-white text-ink rounded-2xl shadow-2xl overflow-hidden border border-gold/25">
+            <div class="bg-gradient-to-r from-charcoal to-espresso px-6 py-5 text-white border-b border-gold/30">
+              <div class="flex items-center justify-between gap-2">
+                <h2 class="font-serif text-2xl font-semibold text-gold">Book Your Free Consultation</h2>
+                <span class="text-[11px] uppercase tracking-wider px-2.5 py-1 rounded-full bg-gold/15 text-gold border border-gold/30">Free Estimate</span>
+              </div>
+              <p class="text-xs sm:text-sm text-white/75 mt-1">Talk to our interior designer and get a tailored estimate. No obligation.</p>
+            </div>
+
+            <form id="leadForm" class="p-6 space-y-4" novalidate>
+              <div>
+                <label for="fullName" class="block text-xs font-semibold uppercase tracking-wider text-muted mb-1.5">Full Name <span class="text-red-600">*</span></label>
+                <input id="fullName" name="fullName" type="text" required placeholder="e.g. Rahul Sharma" class="w-full px-3.5 py-2.5 rounded-lg border border-stone-300 bg-cream/40 text-sm focus:outline-none focus:ring-2 focus:ring-gold focus:border-gold" />
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="phone" class="block text-xs font-semibold uppercase tracking-wider text-muted mb-1.5">Phone Number <span class="text-red-600">*</span></label>
+                  <input id="phone" name="phone" type="tel" required inputmode="numeric" maxlength="10" placeholder="10-digit mobile number" class="w-full px-3.5 py-2.5 rounded-lg border border-stone-300 bg-cream/40 text-sm focus:outline-none focus:ring-2 focus:ring-gold focus:border-gold" />
+                </div>
+                <div>
+                  <label for="propertyType" class="block text-xs font-semibold uppercase tracking-wider text-muted mb-1.5">Property Type <span class="text-red-600">*</span></label>
+                  <select id="propertyType" name="propertyType" required class="w-full px-3.5 py-2.5 rounded-lg border border-stone-300 bg-cream/40 text-sm focus:outline-none focus:ring-2 focus:ring-gold focus:border-gold">
+                    <option value="">Select property...</option>
+                    <option value="Villa / Bungalow">Villa / Bungalow</option>
+                    <option value="Independent Home">Independent Home</option>
+                    <option value="3-4 BHK Apartment">3-4 BHK Apartment</option>
+                    <option value="2 BHK Apartment">2 BHK Apartment</option>
+                    <option value="Commercial / Office">Commercial / Office</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="scope" class="block text-xs font-semibold uppercase tracking-wider text-muted mb-1.5">Project Scope</label>
+                  <select id="scope" name="scope" class="w-full px-3.5 py-2.5 rounded-lg border border-stone-300 bg-cream/40 text-sm focus:outline-none focus:ring-2 focus:ring-gold focus:border-gold">
+                    <option value="Full Home Interior">Full Home Interior</option>
+                    <option value="Modular Kitchen & Wardrobe">Modular Kitchen &amp; Wardrobe</option>
+                    <option value="Renovation & Construction">Renovation &amp; Construction</option>
+                    <option value="3D Visualization & Design">3D Visualization &amp; Design</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="locality" class="block text-xs font-semibold uppercase tracking-wider text-muted mb-1.5">City / Locality</label>
+                  <input id="locality" name="locality" type="text" placeholder="e.g. Raj Nagar Extension" class="w-full px-3.5 py-2.5 rounded-lg border border-stone-300 bg-cream/40 text-sm focus:outline-none focus:ring-2 focus:ring-gold focus:border-gold" />
+                </div>
+              </div>
+
+              <div id="formError" class="hidden text-xs font-medium text-red-700 bg-red-50 border border-red-200 rounded-lg px-3 py-2"></div>
+
+              <button type="submit" class="w-full py-3.5 px-6 rounded-full bg-gold hover:bg-goldDark text-espresso font-semibold text-sm sm:text-base transition shadow-md flex items-center justify-center gap-2 min-h-[48px]">
+                <span>Get My Free Quote</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-7-7 7 7-7 7"/></svg>
+              </button>
+
+              <p class="text-[11px] text-center text-muted flex items-center justify-center gap-1.5">
+                <svg class="w-3.5 h-3.5 text-emerald-700 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                <span>Your details stay private. We never share or sell your data.</span>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Bar -->
+  <section class="bg-charcoal text-white border-y border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-7">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 text-center divide-y lg:divide-y-0 lg:divide-x divide-white/10">
+        <div class="pt-2 lg:pt-0">
+          <div class="font-serif text-3xl sm:text-4xl font-bold text-gold">250+</div>
+          <div class="text-xs sm:text-sm text-white/75 mt-1">Projects completed</div>
+        </div>
+        <div class="pt-2 lg:pt-0">
+          <div class="font-serif text-3xl sm:text-4xl font-bold text-gold">55+</div>
+          <div class="text-xs sm:text-sm text-white/75 mt-1">Expert team members</div>
+        </div>
+        <div class="pt-2 lg:pt-0">
+          <div class="font-serif text-3xl sm:text-4xl font-bold text-gold">300+</div>
+          <div class="text-xs sm:text-sm text-white/75 mt-1">3D renders delivered</div>
+        </div>
+        <div class="pt-2 lg:pt-0">
+          <div class="font-serif text-3xl sm:text-4xl font-bold text-gold">4.9/5</div>
+          <div class="text-xs sm:text-sm text-white/75 mt-1">From 4200+ reviews</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-16 sm:py-20 bg-cream">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto text-center mb-12">
+        <span class="text-xs font-semibold tracking-[0.22em] uppercase text-goldDark">What We Do</span>
+        <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-ink mt-2">Interiors, Modular &amp; Renovation Under One Roof</h2>
+        <p class="text-muted text-sm sm:text-base mt-3">From a single modular kitchen to a complete turnkey villa — with 3D visualization so you see every detail before work begins.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+        <!-- Service Card 1 -->
+        <article class="bg-white rounded-2xl overflow-hidden border border-stone-200/80 shadow-sm hover:shadow-xl transition flex flex-col">
+          <div class="relative aspect-[4/3] overflow-hidden">
+            <img src="images/living-dining.jpg" alt="Full Home and Villa Interior concept" class="w-full h-full object-cover hover:scale-105 transition duration-500" />
+            <span class="absolute top-3.5 left-3.5 px-3 py-1 rounded-full bg-espresso/85 text-gold text-[11px] font-semibold tracking-wider uppercase backdrop-blur-sm">Residential</span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col">
+            <h3 class="font-serif text-2xl font-semibold text-ink">Full Home &amp; Villa Interior</h3>
+            <p class="text-sm text-muted mt-2 leading-relaxed">Complete turnkey design and execution tailored for apartments, independent homes, and multi-floor villas.</p>
+            <ul class="mt-4 space-y-2.5 text-sm text-ink/90 flex-1">
+              <li class="flex items-start gap-2.5">
+                <svg class="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4 4L19 7"/></svg>
+                <span>Living, dining &amp; bedroom space planning</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg class="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4 4L19 7"/></svg>
+                <span>False ceiling, lighting &amp; feature wall decor</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg class="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4 4L19 7"/></svg>
+                <span>Bespoke furniture, soft furnishings &amp; styling</span>
+              </li>
+            </ul>
+            <button type="button" data-scroll-form="Full Home Interior" class="mt-6 w-full py-3 px-5 rounded-full bg-gold hover:bg-goldDark text-espresso font-semibold text-sm transition inline-flex items-center justify-center gap-2 min-h-[44px]">
+              <span>Explore Service</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-7-7 7 7-7 7"/></svg>
+            </button>
+          </div>
+        </article>
+
+        <!-- Service Card 2 -->
+        <article class="bg-white rounded-2xl overflow-hidden border border-stone-200/80 shadow-sm hover:shadow-xl transition flex flex-col">
+          <div class="relative aspect-[4/3] overflow-hidden">
+            <img src="images/modular-kitchen.jpg" alt="Modular Kitchen and Wardrobe concept" class="w-full h-full object-cover hover:scale-105 transition duration-500" />
+            <span class="absolute top-3.5 left-3.5 px-3 py-1 rounded-full bg-espresso/85 text-gold text-[11px] font-semibold tracking-wider uppercase backdrop-blur-sm">Modular</span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col">
+            <h3 class="font-serif text-2xl font-semibold text-ink">Modular Kitchen &amp; Wardrobe</h3>
+            <p class="text-sm text-muted mt-2 leading-relaxed">Precision factory-finished kitchens and smart storage built for daily durability and clean aesthetics.</p>
+            <ul class="mt-4 space-y-2.5 text-sm text-ink/90 flex-1">
+              <li class="flex items-start gap-2.5">
+                <svg class="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4 4L19 7"/></svg>
+                <span>L-shaped, U-shaped, parallel &amp; island kitchens</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg class="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4 4L19 7"/></svg>
+                <span>Sliding, hinged &amp; walk-in glass wardrobes</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg class="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4 4L19 7"/></svg>
+                <span>Bedroom storage, crockery &amp; loft units</span>
+              </li>
+            </ul>
+            <button type="button" data-scroll-form="Modular Kitchen & Wardrobe" class="mt-6 w-full py-3 px-5 rounded-full bg-gold hover:bg-goldDark text-espresso font-semibold text-sm transition inline-flex items-center justify-center gap-2 min-h-[44px]">
+              <span>Explore Service</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-7-7 7 7-7 7"/></svg>
+            </button>
+          </div>
+        </article>
+
+        <!-- Service Card 3 -->
+        <article class="bg-white rounded-2xl overflow-hidden border border-stone-200/80 shadow-sm hover:shadow-xl transition flex flex-col md:col-span-2 lg:col-span-1">
+          <div class="relative aspect-[4/3] overflow-hidden">
+            <img src="images/designer-foyer.jpg" alt="Renovation and Architectural Build concept" class="w-full h-full object-cover hover:scale-105 transition duration-500" />
+            <span class="absolute top-3.5 left-3.5 px-3 py-1 rounded-full bg-espresso/85 text-gold text-[11px] font-semibold tracking-wider uppercase backdrop-blur-sm">Build</span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col">
+            <h3 class="font-serif text-2xl font-semibold text-ink">Renovation &amp; Construction</h3>
+            <p class="text-sm text-muted mt-2 leading-relaxed">Structural upgrades, civil modifications, and complete space transformations managed by one team.</p>
+            <ul class="mt-4 space-y-2.5 text-sm text-ink/90 flex-1">
+              <li class="flex items-start gap-2.5">
+                <svg class="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4 4L19 7"/></svg>
+                <span>Bathroom &amp; kitchen civil renovation</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg class="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4 4L19 7"/></svg>
+                <span>Office &amp; commercial interior execution</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg class="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4 4L19 7"/></svg>
+                <span>Building design &amp; photorealistic 3D views</span>
+              </li>
+            </ul>
+            <button type="button" data-scroll-form="Renovation & Construction" class="mt-6 w-full py-3 px-5 rounded-full bg-gold hover:bg-goldDark text-espresso font-semibold text-sm transition inline-flex items-center justify-center gap-2 min-h-[44px]">
+              <span>Explore Service</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-7-7 7 7-7 7"/></svg>
+            </button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio / Projects Section -->
+  <section id="projects" class="py-16 sm:py-20 bg-espresso text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-8">
+        <div>
+          <span class="text-xs font-semibold tracking-[0.22em] uppercase text-gold">Our Projects &amp; Design Concepts</span>
+          <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold mt-2">Expert Design Services That Shape Beautiful Spaces</h2>
+        </div>
+        <p class="text-sm sm:text-base text-white/75 max-w-md lg:text-right">
+          End-to-end architectural and interior design solutions focused on aesthetics, daily functionality, and lasting finishes. <span class="text-gold/90">(Illustrative concept visuals shown below; click any card to preview.)</span>
+        </p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div id="projectFilters" class="flex flex-wrap items-center gap-2.5 mb-8">
+        <button type="button" data-filter="all" class="filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-gold text-espresso transition">All Spaces (12)</button>
+        <button type="button" data-filter="kitchen" class="filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-medium bg-white/10 text-white/85 hover:bg-white/20 transition">Modular Kitchens</button>
+        <button type="button" data-filter="living" class="filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-medium bg-white/10 text-white/85 hover:bg-white/20 transition">Living &amp; Villa Foyers</button>
+        <button type="button" data-filter="bedroom" class="filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-medium bg-white/10 text-white/85 hover:bg-white/20 transition">Bedrooms &amp; Closets</button>
+        <button type="button" data-filter="washroom" class="filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-medium bg-white/10 text-white/85 hover:bg-white/20 transition">Washrooms</button>
+      </div>
+
+      <!-- 12 Project Cards Grid -->
+      <div id="projectGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+
+      <!-- Bottom CTA -->
+      <div class="text-center mt-10">
+        <button type="button" data-scroll-form="Full Home Interior" class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-gold hover:bg-goldDark text-espresso font-semibold text-sm sm:text-base transition shadow-lg min-h-[48px]">
+          <span>Get a Design Like This For Your Home</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-7-7 7 7-7 7"/></svg>
+        </button>
+      </div>
+
+      <!-- Brands We Deal With Marquee -->
+      <div class="mt-12 rounded-2xl bg-charcoal border border-white/10 px-5 py-5 overflow-hidden">
+        <div class="flex flex-col sm:flex-row sm:items-center gap-4">
+          <span class="text-xs font-semibold uppercase tracking-[0.18em] text-gold shrink-0">Brands we deal with</span>
+          <div class="overflow-hidden flex-1">
+            <div class="marquee-track items-center gap-10 text-sm font-semibold text-white/75 tracking-wide">
+              <span>ADITYA BIRLA GROUP</span>
+              <span class="text-gold">•</span>
+              <span>GYPROC SAINT-GOBAIN</span>
+              <span class="text-gold">•</span>
+              <span>SAINT-GOBAIN</span>
+              <span class="text-gold">•</span>
+              <span>JS JAGDISH STORE</span>
+              <span class="text-gold">•</span>
+              <span>WAKEFIT</span>
+              <span class="text-gold">•</span>
+              <span>ADITYA BIRLA GROUP</span>
+              <span class="text-gold">•</span>
+              <span>GYPROC SAINT-GOBAIN</span>
+              <span class="text-gold">•</span>
+              <span>SAINT-GOBAIN</span>
+              <span class="text-gold">•</span>
+              <span>JS JAGDISH STORE</span>
+              <span class="text-gold">•</span>
+              <span>WAKEFIT</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section (Uniform Step Styling) -->
+  <section id="how-it-works" class="py-16 sm:py-20 bg-cream">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto text-center mb-14">
+        <span class="text-xs font-semibold tracking-[0.22em] uppercase text-goldDark">How It Works</span>
+        <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-ink mt-2">Design, Production &amp; Execution By Just One Company</h2>
+        <p class="text-muted text-sm sm:text-base mt-3">No contractors to chase, no blame games. Design, production, and execution are handled by one team from start to finish.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+        <!-- Step 1 -->
+        <div class="bg-white rounded-2xl p-6 border border-stone-200/80 shadow-sm text-center flex flex-col items-center">
+          <div class="w-12 h-12 rounded-full bg-espresso text-gold font-serif text-xl font-bold flex items-center justify-center mb-4 border-2 border-gold/40">1</div>
+          <h3 class="font-semibold text-sm sm:text-base text-ink leading-snug">Talk to our Interior Designer &amp; Get an Estimate</h3>
+          <p class="text-xs text-muted mt-2">Share your floor plan and requirements for a transparent cost ballpark.</p>
+        </div>
+        <!-- Step 2 -->
+        <div class="bg-white rounded-2xl p-6 border border-stone-200/80 shadow-sm text-center flex flex-col items-center">
+          <div class="w-12 h-12 rounded-full bg-espresso text-gold font-serif text-xl font-bold flex items-center justify-center mb-4 border-2 border-gold/40">2</div>
+          <h3 class="font-semibold text-sm sm:text-base text-ink leading-snug">Detailed Drawing and Approval</h3>
+          <p class="text-xs text-muted mt-2">Review 2D layouts, 3D renders, and material samples before sign-off.</p>
+        </div>
+        <!-- Step 3 -->
+        <div class="bg-white rounded-2xl p-6 border border-stone-200/80 shadow-sm text-center flex flex-col items-center">
+          <div class="w-12 h-12 rounded-full bg-espresso text-gold font-serif text-xl font-bold flex items-center justify-center mb-4 border-2 border-gold/40">3</div>
+          <h3 class="font-semibold text-sm sm:text-base text-ink leading-snug">Production at Our Own Factory</h3>
+          <p class="text-xs text-muted mt-2">Modular units crafted with precision machinery and quality checks.</p>
+        </div>
+        <!-- Step 4 -->
+        <div class="bg-white rounded-2xl p-6 border border-stone-200/80 shadow-sm text-center flex flex-col items-center">
+          <div class="w-12 h-12 rounded-full bg-espresso text-gold font-serif text-xl font-bold flex items-center justify-center mb-4 border-2 border-gold/40">4</div>
+          <h3 class="font-semibold text-sm sm:text-base text-ink leading-snug">Material Delivery &amp; Execution</h3>
+          <p class="text-xs text-muted mt-2">Supervised site installation by our in-house engineering crew.</p>
+        </div>
+        <!-- Step 5 -->
+        <div class="bg-white rounded-2xl p-6 border border-stone-200/80 shadow-sm text-center flex flex-col items-center sm:col-span-2 lg:col-span-1">
+          <div class="w-12 h-12 rounded-full bg-espresso text-gold font-serif text-xl font-bold flex items-center justify-center mb-4 border-2 border-gold/40">5</div>
+          <h3 class="font-semibold text-sm sm:text-base text-ink leading-snug">On Time Project Hand Over</h3>
+          <p class="text-xs text-muted mt-2">Final walkthrough, snag clearance, and ready-to-move-in keys.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mid-Page CTA Banner -->
+  <section class="bg-gradient-to-r from-espresso via-charcoal to-espresso text-white py-14">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-5">
+      <h2 class="font-serif text-3xl sm:text-4xl font-semibold">Your Dream Home Starts With One Free Call</h2>
+      <p class="text-sm sm:text-base text-white/80 max-w-2xl mx-auto">Talk to our interior designer, see your space in 3D, and get an estimate — with no obligation to proceed.</p>
+      <div class="flex flex-wrap items-center justify-center gap-3.5 pt-2">
+        <button type="button" data-scroll-form="Full Home Interior" class="px-6 py-3.5 rounded-full bg-white text-espresso hover:bg-gold font-semibold text-sm sm:text-base transition inline-flex items-center gap-2 min-h-[48px]">
+          <span>Book Free Consultation</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-7-7 7 7-7 7"/></svg>
+        </button>
+        <a href="tel:+919643431551" class="px-6 py-3.5 rounded-full border border-white/30 hover:border-gold text-white hover:text-gold font-medium text-sm sm:text-base transition min-h-[48px] inline-flex items-center">
+          Call +91 96434 31551
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Jain Signature Studio -->
+  <section id="why-us" class="py-16 sm:py-20 bg-cream">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto text-center mb-12">
+        <span class="text-xs font-semibold tracking-[0.22em] uppercase text-goldDark">Why Jain Signature Studio</span>
+        <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-ink mt-2">One Company, Start to Finish</h2>
+        <p class="text-muted text-sm sm:text-base mt-3">The reasons homeowners and villa clients choose our integrated team over fragmented contractors.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 bg-white rounded-2xl border border-stone-200/90 shadow-sm divide-y sm:divide-y-0 sm:divide-x divide-stone-200/80 overflow-hidden">
+        <div class="p-7 border-b border-stone-200/80">
+          <div class="w-11 h-11 rounded-full border border-gold/50 bg-cream flex items-center justify-center text-goldDark mb-4">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v18m9-9H3"/></svg>
+          </div>
+          <h3 class="font-serif text-xl font-semibold text-ink">Design to Execution</h3>
+          <p class="text-sm text-muted mt-1.5">Single-point accountability from initial floor planning to final site handover.</p>
+        </div>
+        <div class="p-7 border-b border-stone-200/80">
+          <div class="w-11 h-11 rounded-full border border-gold/50 bg-cream flex items-center justify-center text-goldDark mb-4">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+          </div>
+          <h3 class="font-serif text-xl font-semibold text-ink">300+ 3D Renders Delivered</h3>
+          <p class="text-sm text-muted mt-1.5">Walk through photorealistic 3D views of your home before a single board is cut.</p>
+        </div>
+        <div class="p-7 border-b border-stone-200/80">
+          <div class="w-11 h-11 rounded-full border border-gold/50 bg-cream flex items-center justify-center text-goldDark mb-4">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path stroke-linecap="round" stroke-linejoin="round" d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3 class="font-serif text-xl font-semibold text-ink">55+ Expert Team</h3>
+          <p class="text-sm text-muted mt-1.5">Dedicated interior architects, project managers, and skilled site technicians.</p>
+        </div>
+        <div class="p-7">
+          <div class="w-11 h-11 rounded-full border border-gold/50 bg-cream flex items-center justify-center text-goldDark mb-4">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <h3 class="font-serif text-xl font-semibold text-ink">4.9/5 Across 4200+ Reviews</h3>
+          <p class="text-sm text-muted mt-1.5">Consistent client satisfaction across residential and commercial projects.</p>
+        </div>
+        <div class="p-7">
+          <div class="w-11 h-11 rounded-full border border-gold/50 bg-cream flex items-center justify-center text-goldDark mb-4">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6l4 2"/></svg>
+          </div>
+          <h3 class="font-serif text-xl font-semibold text-ink">Timely Project Delivery</h3>
+          <p class="text-sm text-muted mt-1.5">Milestone-tracked schedules with clear weekly progress updates.</p>
+        </div>
+        <div class="p-7">
+          <div class="w-11 h-11 rounded-full border border-gold/50 bg-cream flex items-center justify-center text-goldDark mb-4">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/></svg>
+          </div>
+          <h3 class="font-serif text-xl font-semibold text-ink">250+ Material Partners</h3>
+          <p class="text-sm text-muted mt-1.5">Curated hardware, laminates, glass, and stone from trusted national brands.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Client Reviews Section (Fixed Duplicate Quote Bug) -->
+  <section id="reviews" class="py-16 sm:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto text-center mb-12">
+        <span class="text-xs font-semibold tracking-[0.22em] uppercase text-goldDark">Client Reviews</span>
+        <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-ink mt-2">Rated 4.9/5 Across 4200+ Reviews</h2>
+        <p class="text-muted text-sm sm:text-base mt-3">98% client satisfaction across 250+ completed residential and commercial projects.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <article class="bg-cream/60 rounded-2xl p-6 border border-stone-200 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <div class="text-gold text-sm tracking-widest">★★★★★</div>
+              <span class="text-[11px] font-medium px-2.5 py-0.5 rounded-full bg-white border border-stone-200 text-muted">Full Home</span>
+            </div>
+            <p class="text-sm text-ink/90 leading-relaxed italic">
+              "From the initial 3D walkthrough to the final wardrobe fittings, having one team manage everything saved us months of follow-up."
+            </p>
+          </div>
+          <div class="mt-5 pt-4 border-t border-stone-200/80">
+            <div class="font-semibold text-sm text-ink">Mr. Shailendra</div>
+            <div class="text-xs text-muted">Homeowner • Residential Project</div>
+          </div>
+        </article>
+
+        <article class="bg-cream/60 rounded-2xl p-6 border border-stone-200 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <div class="text-gold text-sm tracking-widest">★★★★★</div>
+              <span class="text-[11px] font-medium px-2.5 py-0.5 rounded-full bg-white border border-stone-200 text-muted">Modular Kitchen</span>
+            </div>
+            <p class="text-sm text-ink/90 leading-relaxed italic">
+              "The factory-finished kitchen and lighting layout matched the approved 3D renders closely, and handover stayed right on schedule."
+            </p>
+          </div>
+          <div class="mt-5 pt-4 border-t border-stone-200/80">
+            <div class="font-semibold text-sm text-ink">Ms. Charu Sahani</div>
+            <div class="text-xs text-muted">Homeowner • Residential Project</div>
+          </div>
+        </article>
+
+        <article class="bg-cream/60 rounded-2xl p-6 border border-stone-200 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <div class="text-gold text-sm tracking-widest">★★★★★</div>
+              <span class="text-[11px] font-medium px-2.5 py-0.5 rounded-full bg-white border border-stone-200 text-muted">Commercial &amp; Build</span>
+            </div>
+            <p class="text-sm text-ink/90 leading-relaxed italic">
+              "Clear drawings, reliable material sourcing, and disciplined site supervision made coordinating our project straightforward."
+            </p>
+          </div>
+          <div class="mt-5 pt-4 border-t border-stone-200/80">
+            <div class="font-semibold text-sm text-ink">Mr. Vikas Mishra</div>
+            <div class="text-xs text-muted">Baba Construction • Partner Client</div>
+          </div>
+        </article>
+      </div>
+      <p class="text-center text-[11px] text-muted mt-5">* Sample review summaries shown for layout demonstration; full verified client references are available during consultation.</p>
+    </div>
+  </section>
+
+  <!-- FAQs Section -->
+  <section id="faqs" class="py-16 sm:py-20 bg-cream">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-10">
+        <span class="text-xs font-semibold tracking-[0.22em] uppercase text-goldDark">FAQs</span>
+        <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-ink mt-2">Questions Before You Start</h2>
+        <p class="text-muted text-sm sm:text-base mt-2">Straight answers on cost, timelines, and what is actually covered.</p>
+      </div>
+
+      <div id="faqList" class="space-y-3"></div>
+    </div>
+  </section>
+
+  <!-- Pre-Footer Banner -->
+  <section class="bg-espresso text-white py-14 border-b border-white/10">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-5">
+      <h2 class="font-serif text-3xl sm:text-4xl font-semibold">Ready to start your interior project?</h2>
+      <p class="text-sm sm:text-base text-white/75 max-w-xl mx-auto">Talk to our interior designer, see your space in 3D, and get an estimate — with no obligation.</p>
+      <div class="flex flex-wrap items-center justify-center gap-3.5 pt-2">
+        <button type="button" data-scroll-form="Full Home Interior" class="px-6 py-3.5 rounded-full bg-gold hover:bg-goldDark text-espresso font-semibold text-sm sm:text-base transition inline-flex items-center gap-2 min-h-[48px]">
+          <span>Book Free Consultation</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-7-7 7 7-7 7"/></svg>
+        </button>
+        <button type="button" id="prefooterWhatsappBtn" class="px-6 py-3.5 rounded-full border border-white/25 hover:border-gold text-white hover:text-gold font-medium text-sm sm:text-base transition min-h-[48px]">
+          WhatsApp
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (Clean Transparent Logo) -->
+  <footer class="bg-charcoal text-white/80 pt-14 pb-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10 pb-10 border-b border-white/10">
+        <!-- Col 1 -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-lg border border-gold/60 bg-gold/10 flex items-center justify-center font-serif text-lg font-bold text-gold">JSI</div>
+            <div>
+              <div class="font-serif text-lg font-semibold text-white">Jain Signature Studio LLP</div>
+              <div class="text-[11px] text-white/55 uppercase tracking-widest">Home &amp; Villa Interiors</div>
+            </div>
+          </div>
+          <p class="text-sm text-white/70 leading-relaxed">
+            End-to-end residential, villa, modular kitchen, and commercial interior design and execution across Ghaziabad and Delhi NCR.
+          </p>
+          <div class="flex items-center gap-2.5">
+            <button type="button" data-social="Instagram" class="w-9 h-9 rounded-full border border-white/15 hover:border-gold hover:text-gold flex items-center justify-center transition" aria-label="Instagram">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </button>
+            <button type="button" data-social="Facebook" class="w-9 h-9 rounded-full border border-white/15 hover:border-gold hover:text-gold flex items-center justify-center transition" aria-label="Facebook">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </button>
+            <button type="button" data-social="WhatsApp" class="w-9 h-9 rounded-full border border-white/15 hover:border-gold hover:text-gold flex items-center justify-center transition" aria-label="WhatsApp">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12.03 2a9.97 9.97 0 0 0-8.46 15.27L2 22l4.86-1.53A9.97 9.97 0 1 0 12.03 2Z"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Col 2: Services -->
+        <div>
+          <h3 class="text-xs font-semibold uppercase tracking-[0.2em] text-gold mb-4">Services</h3>
+          <ul class="space-y-2.5 text-sm">
+            <li><button type="button" data-scroll-form="Full Home Interior" class="hover:text-gold transition">Full Home Interior</button></li>
+            <li><button type="button" data-scroll-form="Modular Kitchen & Wardrobe" class="hover:text-gold transition">Modular Kitchen</button></li>
+            <li><button type="button" data-scroll-form="Modular Kitchen & Wardrobe" class="hover:text-gold transition">Modular Wardrobe</button></li>
+            <li><button type="button" data-scroll-form="Renovation & Construction" class="hover:text-gold transition">Renovation &amp; Construction</button></li>
+            <li><button type="button" data-scroll-form="Renovation & Construction" class="hover:text-gold transition">Office &amp; Commercial Interiors</button></li>
+            <li><button type="button" data-scroll-form="Full Home Interior" class="hover:text-gold transition">False Ceiling &amp; Wall Decor</button></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Get In Touch -->
+        <div>
+          <h3 class="text-xs font-semibold uppercase tracking-[0.2em] text-gold mb-4">Get In Touch</h3>
+          <ul class="space-y-3 text-sm">
+            <li><span class="text-white/50 block text-xs">Call Us</span><a href="tel:+919643431551" class="text-white hover:text-gold font-medium">+91 96434 31551</a></li>
+            <li><span class="text-white/50 block text-xs">Email</span><a href="mailto:info@jainstudio.co.in" class="text-white hover:text-gold">info@jainstudio.co.in</a></li>
+            <li><span class="text-white/50 block text-xs">Studio</span><span>L-08, GNB Mall, Raj Nagar Extension, Ghaziabad 201017, Uttar Pradesh</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/55">
+        <div>&copy; 2026 Jain Signature Studio LLP. All rights reserved.</div>
+        <div class="flex items-center gap-5">
+          <button type="button" data-policy="Privacy Policy" class="hover:text-gold transition">Privacy Policy</button>
+          <button type="button" data-policy="Terms & Conditions" class="hover:text-gold transition">Terms &amp; Conditions</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Sticky Action Bar -->
+  <div class="lg:hidden fixed bottom-0 inset-x-0 z-30 bg-espresso/95 backdrop-blur-md border-t border-white/15 px-3 py-2.5 flex items-center gap-2">
+    <a href="tel:+919643431551" class="flex-1 py-2.5 rounded-full border border-white/25 text-white text-xs font-semibold text-center">Call Now</a>
+    <button type="button" id="mobileWhatsappBtn" class="flex-1 py-2.5 rounded-full border border-emerald-500/50 text-emerald-300 text-xs font-semibold text-center">WhatsApp</button>
+    <button type="button" data-scroll-form="Full Home Interior" class="flex-[1.3] py-2.5 rounded-full bg-gold text-espresso text-xs font-bold text-center">Free Quote</button>
+  </div>
+
+  <!-- Explore More Slide-Over Drawer -->
+  <div id="exploreDrawer" class="hidden fixed inset-0 z-50">
+    <div id="drawerBackdrop" class="absolute inset-0 bg-black/60 backdrop-blur-xs"></div>
+    <aside class="relative ml-auto w-full max-w-md h-full bg-white text-ink shadow-2xl flex flex-col">
+      <div class="bg-espresso text-white px-6 py-5 flex items-center justify-between border-b border-white/10">
+        <div>
+          <div class="font-serif text-xl font-semibold text-gold">Jain Signature Studio</div>
+          <div class="text-xs text-white/65">Studio Overview &amp; Quick Actions</div>
+        </div>
+        <button id="closeDrawerBtn" type="button" class="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center text-white hover:text-gold" aria-label="Close drawer">&times;</button>
+      </div>
+
+      <!-- Drawer Tabs -->
+      <div class="flex border-b border-stone-200 px-4 bg-cream">
+        <button type="button" data-drawer-tab="company" class="drawer-tab flex-1 py-3 text-xs font-semibold border-b-2 border-gold text-ink">Company</button>
+        <button type="button" data-drawer-tab="services" class="drawer-tab flex-1 py-3 text-xs font-medium border-b-2 border-transparent text-muted">Services</button>
+        <button type="button" data-drawer-tab="work" class="drawer-tab flex-1 py-3 text-xs font-medium border-b-2 border-transparent text-muted">Our Work</button>
+        <button type="button" data-drawer-tab="enquire" class="drawer-tab flex-1 py-3 text-xs font-medium border-b-2 border-transparent text-muted">Enquire</button>
+      </div>
+
+      <div id="drawerBody" class="p-6 flex-1 overflow-y-auto space-y-5 text-sm"></div>
+
+      <div class="p-5 border-t border-stone-200 bg-cream">
+        <button id="drawerCtaBtn" type="button" class="w-full py-3.5 rounded-full bg-gold hover:bg-goldDark text-espresso font-semibold text-sm transition">
+          Book a Free Consultation
+        </button>
+      </div>
+    </aside>
+  </div>
+
+  <!-- Project Lightbox Modal -->
+  <div id="projectModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4">
+    <div id="projectModalBackdrop" class="absolute inset-0 bg-black/75 backdrop-blur-xs"></div>
+    <div class="relative bg-white rounded-2xl max-w-xl w-full overflow-hidden shadow-2xl">
+      <button id="closeProjectModal" type="button" class="absolute top-3 right-3 z-10 w-9 h-9 rounded-full bg-espresso/80 text-white flex items-center justify-center hover:bg-gold hover:text-espresso transition" aria-label="Close preview">&times;</button>
+      <div class="aspect-[4/3] bg-espresso">
+        <img id="modalProjectImg" src="" alt="" class="w-full h-full object-cover" />
+      </div>
+      <div class="p-6">
+        <span id="modalProjectTag" class="text-[11px] font-semibold uppercase tracking-wider text-goldDark"></span>
+        <h3 id="modalProjectTitle" class="font-serif text-2xl font-semibold text-ink mt-1"></h3>
+        <p id="modalProjectDesc" class="text-sm text-muted mt-2"></p>
+        <div class="mt-5 flex flex-wrap gap-3">
+          <button id="modalQuoteBtn" type="button" class="flex-1 py-3 px-5 rounded-full bg-gold hover:bg-goldDark text-espresso font-semibold text-sm transition">
+            Get a Quote Like This
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Form Confirmation Modal (Dummy Lead Submission) -->
+  <div id="successModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4">
+    <div id="successBackdrop" class="absolute inset-0 bg-black/70 backdrop-blur-xs"></div>
+    <div class="relative bg-white rounded-2xl max-w-md w-full p-6 sm:p-7 text-center shadow-2xl border border-gold/30">
+      <div class="w-14 h-14 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center mx-auto mb-4">
+        <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4 4L19 7"/></svg>
+      </div>
+      <h3 class="font-serif text-2xl font-semibold text-ink">Consultation Request Received</h3>
+      <p class="text-sm text-muted mt-2">Thank you! In a live flow, our senior interior designer would reach out within 24 hours. <span class="font-medium text-ink">(Demo preview — no live enquiry sent.)</span></p>
+      <div id="submittedSummary" class="mt-4 bg-cream rounded-xl p-4 text-left text-xs space-y-1.5 border border-stone-200"></div>
+      <button id="closeSuccessModal" type="button" class="mt-5 w-full py-3 rounded-full bg-espresso text-white hover:bg-gold hover:text-espresso font-semibold text-sm transition">
+        Done
+      </button>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="hidden fixed bottom-20 lg:bottom-6 right-4 sm:right-6 z-50 bg-espresso text-white border border-gold/40 px-4 py-3 rounded-xl shadow-xl text-xs sm:text-sm max-w-sm"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
