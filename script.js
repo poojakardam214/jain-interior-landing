@@ -229,15 +229,35 @@ function setDrawerTab(tab) {
   document.getElementById('drawerBody').innerHTML = DRAWER_CONTENT[tab] || DRAWER_CONTENT.company;
 }
 
-document.getElementById('openDrawerBtn').addEventListener('click', () => {
+function openExploreDrawer() {
+  const drawer = document.getElementById('exploreDrawer');
+  const panel = document.getElementById('exploreDrawerPanel');
   setDrawerTab('company');
-  document.getElementById('exploreDrawer').classList.remove('hidden');
-});
-document.getElementById('closeDrawerBtn').addEventListener('click', () => document.getElementById('exploreDrawer').classList.add('hidden'));
-document.getElementById('drawerBackdrop').addEventListener('click', () => document.getElementById('exploreDrawer').classList.add('hidden'));
+  drawer.classList.remove('pointer-events-none', 'opacity-0');
+  drawer.classList.add('pointer-events-auto', 'opacity-100');
+  drawer.setAttribute('aria-hidden', 'false');
+  requestAnimationFrame(() => {
+    panel.classList.remove('translate-x-full');
+    panel.classList.add('translate-x-0');
+  });
+}
+
+function closeExploreDrawer() {
+  const drawer = document.getElementById('exploreDrawer');
+  const panel = document.getElementById('exploreDrawerPanel');
+  panel.classList.remove('translate-x-0');
+  panel.classList.add('translate-x-full');
+  drawer.classList.remove('opacity-100', 'pointer-events-auto');
+  drawer.classList.add('opacity-0', 'pointer-events-none');
+  drawer.setAttribute('aria-hidden', 'true');
+}
+
+document.getElementById('openDrawerBtn').addEventListener('click', openExploreDrawer);
+document.getElementById('closeDrawerBtn').addEventListener('click', closeExploreDrawer);
+document.getElementById('drawerBackdrop').addEventListener('click', closeExploreDrawer);
 document.querySelectorAll('.drawer-tab').forEach(b => b.addEventListener('click', () => setDrawerTab(b.dataset.drawerTab)));
 document.getElementById('drawerCtaBtn').addEventListener('click', () => {
-  document.getElementById('exploreDrawer').classList.add('hidden');
+  closeExploreDrawer();
   scrollToForm('Full Home Interior');
 });
 
