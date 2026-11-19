@@ -4,20 +4,25 @@ const IMG_KITCHEN = 'images/modular-kitchen.jpg';
 const IMG_BEDROOM = 'images/master-bedroom.jpg';
 const IMG_WASHROOM = 'images/marble-washroom.jpg';
 const IMG_FOYER = 'images/designer-foyer.jpg';
+const IMG_KITCHEN_AURORA = 'images/kitchen-aurora.jpg';
+const IMG_KITCHEN_SIG = 'images/kitchen-signature.jpg';
+const IMG_KITCHEN_NOVA = 'images/kitchen-nova.jpg';
+const IMG_CLOSET = 'images/walkin-closet.jpg';
+const IMG_CALMNEST = 'images/bedroom-calmnest.jpg';
 
 const PROJECTS = [
   { id: 1, title: 'Ivory Gallery Kitchen', tag: 'Luxury Interiors', cat: 'kitchen', scope: 'Modular Kitchen & Wardrobe', img: IMG_KITCHEN, desc: 'Warm walnut cabinetry paired with waterfall marble island seating and recessed under-cabinet lighting.' },
-  { id: 2, title: 'Aurora Line Modular Kitchen', tag: 'Residential Interior', cat: 'kitchen', scope: 'Modular Kitchen & Wardrobe', img: IMG_KITCHEN, desc: 'Clean handleless storage layout engineered for high-efficiency Indian villa and apartment kitchens.' },
+  { id: 2, title: 'Aurora Line Modular Kitchen', tag: 'Residential Interior', cat: 'kitchen', scope: 'Modular Kitchen & Wardrobe', img: IMG_KITCHEN_AURORA, desc: 'Clean handleless storage layout engineered for high-efficiency Indian villa and apartment kitchens.' },
   { id: 3, title: 'The Aura Marble Washroom', tag: 'Residential Washroom', cat: 'washroom', scope: 'Renovation & Construction', img: IMG_WASHROOM, desc: 'Travertine stone vanity, backlit mirror, and brushed brass fixtures with wet-dry glass partitioning.' },
-  { id: 4, title: 'The Horizon Slide Closet', tag: 'Residential Interior', cat: 'bedroom', scope: 'Modular Kitchen & Wardrobe', img: IMG_BEDROOM, desc: 'Tinted glass sliding wardrobe with warm internal strip lighting and fluted oak wall paneling.' },
+  { id: 4, title: 'The Horizon Slide Closet', tag: 'Residential Interior', cat: 'bedroom', scope: 'Modular Kitchen & Wardrobe', img: IMG_CLOSET, desc: 'Tinted glass sliding wardrobe with warm internal strip lighting and fluted oak wall paneling.' },
   { id: 5, title: 'Villa Courtyard Living Suite', tag: 'Luxury Interiors', cat: 'living', scope: 'Full Home Interior', img: IMG_HERO, desc: 'Open-plan villa lounge featuring walnut ceiling beams, travertine hearth, and indoor-outdoor sliders.' },
   { id: 6, title: 'The Zen Rest Bedroom', tag: 'Residential Interior', cat: 'bedroom', scope: 'Full Home Interior', img: IMG_BEDROOM, desc: 'Calm neutral palette with cove-lit false ceiling, acoustic wood slats, and floating bedside consoles.' },
   { id: 7, title: 'Grand Heritage Dining & Lounge', tag: 'Residential Interior', cat: 'living', scope: 'Full Home Interior', img: IMG_LIVING, desc: 'Spacious Indian residence living-dining zone with brass-inlaid wood paneling and statement chandelier.' },
-  { id: 8, title: 'The Signature Marble Kitchen', tag: 'Residential Interior', cat: 'kitchen', scope: 'Modular Kitchen & Wardrobe', img: IMG_KITCHEN, desc: 'Integrated tall appliance unit with matte beige base drawers and stone backsplash.' },
-  { id: 9, title: 'The Nova Marble Kitchen', tag: 'Residential Interior', cat: 'kitchen', scope: 'Modular Kitchen & Wardrobe', img: IMG_KITCHEN, desc: 'Balanced parallel-plus-island workflow designed for family entertaining and effortless maintenance.' },
+  { id: 8, title: 'The Signature Marble Kitchen', tag: 'Residential Interior', cat: 'kitchen', scope: 'Modular Kitchen & Wardrobe', img: IMG_KITCHEN_SIG, desc: 'Integrated tall appliance unit with matte beige base drawers and stone backsplash.' },
+  { id: 9, title: 'The Nova Marble Kitchen', tag: 'Residential Interior', cat: 'kitchen', scope: 'Modular Kitchen & Wardrobe', img: IMG_KITCHEN_NOVA, desc: 'Balanced parallel-plus-island workflow designed for family entertaining and effortless maintenance.' },
   { id: 10, title: 'Aurum Curve Designer Foyer', tag: 'Residential Designs', cat: 'living', scope: 'Full Home Interior', img: IMG_FOYER, desc: 'Statement walnut pivot door, fluted entryway wall, and sculpted marble console table.' },
-  { id: 11, title: 'Ambient Elegance Corner', tag: 'Residential Interior', cat: 'living', scope: 'Full Home Interior', img: IMG_HERO, desc: 'Warm evening architectural lighting layered across custom upholstery and built-in display shelving.' },
-  { id: 12, title: 'The CalmNest Suite', tag: 'Residential Interior', cat: 'bedroom', scope: 'Full Home Interior', img: IMG_BEDROOM, desc: 'Restful master suite combining soft bouclé seating, warm oak textures, and glare-free indirect lighting.' }
+  { id: 11, title: 'Ambient Elegance Corner', tag: 'Residential Interior', cat: 'living', scope: 'Full Home Interior', img: IMG_LIVING, desc: 'Warm evening architectural lighting layered across custom upholstery and built-in display shelving.' },
+  { id: 12, title: 'The CalmNest Suite', tag: 'Residential Interior', cat: 'bedroom', scope: 'Full Home Interior', img: IMG_CALMNEST, desc: 'Restful master suite combining soft bouclé seating, warm oak textures, and glare-free indirect lighting.' }
 ];
 
 const FAQS = [
@@ -243,6 +248,7 @@ document.getElementById('leadForm').addEventListener('submit', (e) => {
   const propertyType = document.getElementById('propertyType').value;
   const scope = document.getElementById('scope').value;
   const locality = document.getElementById('locality').value.trim() || 'Ghaziabad / Delhi NCR';
+  const budget = document.getElementById('budget') ? document.getElementById('budget').value : 'Not decided yet';
   const errBox = document.getElementById('formError');
 
   if (!name || phone.length !== 10 || !propertyType) {
@@ -258,6 +264,7 @@ document.getElementById('leadForm').addEventListener('submit', (e) => {
     <div><strong>Property:</strong> ${propertyType}</div>
     <div><strong>Scope:</strong> ${scope}</div>
     <div><strong>Locality:</strong> ${locality}</div>
+    <div><strong>Budget:</strong> ${budget}</div>
   `;
   document.getElementById('successModal').classList.remove('hidden');
   e.target.reset();
