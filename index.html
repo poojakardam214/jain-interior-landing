@@ -39,9 +39,11 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between gap-3">
       <!-- Brand Logo -->
       <a href="#hero" class="flex items-center gap-3 shrink-0 group">
-        <div class="w-10 h-10 rounded-lg border border-gold/60 bg-gold/10 flex items-center justify-center font-serif text-lg font-bold text-gold tracking-wider">
-          JSI
-        </div>
+        <svg class="w-10 h-10 shrink-0" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="1.5" y="1.5" width="41" height="41" rx="8" stroke="#C89D54" stroke-width="1.5" fill="#231D18"/>
+          <path d="M12 14h20M22 14v16M15 30h14" stroke="#C89D54" stroke-width="1.4" stroke-linecap="round"/>
+          <text x="22" y="26" text-anchor="middle" fill="#FAF6F0" font-family="Georgia, serif" font-size="11" font-weight="700" letter-spacing="1.5">JSI</text>
+        </svg>
         <div class="leading-tight">
           <div class="font-serif text-base sm:text-lg font-semibold tracking-wide text-white group-hover:text-gold transition">JAIN SIGNATURE STUDIO</div>
           <div class="text-[10px] tracking-[0.2em] uppercase text-white/60">LLP • Home &amp; Villa Interiors</div>
@@ -92,8 +94,8 @@
   <!-- Hero Section & Consultation Form -->
   <section id="hero" class="relative bg-espresso text-white overflow-hidden">
     <div class="absolute inset-0">
-      <img src="images/hero-villa.jpg" alt="Luxury modern villa living room concept" class="w-full h-full object-cover opacity-35" />
-      <div class="absolute inset-0 bg-gradient-to-r from-espresso via-espresso/85 to-espresso/60"></div>
+      <img src="images/hero-villa.jpg" alt="Luxury modern villa living room concept" class="w-full h-full object-cover opacity-70" />
+      <div class="absolute inset-0 bg-gradient-to-r from-espresso/85 via-espresso/55 to-espresso/25"></div>
     </div>
 
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
@@ -149,10 +151,10 @@
         <!-- Right Consultation Form -->
         <div class="lg:col-span-5">
           <div id="consultationFormCard" class="bg-white text-ink rounded-2xl shadow-2xl overflow-hidden border border-gold/25">
-            <div class="bg-gradient-to-r from-charcoal to-espresso px-6 py-5 text-white border-b border-gold/30">
+            <div class="bg-gradient-to-r from-[#B88940] to-[#986D2B] px-6 py-5 text-white">
               <div class="flex items-center justify-between gap-2">
-                <h2 class="font-serif text-2xl font-semibold text-gold">Book Your Free Consultation</h2>
-                <span class="text-[11px] uppercase tracking-wider px-2.5 py-1 rounded-full bg-gold/15 text-gold border border-gold/30">Free Estimate</span>
+                <h2 class="font-serif text-2xl font-semibold text-white">Book Your Free Consultation</h2>
+                <span class="text-[11px] uppercase tracking-wider px-2.5 py-1 rounded-full bg-white/15 text-white border border-white/30">Free Estimate</span>
               </div>
               <p class="text-xs sm:text-sm text-white/75 mt-1">Talk to our interior designer and get a tailored estimate. No obligation.</p>
             </div>
@@ -195,6 +197,15 @@
                   <label for="locality" class="block text-xs font-semibold uppercase tracking-wider text-muted mb-1.5">City / Locality</label>
                   <input id="locality" name="locality" type="text" placeholder="e.g. Raj Nagar Extension" class="w-full px-3.5 py-2.5 rounded-lg border border-stone-300 bg-cream/40 text-sm focus:outline-none focus:ring-2 focus:ring-gold focus:border-gold" />
                 </div>
+              </div>
+              <div>
+                <label for="budget" class="block text-xs font-semibold uppercase tracking-wider text-muted mb-1.5">Estimated Budget (Optional)</label>
+                <select id="budget" name="budget" class="w-full px-3.5 py-2.5 rounded-lg border border-stone-300 bg-cream/40 text-sm focus:outline-none focus:ring-2 focus:ring-gold focus:border-gold">
+                  <option value="Not decided yet">Not decided yet — need guidance</option>
+                  <option value="₹5L – ₹10L">₹5L – ₹10L (Kitchen / Selective)</option>
+                  <option value="₹10L – ₹20L">₹10L – ₹20L (Full Apartment)</option>
+                  <option value="₹20L – ₹40L+">₹20L – ₹40L+ (Villa / Luxury Turnkey)</option>
+                </select>
               </div>
 
               <div id="formError" class="hidden text-xs font-medium text-red-700 bg-red-50 border border-red-200 rounded-lg px-3 py-2"></div>
