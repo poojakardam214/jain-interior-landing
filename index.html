@@ -1,850 +1,1310 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jain Signature Studio LLP — Bespoke Home &amp; Villa Interiors</title>
-  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            espresso: '#181411',
-            charcoal: '#231D18',
-            cream: '#FAF6F0',
-            sand: '#F2EAE0',
-            gold: '#C89D54',
-            goldDark: '#A87F3A',
-            ink: '#221C17',
-            muted: '#6B6259'
-          },
-          fontFamily: {
-            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
-            sans: ['"Inter"', 'system-ui', 'sans-serif']
-          }
-        }
-      }
-    };
-  </script>
-  <link rel="stylesheet" href="styles.css" />
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home &amp; Villa Interior Designers in Ghaziabad | Jain Signature Studio</title>
+<meta name="description" content="Jain Signature Studio LLP — full home interiors, modular kitchens, wardrobes and renovation in Ghaziabad &amp; Delhi NCR. 250+ projects, 4.9/5 from 4200+ reviews. Book a free design consultation.">
+
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#1b1714">
+<meta property="og:title" content="Home &amp; Villa Interior Designers in Ghaziabad | Jain Signature Studio">
+<meta property="og:description" content="Full home interiors, modular kitchens, wardrobes and renovation across Ghaziabad &amp; Delhi NCR. Book a free design consultation.">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<script>
+/* progressive enhancement flag + early image fallback (local assets/ -> live image host) */
+document.documentElement.className += ' js';
+document.addEventListener('error', function(e){
+  var t = e.target; if (!t || t.tagName !== 'IMG') return;
+  var s = t.getAttribute('src') || '';
+  if (t.getAttribute('data-fb') || s.indexOf('assets/') !== 0) return;
+  t.setAttribute('data-fb', '1');
+  t.src = 'https://digitalmarketingdoctor.in/lp/2026/oct/jain-interior/images/' + s.slice(7);
+}, true);
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
-<body class="pb-16 lg:pb-0">
-
-  <!-- Sticky Header -->
-  <header id="siteHeader" class="sticky top-0 z-40 bg-espresso/95 backdrop-blur-md border-b border-white/10 text-white transition-shadow">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between gap-3">
-      <!-- Brand Logo -->
-      <a href="#hero" class="flex items-center gap-3 shrink-0 group">
-        <svg class="w-10 h-10 shrink-0" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <rect x="1.5" y="1.5" width="41" height="41" rx="8" stroke="#C89D54" stroke-width="1.5" fill="#231D18"/>
-          <path d="M12 14h20M22 14v16M15 30h14" stroke="#C89D54" stroke-width="1.4" stroke-linecap="round"/>
-          <text x="22" y="26" text-anchor="middle" fill="#FAF6F0" font-family="Georgia, serif" font-size="11" font-weight="700" letter-spacing="1.5">JSI</text>
-        </svg>
-        <div class="leading-tight">
-          <div class="font-serif text-base sm:text-lg font-semibold tracking-wide text-white group-hover:text-gold transition">JAIN SIGNATURE STUDIO</div>
-          <div class="text-[10px] tracking-[0.2em] uppercase text-white/60">LLP • Home &amp; Villa Interiors</div>
-        </div>
-      </a>
-
-      <!-- Center Nav Links (Desktop) -->
-      <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-white/85" aria-label="Primary Navigation">
-        <a href="#services" class="nav-link relative hover:text-gold transition py-1" data-section="services">Services</a>
-        <a href="#projects" class="nav-link relative hover:text-gold transition py-1" data-section="projects">Our Projects</a>
-        <a href="#how-it-works" class="nav-link relative hover:text-gold transition py-1" data-section="how-it-works">How It Works</a>
-        <a href="#why-us" class="nav-link relative hover:text-gold transition py-1" data-section="why-us">Why Us</a>
-        <a href="#reviews" class="nav-link relative hover:text-gold transition py-1" data-section="reviews">Reviews</a>
-        <a href="#faqs" class="nav-link relative hover:text-gold transition py-1" data-section="faqs">FAQs</a>
-      </nav>
-
-      <!-- Right Actions -->
-      <div class="flex items-center gap-2 sm:gap-3">
-        <a href="tel:+919643431551" class="hidden md:inline-flex items-center gap-1.5 text-sm font-medium text-white/90 hover:text-gold transition px-2.5 py-2 rounded-full">
-          <svg class="w-4 h-4 text-gold" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          <span>+91 96434 31551</span>
-        </a>
-        <button id="openDrawerBtn" type="button" class="inline-flex items-center gap-2 px-3.5 sm:px-4 py-2 rounded-full border border-gold/50 text-xs sm:text-sm font-medium text-gold hover:bg-gold hover:text-espresso transition min-h-[40px]">
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
-          <span>Explore More</span>
-        </button>
-        <button id="mobileMenuBtn" type="button" class="lg:hidden inline-flex items-center justify-center w-10 h-10 rounded-lg border border-white/15 text-white hover:border-gold hover:text-gold transition" aria-label="Open menu">
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
-        </button>
-      </div>
-    </div>
-
-    <!-- Mobile Navigation Dropdown -->
-    <div id="mobileNav" class="hidden lg:hidden border-t border-white/10 bg-charcoal px-4 py-4 space-y-1">
-      <a href="#services" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-sm font-medium text-white/90 hover:bg-white/5 hover:text-gold">Services</a>
-      <a href="#projects" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-sm font-medium text-white/90 hover:bg-white/5 hover:text-gold">Our Projects</a>
-      <a href="#how-it-works" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-sm font-medium text-white/90 hover:bg-white/5 hover:text-gold">How It Works</a>
-      <a href="#why-us" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-sm font-medium text-white/90 hover:bg-white/5 hover:text-gold">Why Us</a>
-      <a href="#reviews" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-sm font-medium text-white/90 hover:bg-white/5 hover:text-gold">Reviews</a>
-      <a href="#faqs" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-sm font-medium text-white/90 hover:bg-white/5 hover:text-gold">FAQs</a>
-      <div class="pt-2 border-t border-white/10 flex items-center justify-between px-3">
-        <a href="tel:+919643431551" class="text-sm font-semibold text-gold">+91 96434 31551</a>
-        <button type="button" data-scroll-form="Full Home Interior" class="text-xs font-semibold bg-gold text-espresso px-3.5 py-2 rounded-full">Free Quote</button>
-      </div>
-    </div>
-  </header>
-
-  <!-- Hero Section & Consultation Form -->
-  <section id="hero" class="relative bg-espresso text-white overflow-hidden">
-    <div class="absolute inset-0">
-      <img src="images/hero-villa.jpg" alt="Luxury modern villa living room concept" class="w-full h-full object-cover opacity-70" />
-      <div class="absolute inset-0 bg-gradient-to-r from-espresso/85 via-espresso/55 to-espresso/25"></div>
-    </div>
-
-    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
-        <!-- Left Copy -->
-        <div class="lg:col-span-7 space-y-6 hero-animate-1">
-          <div class="inline-flex items-center gap-2.5 text-xs font-semibold tracking-[0.22em] uppercase text-gold">
-            <span class="w-8 h-[1px] bg-gold"></span>
-            <span>Home &amp; Villa Interiors • Ghaziabad &amp; Delhi NCR</span>
-          </div>
-
-          <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-semibold leading-[1.08] tracking-tight">
-            Bespoke Home &amp; Villa Interiors, <span class="text-gold italic font-normal">Designed &amp; Built</span> Under One Roof
-          </h1>
-
-          <p class="text-base sm:text-lg text-white/80 max-w-2xl leading-relaxed">
-            Full home interiors, modular kitchens, wardrobes, and turnkey renovation for villas, independent homes, and luxury apartments across Ghaziabad and Delhi NCR—with 3D visualization before execution begins.
-          </p>
-
-          <!-- Primary Hero CTAs -->
-          <div class="flex flex-wrap items-center gap-3.5 pt-1">
-            <button type="button" data-scroll-form="Full Home Interior" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-full btn-sheen bg-gold hover:bg-goldDark text-espresso font-semibold text-sm sm:text-base transition shadow-lg shadow-gold/20 min-h-[48px]">
-              <span>Get a Free Design Quote</span>
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-7-7 7 7-7 7"/></svg>
-            </button>
-            <button type="button" id="heroWhatsappBtn" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-full border border-white/25 bg-white/5 hover:bg-white/10 text-white font-medium text-sm sm:text-base transition min-h-[48px]">
-              <svg class="w-4 h-4 text-emerald-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12.03 2a9.97 9.97 0 0 0-8.46 15.27L2 22l4.86-1.53A9.97 9.97 0 1 0 12.03 2Zm5.82 14.12c-.24.68-1.4 1.3-1.94 1.38-.5.08-1.13.11-1.82-.11-.42-.14-.96-.32-1.65-.62-2.9-1.25-4.78-4.18-4.93-4.38-.14-.2-1.18-1.57-1.18-3s.75-2.13 1.02-2.42c.27-.3.59-.37.78-.37h.56c.18 0 .42-.07.66.5.24.58.82 2 .9 2.15.07.15.12.33.02.53-.1.2-.15.32-.3.5-.15.17-.31.39-.44.52-.15.15-.3.31-.13.6.17.3.76 1.25 1.63 2.02 1.12 1 2.06 1.31 2.36 1.46.3.15.47.12.64-.07.17-.2.74-.86.94-1.15.2-.3.4-.25.66-.15.27.1 1.7.8 2 .95.3.15.49.22.56.34.07.12.07.7-.17 1.38Z"/></svg>
-              <span>WhatsApp Us</span>
-            </button>
-          </div>
-
-          <!-- Trust Strip -->
-          <div class="pt-5 border-t border-white/15 grid grid-cols-2 sm:grid-cols-4 gap-4 text-xs sm:text-sm text-white/80">
-            <div>
-              <span class="block text-gold font-semibold text-base">4.9/5 Rating</span>
-              <span>4200+ client reviews</span>
-            </div>
-            <div>
-              <span class="block text-gold font-semibold text-base">250+ Projects</span>
-              <span>Homes &amp; villas delivered</span>
-            </div>
-            <div>
-              <span class="block text-gold font-semibold text-base">55+ Experts</span>
-              <span>In-house design &amp; build</span>
-            </div>
-            <div>
-              <span class="block text-gold font-semibold text-base">98% Satisfaction</span>
-              <span>On-time handover focus</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Right Consultation Form -->
-        <div class="lg:col-span-5">
-          <div id="consultationFormCard" class="hero-animate-2 bg-white text-ink rounded-2xl shadow-2xl overflow-hidden border border-gold/25">
-            <div class="bg-gradient-to-r from-[#B88940] to-[#986D2B] px-6 py-5 text-white">
-              <div class="flex items-center justify-between gap-2">
-                <h2 class="font-serif text-2xl font-semibold text-white">Book Your Free Consultation</h2>
-                <span class="text-[11px] uppercase tracking-wider px-2.5 py-1 rounded-full bg-white/15 text-white border border-white/30">Free Estimate</span>
-              </div>
-              <p class="text-xs sm:text-sm text-white/75 mt-1">Talk to our interior designer and get a tailored estimate. No obligation.</p>
-            </div>
-
-            <form id="leadForm" class="p-6 space-y-4" novalidate>
-              <div>
-                <label for="fullName" class="block text-xs font-semibold uppercase tracking-wider text-muted mb-1.5">Full Name <span class="text-red-600">*</span></label>
-                <input id="fullName" name="fullName" type="text" required placeholder="e.g. Rahul Sharma" class="w-full px-3.5 py-2.5 rounded-lg border border-stone-300 bg-cream/40 text-sm focus:outline-none focus:ring-2 focus:ring-gold focus:border-gold" />
-              </div>
-
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
-                  <label for="phone" class="block text-xs font-semibold uppercase tracking-wider text-muted mb-1.5">Phone Number <span class="text-red-600">*</span></label>
-                  <input id="phone" name="phone" type="tel" required inputmode="numeric" maxlength="10" placeholder="10-digit mobile number" class="w-full px-3.5 py-2.5 rounded-lg border border-stone-300 bg-cream/40 text-sm focus:outline-none focus:ring-2 focus:ring-gold focus:border-gold" />
-                </div>
-                <div>
-                  <label for="propertyType" class="block text-xs font-semibold uppercase tracking-wider text-muted mb-1.5">Property Type <span class="text-red-600">*</span></label>
-                  <select id="propertyType" name="propertyType" required class="w-full px-3.5 py-2.5 rounded-lg border border-stone-300 bg-cream/40 text-sm focus:outline-none focus:ring-2 focus:ring-gold focus:border-gold">
-                    <option value="">Select property...</option>
-                    <option value="Villa / Bungalow">Villa / Bungalow</option>
-                    <option value="Independent Home">Independent Home</option>
-                    <option value="3-4 BHK Apartment">3-4 BHK Apartment</option>
-                    <option value="2 BHK Apartment">2 BHK Apartment</option>
-                    <option value="Commercial / Office">Commercial / Office</option>
-                  </select>
-                </div>
-              </div>
-
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
-                  <label for="scope" class="block text-xs font-semibold uppercase tracking-wider text-muted mb-1.5">Project Scope</label>
-                  <select id="scope" name="scope" class="w-full px-3.5 py-2.5 rounded-lg border border-stone-300 bg-cream/40 text-sm focus:outline-none focus:ring-2 focus:ring-gold focus:border-gold">
-                    <option value="Full Home Interior">Full Home Interior</option>
-                    <option value="Modular Kitchen & Wardrobe">Modular Kitchen &amp; Wardrobe</option>
-                    <option value="Renovation & Construction">Renovation &amp; Construction</option>
-                    <option value="3D Visualization & Design">3D Visualization &amp; Design</option>
-                  </select>
-                </div>
-                <div>
-                  <label for="locality" class="block text-xs font-semibold uppercase tracking-wider text-muted mb-1.5">City / Locality</label>
-                  <input id="locality" name="locality" type="text" placeholder="e.g. Raj Nagar Extension" class="w-full px-3.5 py-2.5 rounded-lg border border-stone-300 bg-cream/40 text-sm focus:outline-none focus:ring-2 focus:ring-gold focus:border-gold" />
-                </div>
-              </div>
-              <div>
-                <label for="budget" class="block text-xs font-semibold uppercase tracking-wider text-muted mb-1.5">Estimated Budget (Optional)</label>
-                <select id="budget" name="budget" class="w-full px-3.5 py-2.5 rounded-lg border border-stone-300 bg-cream/40 text-sm focus:outline-none focus:ring-2 focus:ring-gold focus:border-gold">
-                  <option value="Not decided yet">Not decided yet — need guidance</option>
-                  <option value="₹5L – ₹10L">₹5L – ₹10L (Kitchen / Selective)</option>
-                  <option value="₹10L – ₹20L">₹10L – ₹20L (Full Apartment)</option>
-                  <option value="₹20L – ₹40L+">₹20L – ₹40L+ (Villa / Luxury Turnkey)</option>
-                </select>
-              </div>
-
-              <div id="formError" class="hidden text-xs font-medium text-red-700 bg-red-50 border border-red-200 rounded-lg px-3 py-2"></div>
-
-              <button type="submit" class="w-full py-3.5 px-6 rounded-full btn-sheen bg-gold hover:bg-goldDark text-espresso font-semibold text-sm sm:text-base transition shadow-md flex items-center justify-center gap-2 min-h-[48px]">
-                <span>Get My Free Quote</span>
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-7-7 7 7-7 7"/></svg>
-              </button>
-
-              <p class="text-[11px] text-center text-muted flex items-center justify-center gap-1.5">
-                <svg class="w-3.5 h-3.5 text-emerald-700 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                <span>Your details stay private. We never share or sell your data.</span>
-              </p>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Stats Bar -->
-  <section class="bg-charcoal text-white border-y border-white/10">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-7">
-      <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 text-center divide-y lg:divide-y-0 lg:divide-x divide-white/10">
-        <div class="pt-2 lg:pt-0">
-          <div class="stat-num font-serif text-3xl sm:text-4xl font-bold text-gold" data-target="250" data-suffix="+">250+</div>
-          <div class="text-xs sm:text-sm text-white/75 mt-1">Projects completed</div>
-        </div>
-        <div class="pt-2 lg:pt-0">
-          <div class="stat-num font-serif text-3xl sm:text-4xl font-bold text-gold" data-target="55" data-suffix="+">55+</div>
-          <div class="text-xs sm:text-sm text-white/75 mt-1">Expert team members</div>
-        </div>
-        <div class="pt-2 lg:pt-0">
-          <div class="stat-num font-serif text-3xl sm:text-4xl font-bold text-gold" data-target="300" data-suffix="+">300+</div>
-          <div class="text-xs sm:text-sm text-white/75 mt-1">3D renders delivered</div>
-        </div>
-        <div class="pt-2 lg:pt-0">
-          <div class="font-serif text-3xl sm:text-4xl font-bold text-gold">4.9/5</div>
-          <div class="text-xs sm:text-sm text-white/75 mt-1">From 4200+ reviews</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Services Section -->
-  <section id="services" class="py-16 sm:py-20 bg-cream">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="reveal max-w-3xl mx-auto text-center mb-12">
-        <span class="text-xs font-semibold tracking-[0.22em] uppercase text-goldDark">What We Do</span>
-        <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-ink mt-2">Interiors, Modular &amp; Renovation Under One Roof</h2>
-        <p class="text-muted text-sm sm:text-base mt-3">From a single modular kitchen to a complete turnkey villa — with 3D visualization so you see every detail before work begins.</p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
-        <!-- Service Card 1 -->
-        <article class="reveal card-lift bg-white rounded-2xl overflow-hidden border border-stone-200/80 shadow-sm hover:shadow-xl flex flex-col">
-          <div class="relative aspect-[4/3] overflow-hidden">
-            <img src="images/living-dining.jpg" alt="Full Home and Villa Interior concept" class="w-full h-full object-cover hover:scale-105 transition duration-500" />
-            <span class="absolute top-3.5 left-3.5 px-3 py-1 rounded-full bg-espresso/85 text-gold text-[11px] font-semibold tracking-wider uppercase backdrop-blur-sm">Residential</span>
-          </div>
-          <div class="p-6 flex-1 flex flex-col">
-            <h3 class="font-serif text-2xl font-semibold text-ink">Full Home &amp; Villa Interior</h3>
-            <p class="text-sm text-muted mt-2 leading-relaxed">Complete turnkey design and execution tailored for apartments, independent homes, and multi-floor villas.</p>
-            <ul class="mt-4 space-y-2.5 text-sm text-ink/90 flex-1">
-              <li class="flex items-start gap-2.5">
-                <svg class="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4 4L19 7"/></svg>
-                <span>Living, dining &amp; bedroom space planning</span>
-              </li>
-              <li class="flex items-start gap-2.5">
-                <svg class="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4 4L19 7"/></svg>
-                <span>False ceiling, lighting &amp; feature wall decor</span>
-              </li>
-              <li class="flex items-start gap-2.5">
-                <svg class="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4 4L19 7"/></svg>
-                <span>Bespoke furniture, soft furnishings &amp; styling</span>
-              </li>
-            </ul>
-            <button type="button" data-scroll-form="Full Home Interior" class="mt-6 w-full py-3 px-5 rounded-full btn-sheen bg-gold hover:bg-goldDark text-espresso font-semibold text-sm transition inline-flex items-center justify-center gap-2 min-h-[44px]">
-              <span>Explore Service</span>
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-7-7 7 7-7 7"/></svg>
-            </button>
-          </div>
-        </article>
-
-        <!-- Service Card 2 -->
-        <article class="reveal card-lift bg-white rounded-2xl overflow-hidden border border-stone-200/80 shadow-sm hover:shadow-xl flex flex-col">
-          <div class="relative aspect-[4/3] overflow-hidden">
-            <img src="images/modular-kitchen.jpg" alt="Modular Kitchen and Wardrobe concept" class="w-full h-full object-cover hover:scale-105 transition duration-500" />
-            <span class="absolute top-3.5 left-3.5 px-3 py-1 rounded-full bg-espresso/85 text-gold text-[11px] font-semibold tracking-wider uppercase backdrop-blur-sm">Modular</span>
-          </div>
-          <div class="p-6 flex-1 flex flex-col">
-            <h3 class="font-serif text-2xl font-semibold text-ink">Modular Kitchen &amp; Wardrobe</h3>
-            <p class="text-sm text-muted mt-2 leading-relaxed">Precision factory-finished kitchens and smart storage built for daily durability and clean aesthetics.</p>
-            <ul class="mt-4 space-y-2.5 text-sm text-ink/90 flex-1">
-              <li class="flex items-start gap-2.5">
-                <svg class="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4 4L19 7"/></svg>
-                <span>L-shaped, U-shaped, parallel &amp; island kitchens</span>
-              </li>
-              <li class="flex items-start gap-2.5">
-                <svg class="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4 4L19 7"/></svg>
-                <span>Sliding, hinged &amp; walk-in glass wardrobes</span>
-              </li>
-              <li class="flex items-start gap-2.5">
-                <svg class="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4 4L19 7"/></svg>
-                <span>Bedroom storage, crockery &amp; loft units</span>
-              </li>
-            </ul>
-            <button type="button" data-scroll-form="Modular Kitchen & Wardrobe" class="mt-6 w-full py-3 px-5 rounded-full btn-sheen bg-gold hover:bg-goldDark text-espresso font-semibold text-sm transition inline-flex items-center justify-center gap-2 min-h-[44px]">
-              <span>Explore Service</span>
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-7-7 7 7-7 7"/></svg>
-            </button>
-          </div>
-        </article>
-
-        <!-- Service Card 3 -->
-        <article class="reveal card-lift bg-white rounded-2xl overflow-hidden border border-stone-200/80 shadow-sm hover:shadow-xl flex flex-col md:col-span-2 lg:col-span-1">
-          <div class="relative aspect-[4/3] overflow-hidden">
-            <img src="images/designer-foyer.jpg" alt="Renovation and Architectural Build concept" class="w-full h-full object-cover hover:scale-105 transition duration-500" />
-            <span class="absolute top-3.5 left-3.5 px-3 py-1 rounded-full bg-espresso/85 text-gold text-[11px] font-semibold tracking-wider uppercase backdrop-blur-sm">Build</span>
-          </div>
-          <div class="p-6 flex-1 flex flex-col">
-            <h3 class="font-serif text-2xl font-semibold text-ink">Renovation &amp; Construction</h3>
-            <p class="text-sm text-muted mt-2 leading-relaxed">Structural upgrades, civil modifications, and complete space transformations managed by one team.</p>
-            <ul class="mt-4 space-y-2.5 text-sm text-ink/90 flex-1">
-              <li class="flex items-start gap-2.5">
-                <svg class="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4 4L19 7"/></svg>
-                <span>Bathroom &amp; kitchen civil renovation</span>
-              </li>
-              <li class="flex items-start gap-2.5">
-                <svg class="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4 4L19 7"/></svg>
-                <span>Office &amp; commercial interior execution</span>
-              </li>
-              <li class="flex items-start gap-2.5">
-                <svg class="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4 4L19 7"/></svg>
-                <span>Building design &amp; photorealistic 3D views</span>
-              </li>
-            </ul>
-            <button type="button" data-scroll-form="Renovation & Construction" class="mt-6 w-full py-3 px-5 rounded-full btn-sheen bg-gold hover:bg-goldDark text-espresso font-semibold text-sm transition inline-flex items-center justify-center gap-2 min-h-[44px]">
-              <span>Explore Service</span>
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-7-7 7 7-7 7"/></svg>
-            </button>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- Portfolio / Projects Section -->
-  <section id="projects" class="py-16 sm:py-20 bg-espresso text-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="reveal flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-8">
-        <div>
-          <span class="text-xs font-semibold tracking-[0.22em] uppercase text-gold">Our Projects &amp; Design Concepts</span>
-          <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold mt-2">Expert Design Services That Shape Beautiful Spaces</h2>
-        </div>
-        <p class="text-sm sm:text-base text-white/75 max-w-md lg:text-right">
-          End-to-end architectural and interior design solutions focused on aesthetics, daily functionality, and lasting finishes. <span class="text-gold/90">(Illustrative concept visuals shown below; click any card to preview.)</span>
-        </p>
-      </div>
-
-      <!-- Category Filter Tabs -->
-      <div id="projectFilters" class="flex flex-wrap items-center gap-2.5 mb-8">
-        <button type="button" data-filter="all" class="filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-gold text-espresso transition">All Spaces (12)</button>
-        <button type="button" data-filter="kitchen" class="filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-medium bg-white/10 text-white/85 hover:bg-white/20 transition">Modular Kitchens</button>
-        <button type="button" data-filter="living" class="filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-medium bg-white/10 text-white/85 hover:bg-white/20 transition">Living &amp; Villa Foyers</button>
-        <button type="button" data-filter="bedroom" class="filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-medium bg-white/10 text-white/85 hover:bg-white/20 transition">Bedrooms &amp; Closets</button>
-        <button type="button" data-filter="washroom" class="filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-medium bg-white/10 text-white/85 hover:bg-white/20 transition">Washrooms</button>
-      </div>
-
-      <!-- 12 Project Cards Grid -->
-      <div id="projectGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
-
-      <!-- Bottom CTA -->
-      <div class="text-center mt-10">
-        <button type="button" data-scroll-form="Full Home Interior" class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full btn-sheen bg-gold hover:bg-goldDark text-espresso font-semibold text-sm sm:text-base transition shadow-lg min-h-[48px]">
-          <span>Get a Design Like This For Your Home</span>
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-7-7 7 7-7 7"/></svg>
-        </button>
-      </div>
-
-      <!-- Brands We Deal With Marquee -->
-      <div class="mt-12 rounded-2xl bg-charcoal border border-white/10 px-5 py-5 overflow-hidden">
-        <div class="flex flex-col sm:flex-row sm:items-center gap-5">
-          <span class="text-xs sm:text-sm font-semibold text-white shrink-0 sm:pr-5 sm:border-r sm:border-white/15">Brands we deal with</span>
-          <div class="overflow-hidden flex-1" style="-webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent); mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);">
-            <div class="marquee-track items-center gap-4">
-              <div class="h-14 w-36 px-3.5 py-2 rounded-xl bg-white shadow-sm flex items-center justify-center shrink-0">
-                <img src="images/brands/asian-paints.png" alt="Asian Paints" class="max-h-10 max-w-full w-auto object-contain" />
-              </div>
-              <div class="h-14 w-36 px-3.5 py-2 rounded-xl bg-white shadow-sm flex items-center justify-center shrink-0">
-                <img src="images/brands/greenply.png" alt="Greenply" class="max-h-10 max-w-full w-auto object-contain" />
-              </div>
-              <div class="h-14 w-36 px-3.5 py-2 rounded-xl bg-white shadow-sm flex items-center justify-center shrink-0">
-                <img src="images/brands/sleepwell.png" alt="Sleepwell" class="max-h-10 max-w-full w-auto object-contain" />
-              </div>
-              <div class="h-14 w-36 px-3.5 py-2 rounded-xl bg-white shadow-sm flex items-center justify-center shrink-0">
-                <img src="images/brands/sakarni-pop.png" alt="Sakarni Plaster" class="max-h-10 max-w-full w-auto object-contain" />
-              </div>
-              <div class="h-14 w-36 px-3.5 py-2 rounded-xl bg-white shadow-sm flex items-center justify-center shrink-0">
-                <img src="images/brands/trimurti-pop.png" alt="Trimurti P.O.P." class="max-h-10 max-w-full w-auto object-contain" />
-              </div>
-              <div class="h-14 w-36 px-3.5 py-2 rounded-xl bg-white shadow-sm flex items-center justify-center shrink-0">
-                <img src="images/brands/acc-cement.png" alt="ACC Cement" class="max-h-10 max-w-full w-auto object-contain" />
-              </div>
-              <div class="h-14 w-36 px-3.5 py-2 rounded-xl bg-white shadow-sm flex items-center justify-center shrink-0">
-                <img src="images/brands/jk-lakshmi.png" alt="JK Lakshmi Cement" class="max-h-10 max-w-full w-auto object-contain" />
-              </div>
-              <div class="h-14 w-36 px-3.5 py-2 rounded-xl bg-white shadow-sm flex items-center justify-center shrink-0">
-                <img src="images/brands/ambuja-cement.png" alt="Ambuja Cement" class="max-h-10 max-w-full w-auto object-contain" />
-              </div>
-              <div class="h-14 w-36 px-3.5 py-2 rounded-xl bg-white shadow-sm flex items-center justify-center shrink-0">
-                <img src="images/brands/jagdish-store.png" alt="JS Jagdish Store" class="max-h-10 max-w-full w-auto object-contain" />
-              </div>
-              <div class="h-14 w-36 px-3.5 py-2 rounded-xl bg-white shadow-sm flex items-center justify-center shrink-0">
-                <img src="images/brands/wakefit.png" alt="Wakefit" class="max-h-10 max-w-full w-auto object-contain" />
-              </div>
-              <div class="h-14 w-36 px-3.5 py-2 rounded-xl bg-white shadow-sm flex items-center justify-center shrink-0">
-                <img src="images/brands/asian-paints.png" alt="Asian Paints" class="max-h-10 max-w-full w-auto object-contain" />
-              </div>
-              <div class="h-14 w-36 px-3.5 py-2 rounded-xl bg-white shadow-sm flex items-center justify-center shrink-0">
-                <img src="images/brands/greenply.png" alt="Greenply" class="max-h-10 max-w-full w-auto object-contain" />
-              </div>
-              <div class="h-14 w-36 px-3.5 py-2 rounded-xl bg-white shadow-sm flex items-center justify-center shrink-0">
-                <img src="images/brands/sleepwell.png" alt="Sleepwell" class="max-h-10 max-w-full w-auto object-contain" />
-              </div>
-              <div class="h-14 w-36 px-3.5 py-2 rounded-xl bg-white shadow-sm flex items-center justify-center shrink-0">
-                <img src="images/brands/sakarni-pop.png" alt="Sakarni Plaster" class="max-h-10 max-w-full w-auto object-contain" />
-              </div>
-              <div class="h-14 w-36 px-3.5 py-2 rounded-xl bg-white shadow-sm flex items-center justify-center shrink-0">
-                <img src="images/brands/trimurti-pop.png" alt="Trimurti P.O.P." class="max-h-10 max-w-full w-auto object-contain" />
-              </div>
-              <div class="h-14 w-36 px-3.5 py-2 rounded-xl bg-white shadow-sm flex items-center justify-center shrink-0">
-                <img src="images/brands/acc-cement.png" alt="ACC Cement" class="max-h-10 max-w-full w-auto object-contain" />
-              </div>
-              <div class="h-14 w-36 px-3.5 py-2 rounded-xl bg-white shadow-sm flex items-center justify-center shrink-0">
-                <img src="images/brands/jk-lakshmi.png" alt="JK Lakshmi Cement" class="max-h-10 max-w-full w-auto object-contain" />
-              </div>
-              <div class="h-14 w-36 px-3.5 py-2 rounded-xl bg-white shadow-sm flex items-center justify-center shrink-0">
-                <img src="images/brands/ambuja-cement.png" alt="Ambuja Cement" class="max-h-10 max-w-full w-auto object-contain" />
-              </div>
-              <div class="h-14 w-36 px-3.5 py-2 rounded-xl bg-white shadow-sm flex items-center justify-center shrink-0">
-                <img src="images/brands/jagdish-store.png" alt="JS Jagdish Store" class="max-h-10 max-w-full w-auto object-contain" />
-              </div>
-              <div class="h-14 w-36 px-3.5 py-2 rounded-xl bg-white shadow-sm flex items-center justify-center shrink-0">
-                <img src="images/brands/wakefit.png" alt="Wakefit" class="max-h-10 max-w-full w-auto object-contain" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- How It Works Section (Architectural Timeline Flow) -->
-  <section id="how-it-works" class="py-16 sm:py-20 bg-cream">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="reveal max-w-3xl mx-auto text-center mb-16">
-        <span class="text-xs font-semibold tracking-[0.22em] uppercase text-goldDark">How It Works</span>
-        <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-ink mt-2">Design, Production &amp; Execution By Just One Company</h2>
-        <p class="text-muted text-sm sm:text-base mt-3">No contractors to chase, no blame games. Design, production, and execution are handled by one team from start to finish.</p>
-      </div>
-
-      <div class="relative pt-6">
-        <!-- Desktop Connecting Gold Timeline Line -->
-        <div class="hidden lg:block absolute top-6 left-[10%] right-[10%] h-[2px] bg-gradient-to-r from-gold/30 via-gold to-gold/30 pointer-events-none"></div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-y-10 gap-x-5 relative">
-          <!-- Step 1 -->
-          <div class="reveal card-lift group bg-white rounded-2xl px-5 pb-6 pt-10 border border-stone-200/90 hover:border-gold shadow-sm hover:shadow-xl text-center flex flex-col items-center relative">
-            <div class="absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 rounded-full bg-espresso text-gold font-serif text-lg font-bold flex items-center justify-center border-2 border-gold shadow-md group-hover:bg-gold group-hover:text-espresso group-hover:scale-110 transition duration-300">01</div>
-            <span class="text-[10px] font-semibold uppercase tracking-[0.18em] text-goldDark bg-cream px-2.5 py-0.5 rounded-full border border-gold/25 mb-2.5">Consultation</span>
-            <h3 class="font-semibold text-sm text-ink leading-snug">Talk to our Interior Designer &amp; Get an Estimate</h3>
-            <p class="text-xs text-muted mt-2 leading-relaxed">Share your floor plan and requirements for a transparent cost ballpark.</p>
-          </div>
-
-          <!-- Step 2 -->
-          <div class="reveal card-lift group bg-white rounded-2xl px-5 pb-6 pt-10 border border-stone-200/90 hover:border-gold shadow-sm hover:shadow-xl text-center flex flex-col items-center relative">
-            <div class="absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 rounded-full bg-espresso text-gold font-serif text-lg font-bold flex items-center justify-center border-2 border-gold shadow-md group-hover:bg-gold group-hover:text-espresso group-hover:scale-110 transition duration-300">02</div>
-            <span class="text-[10px] font-semibold uppercase tracking-[0.18em] text-goldDark bg-cream px-2.5 py-0.5 rounded-full border border-gold/25 mb-2.5">3D Approval</span>
-            <h3 class="font-semibold text-sm text-ink leading-snug">Detailed Drawing and Approval</h3>
-            <p class="text-xs text-muted mt-2 leading-relaxed">Review 2D layouts, 3D renders, and material samples before sign-off.</p>
-          </div>
-
-          <!-- Step 3 -->
-          <div class="reveal card-lift group bg-white rounded-2xl px-5 pb-6 pt-10 border border-stone-200/90 hover:border-gold shadow-sm hover:shadow-xl text-center flex flex-col items-center relative">
-            <div class="absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 rounded-full bg-espresso text-gold font-serif text-lg font-bold flex items-center justify-center border-2 border-gold shadow-md group-hover:bg-gold group-hover:text-espresso group-hover:scale-110 transition duration-300">03</div>
-            <span class="text-[10px] font-semibold uppercase tracking-[0.18em] text-goldDark bg-cream px-2.5 py-0.5 rounded-full border border-gold/25 mb-2.5">Manufacturing</span>
-            <h3 class="font-semibold text-sm text-ink leading-snug">Production at Our Own Factory</h3>
-            <p class="text-xs text-muted mt-2 leading-relaxed">Modular units crafted with precision machinery and quality checks.</p>
-          </div>
-
-          <!-- Step 4 -->
-          <div class="reveal card-lift group bg-white rounded-2xl px-5 pb-6 pt-10 border border-stone-200/90 hover:border-gold shadow-sm hover:shadow-xl text-center flex flex-col items-center relative">
-            <div class="absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 rounded-full bg-espresso text-gold font-serif text-lg font-bold flex items-center justify-center border-2 border-gold shadow-md group-hover:bg-gold group-hover:text-espresso group-hover:scale-110 transition duration-300">04</div>
-            <span class="text-[10px] font-semibold uppercase tracking-[0.18em] text-goldDark bg-cream px-2.5 py-0.5 rounded-full border border-gold/25 mb-2.5">Site Execution</span>
-            <h3 class="font-semibold text-sm text-ink leading-snug">Material Delivery &amp; Execution</h3>
-            <p class="text-xs text-muted mt-2 leading-relaxed">Supervised site installation by our in-house engineering crew.</p>
-          </div>
-
-          <!-- Step 5 -->
-          <div class="reveal card-lift group bg-white rounded-2xl px-5 pb-6 pt-10 border border-stone-200/90 hover:border-gold shadow-sm hover:shadow-xl text-center flex flex-col items-center relative sm:col-span-2 lg:col-span-1">
-            <div class="absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 rounded-full bg-espresso text-gold font-serif text-lg font-bold flex items-center justify-center border-2 border-gold shadow-md group-hover:bg-gold group-hover:text-espresso group-hover:scale-110 transition duration-300">05</div>
-            <span class="text-[10px] font-semibold uppercase tracking-[0.18em] text-goldDark bg-cream px-2.5 py-0.5 rounded-full border border-gold/25 mb-2.5">Handover</span>
-            <h3 class="font-semibold text-sm text-ink leading-snug">On Time Project Hand Over</h3>
-            <p class="text-xs text-muted mt-2 leading-relaxed">Final walkthrough, snag clearance, and ready-to-move-in keys.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Mid-Page CTA Banner -->
-  <section class="bg-gradient-to-r from-espresso via-charcoal to-espresso text-white py-14">
-    <div class="reveal max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-5">
-      <h2 class="font-serif text-3xl sm:text-4xl font-semibold">Your Dream Home Starts With One Free Call</h2>
-      <p class="text-sm sm:text-base text-white/80 max-w-2xl mx-auto">Talk to our interior designer, see your space in 3D, and get an estimate — with no obligation to proceed.</p>
-      <div class="flex flex-wrap items-center justify-center gap-3.5 pt-2">
-        <button type="button" data-scroll-form="Full Home Interior" class="px-6 py-3.5 rounded-full bg-white text-espresso hover:bg-gold font-semibold text-sm sm:text-base transition inline-flex items-center gap-2 min-h-[48px]">
-          <span>Book Free Consultation</span>
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-7-7 7 7-7 7"/></svg>
-        </button>
-        <a href="tel:+919643431551" class="px-6 py-3.5 rounded-full border border-white/30 hover:border-gold text-white hover:text-gold font-medium text-sm sm:text-base transition min-h-[48px] inline-flex items-center">
-          Call +91 96434 31551
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Why Jain Signature Studio (Elevated 3x2 Bento Cards) -->
-  <section id="why-us" class="py-16 sm:py-20 bg-sand/60">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="reveal max-w-3xl mx-auto text-center mb-12">
-        <span class="text-xs font-semibold tracking-[0.22em] uppercase text-goldDark">Why Jain Signature Studio</span>
-        <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-ink mt-2">One Company, Start to Finish</h2>
-        <p class="text-muted text-sm sm:text-base mt-3">The reasons homeowners and villa clients choose our integrated team over fragmented contractors.</p>
-      </div>
-
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="reveal card-lift group relative bg-white rounded-2xl p-7 border border-stone-200/90 hover:border-gold shadow-sm hover:shadow-xl overflow-hidden">
-          <span class="absolute top-4 right-5 font-serif text-4xl font-bold text-stone-100 group-hover:text-gold/20 transition select-none">01</span>
-          <div class="w-12 h-12 rounded-xl border border-gold/40 bg-cream flex items-center justify-center text-goldDark mb-5 group-hover:bg-gold group-hover:text-espresso group-hover:scale-110 transition duration-300">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v18m9-9H3"/></svg>
-          </div>
-          <h3 class="font-serif text-2xl font-semibold text-ink">Design to Execution</h3>
-          <p class="text-sm text-muted mt-2 leading-relaxed">Single-point accountability from initial floor planning to final site handover.</p>
-        </div>
-
-        <div class="reveal card-lift group relative bg-white rounded-2xl p-7 border border-stone-200/90 hover:border-gold shadow-sm hover:shadow-xl overflow-hidden">
-          <span class="absolute top-4 right-5 font-serif text-4xl font-bold text-stone-100 group-hover:text-gold/20 transition select-none">02</span>
-          <div class="w-12 h-12 rounded-xl border border-gold/40 bg-cream flex items-center justify-center text-goldDark mb-5 group-hover:bg-gold group-hover:text-espresso group-hover:scale-110 transition duration-300">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
-          </div>
-          <h3 class="font-serif text-2xl font-semibold text-ink">300+ 3D Renders Delivered</h3>
-          <p class="text-sm text-muted mt-2 leading-relaxed">Walk through photorealistic 3D views of your home before a single board is cut.</p>
-        </div>
-
-        <div class="reveal card-lift group relative bg-white rounded-2xl p-7 border border-stone-200/90 hover:border-gold shadow-sm hover:shadow-xl overflow-hidden">
-          <span class="absolute top-4 right-5 font-serif text-4xl font-bold text-stone-100 group-hover:text-gold/20 transition select-none">03</span>
-          <div class="w-12 h-12 rounded-xl border border-gold/40 bg-cream flex items-center justify-center text-goldDark mb-5 group-hover:bg-gold group-hover:text-espresso group-hover:scale-110 transition duration-300">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path stroke-linecap="round" stroke-linejoin="round" d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-          </div>
-          <h3 class="font-serif text-2xl font-semibold text-ink">55+ Expert Team</h3>
-          <p class="text-sm text-muted mt-2 leading-relaxed">Dedicated interior architects, project managers, and skilled site technicians.</p>
-        </div>
-
-        <div class="reveal card-lift group relative bg-white rounded-2xl p-7 border border-stone-200/90 hover:border-gold shadow-sm hover:shadow-xl overflow-hidden">
-          <span class="absolute top-4 right-5 font-serif text-4xl font-bold text-stone-100 group-hover:text-gold/20 transition select-none">04</span>
-          <div class="w-12 h-12 rounded-xl border border-gold/40 bg-cream flex items-center justify-center text-goldDark mb-5 group-hover:bg-gold group-hover:text-espresso group-hover:scale-110 transition duration-300">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          </div>
-          <h3 class="font-serif text-2xl font-semibold text-ink">4.9/5 Across 4200+ Reviews</h3>
-          <p class="text-sm text-muted mt-2 leading-relaxed">Consistent client satisfaction across residential and commercial projects.</p>
-        </div>
-
-        <div class="reveal card-lift group relative bg-white rounded-2xl p-7 border border-stone-200/90 hover:border-gold shadow-sm hover:shadow-xl overflow-hidden">
-          <span class="absolute top-4 right-5 font-serif text-4xl font-bold text-stone-100 group-hover:text-gold/20 transition select-none">05</span>
-          <div class="w-12 h-12 rounded-xl border border-gold/40 bg-cream flex items-center justify-center text-goldDark mb-5 group-hover:bg-gold group-hover:text-espresso group-hover:scale-110 transition duration-300">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6l4 2"/></svg>
-          </div>
-          <h3 class="font-serif text-2xl font-semibold text-ink">Timely Project Delivery</h3>
-          <p class="text-sm text-muted mt-2 leading-relaxed">Milestone-tracked schedules with clear weekly progress updates.</p>
-        </div>
-
-        <div class="reveal card-lift group relative bg-white rounded-2xl p-7 border border-stone-200/90 hover:border-gold shadow-sm hover:shadow-xl overflow-hidden">
-          <span class="absolute top-4 right-5 font-serif text-4xl font-bold text-stone-100 group-hover:text-gold/20 transition select-none">06</span>
-          <div class="w-12 h-12 rounded-xl border border-gold/40 bg-cream flex items-center justify-center text-goldDark mb-5 group-hover:bg-gold group-hover:text-espresso group-hover:scale-110 transition duration-300">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/></svg>
-          </div>
-          <h3 class="font-serif text-2xl font-semibold text-ink">250+ Material Partners</h3>
-          <p class="text-sm text-muted mt-2 leading-relaxed">Curated hardware, laminates, glass, and stone from trusted national brands.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Client Reviews Section (Elevated Editorial Cards) -->
-  <section id="reviews" class="py-16 sm:py-20 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="reveal max-w-3xl mx-auto text-center mb-12">
-        <span class="text-xs font-semibold tracking-[0.22em] uppercase text-goldDark">Client Reviews</span>
-        <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-ink mt-2">Rated 4.9/5 Across 4200+ Reviews</h2>
-        <p class="text-muted text-sm sm:text-base mt-3">98% client satisfaction across 250+ completed residential and commercial projects.</p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <article class="reveal card-lift relative bg-cream/70 rounded-2xl p-7 border border-stone-200 hover:border-gold hover:shadow-xl flex flex-col justify-between">
-          <div>
-            <div class="flex items-center justify-between mb-4">
-              <div class="text-gold text-sm tracking-widest">★★★★★</div>
-              <span class="text-[11px] font-semibold px-3 py-1 rounded-full bg-white border border-stone-200 text-goldDark">Full Home</span>
-            </div>
-            <div class="font-serif text-5xl leading-none text-gold/35 select-none mb-1">&ldquo;</div>
-            <p class="text-sm text-ink/90 leading-relaxed">
-              From the initial 3D walkthrough to the final wardrobe fittings, having one team manage everything saved us months of follow-up.
-            </p>
-          </div>
-          <div class="mt-6 pt-4 border-t border-stone-200/80 flex items-center gap-3">
-            <div class="w-10 h-10 rounded-full bg-espresso text-gold font-serif font-bold text-sm flex items-center justify-center shrink-0">MS</div>
-            <div>
-              <div class="font-semibold text-sm text-ink">Mr. Shailendra</div>
-              <div class="text-xs text-muted">Homeowner • Residential Project</div>
-            </div>
-          </div>
-        </article>
-
-        <article class="reveal card-lift relative bg-cream/70 rounded-2xl p-7 border border-stone-200 hover:border-gold hover:shadow-xl flex flex-col justify-between">
-          <div>
-            <div class="flex items-center justify-between mb-4">
-              <div class="text-gold text-sm tracking-widest">★★★★★</div>
-              <span class="text-[11px] font-semibold px-3 py-1 rounded-full bg-white border border-stone-200 text-goldDark">Modular Kitchen</span>
-            </div>
-            <div class="font-serif text-5xl leading-none text-gold/35 select-none mb-1">&ldquo;</div>
-            <p class="text-sm text-ink/90 leading-relaxed">
-              The factory-finished kitchen and lighting layout matched the approved 3D renders closely, and handover stayed right on schedule.
-            </p>
-          </div>
-          <div class="mt-6 pt-4 border-t border-stone-200/80 flex items-center gap-3">
-            <div class="w-10 h-10 rounded-full bg-espresso text-gold font-serif font-bold text-sm flex items-center justify-center shrink-0">CS</div>
-            <div>
-              <div class="font-semibold text-sm text-ink">Ms. Charu Sahani</div>
-              <div class="text-xs text-muted">Homeowner • Residential Project</div>
-            </div>
-          </div>
-        </article>
-
-        <article class="reveal card-lift relative bg-cream/70 rounded-2xl p-7 border border-stone-200 hover:border-gold hover:shadow-xl flex flex-col justify-between">
-          <div>
-            <div class="flex items-center justify-between mb-4">
-              <div class="text-gold text-sm tracking-widest">★★★★★</div>
-              <span class="text-[11px] font-semibold px-3 py-1 rounded-full bg-white border border-stone-200 text-goldDark">Commercial &amp; Build</span>
-            </div>
-            <div class="font-serif text-5xl leading-none text-gold/35 select-none mb-1">&ldquo;</div>
-            <p class="text-sm text-ink/90 leading-relaxed">
-              Clear drawings, reliable material sourcing, and disciplined site supervision made coordinating our project straightforward.
-            </p>
-          </div>
-          <div class="mt-6 pt-4 border-t border-stone-200/80 flex items-center gap-3">
-            <div class="w-10 h-10 rounded-full bg-espresso text-gold font-serif font-bold text-sm flex items-center justify-center shrink-0">VM</div>
-            <div>
-              <div class="font-semibold text-sm text-ink">Mr. Vikas Mishra</div>
-              <div class="text-xs text-muted">Baba Construction • Partner Client</div>
-            </div>
-          </div>
-        </article>
-      </div>
-      <p class="text-center text-[11px] text-muted mt-6">* Sample review summaries shown for layout demonstration; full verified client references are available during consultation.</p>
-    </div>
-  </section>
-
-  <!-- FAQs Section -->
-  <section id="faqs" class="py-16 sm:py-20 bg-cream">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="reveal text-center mb-10">
-        <span class="text-xs font-semibold tracking-[0.22em] uppercase text-goldDark">FAQs</span>
-        <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-ink mt-2">Questions Before You Start</h2>
-        <p class="text-muted text-sm sm:text-base mt-2">Straight answers on cost, timelines, and what is actually covered.</p>
-      </div>
-
-      <div id="faqList" class="space-y-3"></div>
-    </div>
-  </section>
-
-  <!-- Pre-Footer Banner -->
-  <section class="bg-espresso text-white py-14 border-b border-white/10">
-    <div class="reveal max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-5">
-      <h2 class="font-serif text-3xl sm:text-4xl font-semibold">Ready to start your interior project?</h2>
-      <p class="text-sm sm:text-base text-white/75 max-w-xl mx-auto">Talk to our interior designer, see your space in 3D, and get an estimate — with no obligation.</p>
-      <div class="flex flex-wrap items-center justify-center gap-3.5 pt-2">
-        <button type="button" data-scroll-form="Full Home Interior" class="px-6 py-3.5 rounded-full btn-sheen bg-gold hover:bg-goldDark text-espresso font-semibold text-sm sm:text-base transition inline-flex items-center gap-2 min-h-[48px]">
-          <span>Book Free Consultation</span>
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-7-7 7 7-7 7"/></svg>
-        </button>
-        <button type="button" id="prefooterWhatsappBtn" class="px-6 py-3.5 rounded-full border border-white/25 hover:border-gold text-white hover:text-gold font-medium text-sm sm:text-base transition min-h-[48px]">
-          WhatsApp
-        </button>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer (Clean Transparent Logo) -->
-  <footer class="bg-charcoal text-white/80 pt-14 pb-10">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-10 pb-10 border-b border-white/10">
-        <!-- Col 1 -->
-        <div class="space-y-4">
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-lg border border-gold/60 bg-gold/10 flex items-center justify-center font-serif text-lg font-bold text-gold">JSI</div>
-            <div>
-              <div class="font-serif text-lg font-semibold text-white">Jain Signature Studio LLP</div>
-              <div class="text-[11px] text-white/55 uppercase tracking-widest">Home &amp; Villa Interiors</div>
-            </div>
-          </div>
-          <p class="text-sm text-white/70 leading-relaxed">
-            End-to-end residential, villa, modular kitchen, and commercial interior design and execution across Ghaziabad and Delhi NCR.
-          </p>
-          <div class="flex items-center gap-2.5">
-            <button type="button" data-social="Instagram" class="w-9 h-9 rounded-full border border-white/15 hover:border-gold hover:text-gold flex items-center justify-center transition" aria-label="Instagram">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-            </button>
-            <button type="button" data-social="Facebook" class="w-9 h-9 rounded-full border border-white/15 hover:border-gold hover:text-gold flex items-center justify-center transition" aria-label="Facebook">
-              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-            </button>
-            <button type="button" data-social="WhatsApp" class="w-9 h-9 rounded-full border border-white/15 hover:border-gold hover:text-gold flex items-center justify-center transition" aria-label="WhatsApp">
-              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12.03 2a9.97 9.97 0 0 0-8.46 15.27L2 22l4.86-1.53A9.97 9.97 0 1 0 12.03 2Z"/></svg>
-            </button>
-          </div>
-        </div>
-
-        <!-- Col 2: Services -->
-        <div>
-          <h3 class="text-xs font-semibold uppercase tracking-[0.2em] text-gold mb-4">Services</h3>
-          <ul class="space-y-2.5 text-sm">
-            <li><button type="button" data-scroll-form="Full Home Interior" class="hover:text-gold transition">Full Home Interior</button></li>
-            <li><button type="button" data-scroll-form="Modular Kitchen & Wardrobe" class="hover:text-gold transition">Modular Kitchen</button></li>
-            <li><button type="button" data-scroll-form="Modular Kitchen & Wardrobe" class="hover:text-gold transition">Modular Wardrobe</button></li>
-            <li><button type="button" data-scroll-form="Renovation & Construction" class="hover:text-gold transition">Renovation &amp; Construction</button></li>
-            <li><button type="button" data-scroll-form="Renovation & Construction" class="hover:text-gold transition">Office &amp; Commercial Interiors</button></li>
-            <li><button type="button" data-scroll-form="Full Home Interior" class="hover:text-gold transition">False Ceiling &amp; Wall Decor</button></li>
-          </ul>
-        </div>
-
-        <!-- Col 3: Get In Touch -->
-        <div>
-          <h3 class="text-xs font-semibold uppercase tracking-[0.2em] text-gold mb-4">Get In Touch</h3>
-          <ul class="space-y-3 text-sm">
-            <li><span class="text-white/50 block text-xs">Call Us</span><a href="tel:+919643431551" class="text-white hover:text-gold font-medium">+91 96434 31551</a></li>
-            <li><span class="text-white/50 block text-xs">Email</span><a href="mailto:info@jainstudio.co.in" class="text-white hover:text-gold">info@jainstudio.co.in</a></li>
-            <li><span class="text-white/50 block text-xs">Studio</span><span>L-08, GNB Mall, Raj Nagar Extension, Ghaziabad 201017, Uttar Pradesh</span></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/55">
-        <div>&copy; 2026 Jain Signature Studio LLP. All rights reserved.</div>
-        <div class="flex items-center gap-5">
-          <button type="button" data-policy="Privacy Policy" class="hover:text-gold transition">Privacy Policy</button>
-          <button type="button" data-policy="Terms & Conditions" class="hover:text-gold transition">Terms &amp; Conditions</button>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Mobile Sticky Action Bar -->
-  <div class="lg:hidden fixed bottom-0 inset-x-0 z-30 bg-espresso/95 backdrop-blur-md border-t border-white/15 px-3 py-2.5 flex items-center gap-2">
-    <a href="tel:+919643431551" class="flex-1 py-2.5 rounded-full border border-white/25 text-white text-xs font-semibold text-center">Call Now</a>
-    <button type="button" id="mobileWhatsappBtn" class="flex-1 py-2.5 rounded-full border border-emerald-500/50 text-emerald-300 text-xs font-semibold text-center">WhatsApp</button>
-    <button type="button" data-scroll-form="Full Home Interior" class="flex-[1.3] py-2.5 rounded-full bg-gold text-espresso text-xs font-bold text-center">Free Quote</button>
-  </div>
-
-  <!-- Explore More Slide-Over Drawer (Smooth Slide & Fade) -->
-  <div id="exploreDrawer" class="fixed inset-0 z-50 pointer-events-none opacity-0 transition-opacity duration-300 ease-out" aria-hidden="true">
-    <div id="drawerBackdrop" class="absolute inset-0 bg-black/60 backdrop-blur-xs"></div>
-    <aside id="exploreDrawerPanel" class="relative ml-auto w-full max-w-md h-full bg-white text-ink shadow-2xl flex flex-col translate-x-full transition-transform duration-300 ease-out">
-      <div class="bg-espresso text-white px-6 py-5 flex items-center justify-between border-b border-white/10">
-        <div>
-          <div class="font-serif text-xl font-semibold text-gold">Jain Signature Studio</div>
-          <div class="text-xs text-white/65">Studio Overview &amp; Quick Actions</div>
-        </div>
-        <button id="closeDrawerBtn" type="button" class="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center text-white hover:text-gold" aria-label="Close drawer">&times;</button>
-      </div>
-
-      <!-- Drawer Tabs -->
-      <div class="flex border-b border-stone-200 px-4 bg-cream">
-        <button type="button" data-drawer-tab="company" class="drawer-tab flex-1 py-3 text-xs font-semibold border-b-2 border-gold text-ink">Company</button>
-        <button type="button" data-drawer-tab="services" class="drawer-tab flex-1 py-3 text-xs font-medium border-b-2 border-transparent text-muted">Services</button>
-        <button type="button" data-drawer-tab="work" class="drawer-tab flex-1 py-3 text-xs font-medium border-b-2 border-transparent text-muted">Our Work</button>
-        <button type="button" data-drawer-tab="enquire" class="drawer-tab flex-1 py-3 text-xs font-medium border-b-2 border-transparent text-muted">Enquire</button>
-      </div>
-
-      <div id="drawerBody" class="p-6 flex-1 overflow-y-auto space-y-5 text-sm"></div>
-
-      <div class="p-5 border-t border-stone-200 bg-cream">
-        <button id="drawerCtaBtn" type="button" class="w-full py-3.5 rounded-full btn-sheen bg-gold hover:bg-goldDark text-espresso font-semibold text-sm transition">
-          Book a Free Consultation
-        </button>
-      </div>
-    </aside>
-  </div>
-
-  <!-- Project Lightbox Modal -->
-  <div id="projectModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4">
-    <div id="projectModalBackdrop" class="absolute inset-0 bg-black/75 backdrop-blur-xs"></div>
-    <div class="modal-animate relative bg-white rounded-2xl max-w-xl w-full overflow-hidden shadow-2xl">
-      <button id="closeProjectModal" type="button" class="absolute top-3 right-3 z-10 w-9 h-9 rounded-full bg-espresso/80 text-white flex items-center justify-center hover:bg-gold hover:text-espresso transition" aria-label="Close preview">&times;</button>
-      <div class="aspect-[4/3] bg-espresso">
-        <img id="modalProjectImg" src="" alt="" class="w-full h-full object-cover" />
-      </div>
-      <div class="p-6">
-        <span id="modalProjectTag" class="text-[11px] font-semibold uppercase tracking-wider text-goldDark"></span>
-        <h3 id="modalProjectTitle" class="font-serif text-2xl font-semibold text-ink mt-1"></h3>
-        <p id="modalProjectDesc" class="text-sm text-muted mt-2"></p>
-        <div class="mt-5 flex flex-wrap gap-3">
-          <button id="modalQuoteBtn" type="button" class="flex-1 py-3 px-5 rounded-full btn-sheen bg-gold hover:bg-goldDark text-espresso font-semibold text-sm transition">
-            Get a Quote Like This
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Form Confirmation Modal (Dummy Lead Submission) -->
-  <div id="successModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4">
-    <div id="successBackdrop" class="absolute inset-0 bg-black/70 backdrop-blur-xs"></div>
-    <div class="modal-animate relative bg-white rounded-2xl max-w-md w-full p-6 sm:p-7 text-center shadow-2xl border border-gold/30">
-      <div class="w-14 h-14 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center mx-auto mb-4">
-        <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m5 13 4 4L19 7"/></svg>
-      </div>
-      <h3 class="font-serif text-2xl font-semibold text-ink">Consultation Request Received</h3>
-      <p class="text-sm text-muted mt-2">Thank you! In a live flow, our senior interior designer would reach out within 24 hours. <span class="font-medium text-ink">(Demo preview — no live enquiry sent.)</span></p>
-      <div id="submittedSummary" class="mt-4 bg-cream rounded-xl p-4 text-left text-xs space-y-1.5 border border-stone-200"></div>
-      <button id="closeSuccessModal" type="button" class="mt-5 w-full py-3 rounded-full bg-espresso text-white hover:bg-gold hover:text-espresso font-semibold text-sm transition">
-        Done
+<body id="top">
+<a class="skip" href="#main">Skip to content</a>
+<!-- ======================= TOPBAR ======================= -->
+<header class="topbar">
+  <div class="wrap topbar__in">
+    <a href="#top" class="logo" aria-label="Jain Signature Studio - back to top"><img src="assets/logo.svg" alt="Jain Signature Studio" width="250" height="50"></a>
+    <nav class="topnav" aria-label="Sections">
+      <a href="#services" data-label="Services">Services</a>
+      <a href="#work" data-label="Our Projects">Our Projects</a>
+      <a href="#why" data-label="Why Us">Why Us</a>
+      <a href="#process" data-label="How It Works">How It Works</a>
+      <a href="#reviews" data-label="Reviews">Reviews</a>
+      <a href="#faq" data-label="FAQs">FAQs</a>
+    </nav>
+    <div class="topbar__cta">
+        <a class="phone" href="tel:+919643431551" aria-label="Call +91 96434 31551"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a>
+      <button type="button" class="btn btn--p btn--quote" data-open>Free Quote</button>
+      <button type="button" class="btn btn--p btn--explore" data-xp-trigger aria-haspopup="dialog" aria-expanded="false" aria-label="Explore More">
+        <svg class="btn__i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><rect x="14" y="14" width="7" height="7" rx="1.5"></rect></svg>
+        <span class="btn__l"><span>Explore More</span></span>
+        <svg class="btn__chev" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
+      </button>
+      <!-- Mobile only. Opens the same dialog.xp as Explore More, so there is one menu, not two. -->
+      <button type="button" class="burger" data-xp-trigger aria-haspopup="dialog" aria-expanded="false" aria-label="Open menu">
+        <span class="burger__b" aria-hidden="true"></span>
+        <span class="burger__b" aria-hidden="true"></span>
+        <span class="burger__b" aria-hidden="true"></span>
       </button>
     </div>
   </div>
+</header>
 
-  <!-- Toast Notification -->
-  <div id="toast" class="hidden fixed bottom-20 lg:bottom-6 right-4 sm:right-6 z-50 bg-espresso text-white border border-gold/40 px-4 py-3 rounded-xl shadow-xl text-xs sm:text-sm max-w-sm"></div>
+<main id="main">
+<!-- ======================= HERO ======================= -->
+<section class="hero">
+  <div class="hero__bg">
+    <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=70" alt="Modern living room interior" width="1600" height="1067" fetchpriority="high">
+  </div>
+  <div class="wrap hero__in">
+    <div class="hero__l">
+      <span class="eyebrow">Home &amp; Villa Interior Designers &middot; Ghaziabad &amp; NCR</span>
+      <h1>Interiors for Your Home or Villa, <em>Designed &amp; Built by One Team</em></h1>
+      <p class="hero__lead">
+        Full home interiors, modular kitchens, wardrobes and renovation for apartments,
+        independent homes and villas across Ghaziabad and Delhi NCR.
+        <b>See your design in 3D before any work begins.</b>
+      </p>
+      <div class="hero__cta">
+        <button class="btn btn--p" data-open>
+          Get a Free Design Quote
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </button>
+        <a class="btn btn--o" href="https://wa.me/919643431551?text=Hi%2C%20I%27d%20like%20an%20interior%20design%20quote" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.9-.95 1.08-.17.18-.35.2-.65.07-.3-.15-1.13-.42-2.15-1.33-.8-.71-1.33-1.59-1.49-1.89-.15-.3-.02-.47.13-.62.15-.15.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.38-.03-.53-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.01-1.04 2.47s1.06 2.87 1.21 3.07c.15.2 2.08 3.32 5.05 4.53 2.97 1.21 2.97.81 3.51.76.54-.05 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.42-.07-.12-.27-.2-.57-.35zM12 22a9.94 9.94 0 0 1-5.08-1.39L2 22l1.42-4.84A9.94 9.94 0 0 1 2 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10z"/></svg>
+          WhatsApp Us
+        </a>
+      </div>
+      <ul class="trustrow">
+        <li class="trust"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>Free consultation &amp; estimate</li>
+        <li class="trust"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><path d="M3.3 7L12 12l8.7-5M12 22V12"/></svg>3D design approval before production</li>
+        <li class="trust"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 20V8l6 4V8l6 4V4h6v16z"/></svg>Own factory production</li>
+        <li class="trust"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Ghaziabad &amp; Delhi NCR</li>
+      </ul>
+    </div>
 
-  <script src="script.js"></script>
-</body>
-</html>
+    <!-- LEAD FORM -->
+    <aside class="lead" id="leadcard">
+      <div class="lead__hd">
+        <h3>Get Your Free Design Quote</h3>
+        <p>Share a few details and a designer will call you with a plan and an estimate. No obligation.</p>
+      </div>
+      <div class="lead__bd">
+        <form id="leadform" novalidate>
+          <div class="fld" data-f>
+            <label for="f-name">Full Name *</label>
+            <input id="f-name" name="name" type="text" placeholder="e.g. Rahul Sharma" autocomplete="name" required>
+            <span class="err">Please enter your name.</span>
+          </div>
+          <div class="fld" data-f>
+            <label for="f-phone">Mobile Number *</label>
+            <input id="f-phone" name="phone" type="tel" inputmode="tel" maxlength="16" placeholder="10-digit mobile number" autocomplete="tel" required>
+            <span class="err">Enter a valid 10-digit Indian mobile number.</span>
+          </div>
+          <div class="fld--2">
+            <div class="fld" data-f>
+              <label for="f-type">Property Type *</label>
+              <select id="f-type" name="property" required>
+                <option value="">Select</option>
+                <option>1 BHK Apartment</option>
+                <option>2 BHK Apartment</option>
+                <option>3 BHK Apartment</option>
+                <option>4 BHK / Penthouse</option>
+                <option>Independent House</option>
+                <option>Villa / Bungalow</option>
+              </select>
+              <span class="err">Please select one.</span>
+            </div>
+            <div class="fld" data-f>
+              <label for="f-scope">What do you need? <span class="opt">(optional)</span></label>
+              <select id="f-scope" name="scope">
+                <option value="">Select</option>
+                <option>Full home interiors</option>
+                <option>Modular kitchen only</option>
+                <option>Wardrobes / storage</option>
+                <option>Living &amp; dining</option>
+                <option>Renovation</option>
+              </select>
+            </div>
+          </div>
+          <div class="fld--2">
+            <div class="fld" data-f>
+              <label for="f-city">Locality <span class="opt">(optional)</span></label>
+              <input id="f-city" name="city" type="text" placeholder="e.g. Raj Nagar Ext." autocomplete="address-level2">
+            </div>
+            <div class="fld" data-f>
+              <label for="f-start">Start planned <span class="opt">(optional)</span></label>
+              <select id="f-start" name="timeline">
+                <option value="">Select</option>
+                <option>Within 1 month</option>
+                <option>1 - 3 months</option>
+                <option>3 - 6 months</option>
+                <option>Just exploring</option>
+              </select>
+            </div>
+          </div>
+          <button type="submit" class="btn btn--p btn--wide">
+            Get My Free Quote
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+          <p class="lead__note">&#128274; Your details stay private. We never share or sell your data.</p>
+          <p class="lead__consent">By submitting, you agree to be contacted by phone or WhatsApp about your enquiry.</p>
+          <p class="lead__alt">Prefer to talk now? <a href="tel:+919643431551">Call +91 96434 31551</a> or <a href="https://wa.me/919643431551?text=Hi%2C%20I%27d%20like%20an%20interior%20design%20quote" target="_blank" rel="noopener">WhatsApp us</a></p>
+        </form>
+      </div>
+      <div class="lead__ok" role="status">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+        <h3>Thank you!</h3>
+        <p>Your request is in. One of our interior designers will call you shortly to schedule your free consultation.</p>
+        <div class="lead__act">
+          <a class="btn btn--o" href="https://wa.me/919643431551?text=Hi%2C%20I%27d%20like%20an%20interior%20design%20quote" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.9-.95 1.08-.17.18-.35.2-.65.07-.3-.15-1.13-.42-2.15-1.33-.8-.71-1.33-1.59-1.49-1.89-.15-.3-.02-.47.13-.62.15-.15.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.38-.03-.53-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.01-1.04 2.47s1.06 2.87 1.21 3.07c.15.2 2.08 3.32 5.05 4.53 2.97 1.21 2.97.81 3.51.76.54-.05 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.42-.07-.12-.27-.2-.57-.35zM12 22a9.94 9.94 0 0 1-5.08-1.39L2 22l1.42-4.84A9.94 9.94 0 0 1 2 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10z"/></svg> Chat on WhatsApp now</a>
+          <button type="button" class="lead__again">Send another enquiry</button>
+        </div>
+        <p class="lead__demo">Preview build: this form shows the success flow only and sends no data.</p>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- ======================= STATS ======================= -->
+<section class="strip">
+  <div class="wrap strip__in">
+    <div><b>250+</b><span>Projects completed</span></div>
+    <div><b>55+</b><span>Expert team members</span></div>
+    <div><b>300+</b><span>3D renders delivered</span></div>
+    <div><b>4.9/5</b><span>From 4200+ reviews</span></div>
+  </div>
+</section>
+
+<!-- ======================= SERVICES ======================= -->
+<section class="sec" id="services">
+  <div class="wrap">
+    <div class="center rv">
+      <span class="eyebrow">What We Do</span>
+      <h2 class="sec-h">Interiors, Modular &amp; Renovation Under One Roof</h2>
+      <p class="sec-sub">From a single modular kitchen to a complete turnkey home. Pick a service to see what is included, then get a free quote.</p>
+    </div>
+
+    <div class="grid-3">
+      <article class="svc rv">
+        <div class="svc__img">
+          <span class="svc__tag">Residential</span>
+          <span class="svc__note">Representative image</span>
+          <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=70" alt="Full home interior living room" loading="lazy">
+        </div>
+        <div class="svc__bd">
+          <h3>Full Home Interior</h3>
+          <p>Complete interiors for apartments, independent homes and villas — designed, manufactured and installed by one team.</p>
+          <ul class="svc__li">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"></path></svg>Living, dining &amp; bedroom interiors</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"></path></svg>False ceiling, wallpaper &amp; wall decor</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"></path></svg>Furniture &amp; furnishing</li>
+          </ul>
+          <div class="svc__ft">
+            <button type="button" class="btn btn--p btn--wide" data-sd="home" aria-haspopup="dialog" aria-expanded="false">View Details &amp; Get Quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></button>
+          </div>
+        </div>
+      </article>
+
+      <article class="svc rv">
+        <div class="svc__img">
+          <span class="svc__tag">Modular</span>
+          <span class="svc__note">Representative image</span>
+          <img src="https://images.unsplash.com/photo-1600489000022-c2086d79f9d4?auto=format&fit=crop&w=800&q=70" alt="Modular kitchen" loading="lazy">
+        </div>
+        <div class="svc__bd">
+          <h3>Modular Kitchen &amp; Wardrobe</h3>
+          <p>Factory-finished modular kitchens and wardrobes built to your exact layout and storage needs.</p>
+          <ul class="svc__li">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"></path></svg>Modular kitchens in every layout</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"></path></svg>Sliding &amp; hinged modular wardrobes</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"></path></svg>Bedroom storage &amp; loft units</li>
+          </ul>
+          <div class="svc__ft">
+            <button type="button" class="btn btn--p btn--wide" data-sd="modular" aria-haspopup="dialog" aria-expanded="false">View Details &amp; Get Quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></button>
+          </div>
+        </div>
+      </article>
+
+      <article class="svc rv">
+        <div class="svc__img">
+          <span class="svc__tag">Build</span>
+          <span class="svc__note">Representative image</span>
+          <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=800&q=70" alt="Renovation and construction" loading="lazy">
+        </div>
+        <div class="svc__bd">
+          <h3>Renovation &amp; Construction</h3>
+          <p>Full renovation and civil work — from a single bathroom to a complete building, including commercial and office spaces.</p>
+          <ul class="svc__li">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"></path></svg>Bathroom &amp; kitchen renovation</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"></path></svg>Office &amp; commercial interiors</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"></path></svg>Building design &amp; 3D visualization</li>
+          </ul>
+          <div class="svc__ft">
+            <button type="button" class="btn btn--p btn--wide" data-sd="renovation" aria-haspopup="dialog" aria-expanded="false">View Details &amp; Get Quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= PROJECTS ======================= -->
+<section class="sec sec--dark" id="work">
+  <div class="wrap">
+    <div class="pj-head rv">
+      <div>
+        <span class="eyebrow">Our Projects</span>
+        <h2 class="sec-h">Recent Interior Work: Kitchens, Bedrooms, Wardrobes &amp; More</h2>
+      </div>
+      <div class="pj-head__r">
+        <p class="sec-sub">A selection from our project gallery. Tap any design to get a quote for something similar in your own home or villa.</p>
+      </div>
+    </div>
+
+    <div class="pj-filter rv" role="group" aria-label="Filter projects by type">
+      <button type="button" class="chip" data-filter="all" aria-pressed="true">All</button>
+      <button type="button" class="chip" data-filter="kitchen" aria-pressed="false">Kitchens</button>
+      <button type="button" class="chip" data-filter="bedroom" aria-pressed="false">Bedrooms</button>
+      <button type="button" class="chip" data-filter="wardrobe" aria-pressed="false">Wardrobes</button>
+      <button type="button" class="chip" data-filter="washroom" aria-pressed="false">Washrooms</button>
+      <button type="button" class="chip" data-filter="panel" aria-pressed="false">Panels &amp; Doors</button>
+    </div>
+
+    <div class="pj" id="pjGrid">
+      <button class="pj-card rv" data-open data-ctx="Ivory Gallery Kitchen" data-cat="kitchen" aria-label="Get a quote for a design like Ivory Gallery Kitchen">
+        <img src="assets/projects/project-1.jpg" alt="Ivory Gallery Kitchen - Luxury Interiors" decoding="async">
+        <span class="pj-card__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+        <span class="pj-card__bd">
+          <span class="pj-card__cat">Luxury Interiors</span>
+          <span class="pj-card__ttl">Ivory Gallery Kitchen</span>
+          <span class="pj-card__cta">Get a quote for this style <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+        </span>
+      </button>
+      <button class="pj-card rv" data-open data-ctx="Aurora Line Modular Kitchen" data-cat="kitchen" aria-label="Get a quote for a design like Aurora Line Modular Kitchen">
+        <img src="assets/projects/project-2.jpg" alt="Aurora Line Modular Kitchen - Residential Interior" decoding="async">
+        <span class="pj-card__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+        <span class="pj-card__bd">
+          <span class="pj-card__cat">Residential Interior</span>
+          <span class="pj-card__ttl">Aurora Line Modular Kitchen</span>
+          <span class="pj-card__cta">Get a quote for this style <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+        </span>
+      </button>
+      <button class="pj-card rv" data-open data-ctx="The Aura Marble Washroom" data-cat="washroom" aria-label="Get a quote for a design like The Aura Marble Washroom">
+        <img src="assets/projects/project-3.jpg" alt="The Aura Marble Washroom - Residential Washroom" decoding="async">
+        <span class="pj-card__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+        <span class="pj-card__bd">
+          <span class="pj-card__cat">Residential Washroom</span>
+          <span class="pj-card__ttl">The Aura Marble Washroom</span>
+          <span class="pj-card__cta">Get a quote for this style <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+        </span>
+      </button>
+      <button class="pj-card rv" data-open data-ctx="The Horizon Slide Closet" data-cat="wardrobe" aria-label="Get a quote for a design like The Horizon Slide Closet">
+        <img src="assets/projects/project-4.jpg" alt="The Horizon Slide Closet - Residential Interior" loading="lazy" decoding="async">
+        <span class="pj-card__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+        <span class="pj-card__bd">
+          <span class="pj-card__cat">Residential Interior</span>
+          <span class="pj-card__ttl">The Horizon Slide Closet</span>
+          <span class="pj-card__cta">Get a quote for this style <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+        </span>
+      </button>
+      <button class="pj-card rv" data-open data-ctx="Contemporary Glow Panel Design" data-cat="panel" aria-label="Get a quote for a design like Contemporary Glow Panel Design">
+        <img src="assets/projects/project-5.jpg" alt="Contemporary Glow Panel Design - Luxury Interiors" loading="lazy" decoding="async">
+        <span class="pj-card__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+        <span class="pj-card__bd">
+          <span class="pj-card__cat">Luxury Interiors</span>
+          <span class="pj-card__ttl">Contemporary Glow Panel Design</span>
+          <span class="pj-card__cta">Get a quote for this style <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+        </span>
+      </button>
+      <button class="pj-card rv" data-open data-ctx="The Zen Rest Bedroom" data-cat="bedroom" aria-label="Get a quote for a design like The Zen Rest Bedroom">
+        <img src="assets/projects/project-6.jpg" alt="The Zen Rest Bedroom - Residential Interior" loading="lazy" decoding="async">
+        <span class="pj-card__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+        <span class="pj-card__bd">
+          <span class="pj-card__cat">Residential Interior</span>
+          <span class="pj-card__ttl">The Zen Rest Bedroom</span>
+          <span class="pj-card__cta">Get a quote for this style <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+        </span>
+      </button>
+      <button class="pj-card rv" data-open data-ctx="Golden Glow Feature Panel" data-cat="panel" aria-label="Get a quote for a design like Golden Glow Feature Panel">
+        <img src="assets/projects/project-7.jpg" alt="Golden Glow Feature Panel - Residential Interior" loading="lazy" decoding="async">
+        <span class="pj-card__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+        <span class="pj-card__bd">
+          <span class="pj-card__cat">Residential Interior</span>
+          <span class="pj-card__ttl">Golden Glow Feature Panel</span>
+          <span class="pj-card__cta">Get a quote for this style <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+        </span>
+      </button>
+      <button class="pj-card rv" data-open data-ctx="The Signature Marble Kitchen" data-cat="kitchen" aria-label="Get a quote for a design like The Signature Marble Kitchen">
+        <img src="assets/projects/project-8.jpg" alt="The Signature Marble Kitchen - Residential Interior" loading="lazy" decoding="async">
+        <span class="pj-card__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+        <span class="pj-card__bd">
+          <span class="pj-card__cat">Residential Interior</span>
+          <span class="pj-card__ttl">The Signature Marble Kitchen</span>
+          <span class="pj-card__cta">Get a quote for this style <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+        </span>
+      </button>
+      <button class="pj-card rv" data-open data-ctx="The Nova Marble Kitchen" data-cat="kitchen" aria-label="Get a quote for a design like The Nova Marble Kitchen">
+        <img src="assets/projects/project-9.jpg" alt="The Nova Marble Kitchen - Residential Interior" loading="lazy" decoding="async">
+        <span class="pj-card__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+        <span class="pj-card__bd">
+          <span class="pj-card__cat">Residential Interior</span>
+          <span class="pj-card__ttl">The Nova Marble Kitchen</span>
+          <span class="pj-card__cta">Get a quote for this style <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+        </span>
+      </button>
+      <button class="pj-card rv" data-open data-ctx="Aurum Curve Designer Door" data-cat="panel" aria-label="Get a quote for a design like Aurum Curve Designer Door">
+        <img src="assets/projects/project-10.jpg" alt="Aurum Curve Designer Door - Residential Designs" loading="lazy" decoding="async">
+        <span class="pj-card__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+        <span class="pj-card__bd">
+          <span class="pj-card__cat">Residential Designs</span>
+          <span class="pj-card__ttl">Aurum Curve Designer Door</span>
+          <span class="pj-card__cta">Get a quote for this style <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+        </span>
+      </button>
+      <button class="pj-card rv" data-open data-ctx="Ambient Elegance Corner" data-cat="panel" aria-label="Get a quote for a design like Ambient Elegance Corner">
+        <img src="assets/projects/project-11.jpg" alt="Ambient Elegance Corner - Residential Interior" loading="lazy" decoding="async">
+        <span class="pj-card__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+        <span class="pj-card__bd">
+          <span class="pj-card__cat">Residential Interior</span>
+          <span class="pj-card__ttl">Ambient Elegance Corner</span>
+          <span class="pj-card__cta">Get a quote for this style <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+        </span>
+      </button>
+      <button class="pj-card rv" data-open data-ctx="The CalmNest Suite" data-cat="bedroom" aria-label="Get a quote for a design like The CalmNest Suite">
+        <img src="assets/projects/project-12.jpg" alt="The CalmNest Suite - Residential Interior" loading="lazy" decoding="async">
+        <span class="pj-card__go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+        <span class="pj-card__bd">
+          <span class="pj-card__cat">Residential Interior</span>
+          <span class="pj-card__ttl">The CalmNest Suite</span>
+          <span class="pj-card__cta">Get a quote for this style <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+        </span>
+      </button>
+    </div>
+    <p class="pj-count" id="pjCount" aria-live="polite"></p>
+
+    <div class="pj__more rv">
+      <button type="button" class="btn btn--o" id="pjMore" aria-expanded="false">Show all 12 projects</button>
+      <button class="btn btn--p" data-open>
+        Get a Design Like This For Your Home
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </button>
+    </div>
+
+    <!-- Brands we deal with -->
+    <div class="brands rv">
+      <div class="brands__ttl">Brands we deal with</div>
+      <div class="brands__rule" aria-hidden="true"></div>
+      <div class="brands__vp">
+        <div class="brands__track">
+        <div class="brand"><img src="assets/brands/asian-paints.png" alt="Asian Paints" loading="lazy" decoding="async"></div>
+        <div class="brand"><img src="assets/brands/nerolac.png" alt="Nerolac" loading="lazy" decoding="async"></div>
+        <div class="brand"><img src="assets/brands/greenply.png" alt="Greenply" loading="lazy" decoding="async"></div>
+        <div class="brand"><img src="assets/brands/merino.png" alt="Merino Laminate" loading="lazy" decoding="async"></div>
+        <div class="brand"><img src="assets/brands/gyproc.png" alt="Gyproc False Ceiling" loading="lazy" decoding="async"></div>
+        <div class="brand"><img src="assets/brands/saint-gobain.png" alt="Saint Gobain Glass" loading="lazy" decoding="async"></div>
+        <div class="brand"><img src="assets/brands/aditya-birla.png" alt="Aditya Birla" loading="lazy" decoding="async"></div>
+        <div class="brand"><img src="assets/brands/jk-maxx.png" alt="JK Maxx Paint" loading="lazy" decoding="async"></div>
+        <div class="brand"><img src="assets/brands/jk-wall-putty.png" alt="JK Wall Putty" loading="lazy" decoding="async"></div>
+        <div class="brand"><img src="assets/brands/sleepwell.png" alt="Sleepwell" loading="lazy" decoding="async"></div>
+        <div class="brand"><img src="assets/brands/wakefit.png" alt="Wakefit" loading="lazy" decoding="async"></div>
+        <div class="brand"><img src="assets/brands/stanley-sofa.png" alt="Stanley Sofa" loading="lazy" decoding="async"></div>
+        <div class="brand"><img src="assets/brands/sakarni-pop.png" alt="Sakarni POP" loading="lazy" decoding="async"></div>
+        <div class="brand"><img src="assets/brands/trimurti-pop.png" alt="Trimurti POP" loading="lazy" decoding="async"></div>
+        <div class="brand"><img src="assets/brands/ambuja-cement.png" alt="Ambuja Cements" loading="lazy" decoding="async"></div>
+        <div class="brand"><img src="assets/brands/jk-lakshmi.png" alt="JK Lakshmi Cement" loading="lazy" decoding="async"></div>
+        <div class="brand"><img src="assets/brands/acc-cement.png" alt="ACC Cement" loading="lazy" decoding="async"></div>
+        <div class="brand"><img src="assets/brands/jagdish-store.png" alt="Jagdish Store" loading="lazy" decoding="async"></div>
+        <div class="brand" aria-hidden="true"><img src="assets/brands/asian-paints.png" alt="" loading="lazy" decoding="async"></div>
+        <div class="brand" aria-hidden="true"><img src="assets/brands/nerolac.png" alt="" loading="lazy" decoding="async"></div>
+        <div class="brand" aria-hidden="true"><img src="assets/brands/greenply.png" alt="" loading="lazy" decoding="async"></div>
+        <div class="brand" aria-hidden="true"><img src="assets/brands/merino.png" alt="" loading="lazy" decoding="async"></div>
+        <div class="brand" aria-hidden="true"><img src="assets/brands/gyproc.png" alt="" loading="lazy" decoding="async"></div>
+        <div class="brand" aria-hidden="true"><img src="assets/brands/saint-gobain.png" alt="" loading="lazy" decoding="async"></div>
+        <div class="brand" aria-hidden="true"><img src="assets/brands/aditya-birla.png" alt="" loading="lazy" decoding="async"></div>
+        <div class="brand" aria-hidden="true"><img src="assets/brands/jk-maxx.png" alt="" loading="lazy" decoding="async"></div>
+        <div class="brand" aria-hidden="true"><img src="assets/brands/jk-wall-putty.png" alt="" loading="lazy" decoding="async"></div>
+        <div class="brand" aria-hidden="true"><img src="assets/brands/sleepwell.png" alt="" loading="lazy" decoding="async"></div>
+        <div class="brand" aria-hidden="true"><img src="assets/brands/wakefit.png" alt="" loading="lazy" decoding="async"></div>
+        <div class="brand" aria-hidden="true"><img src="assets/brands/stanley-sofa.png" alt="" loading="lazy" decoding="async"></div>
+        <div class="brand" aria-hidden="true"><img src="assets/brands/sakarni-pop.png" alt="" loading="lazy" decoding="async"></div>
+        <div class="brand" aria-hidden="true"><img src="assets/brands/trimurti-pop.png" alt="" loading="lazy" decoding="async"></div>
+        <div class="brand" aria-hidden="true"><img src="assets/brands/ambuja-cement.png" alt="" loading="lazy" decoding="async"></div>
+        <div class="brand" aria-hidden="true"><img src="assets/brands/jk-lakshmi.png" alt="" loading="lazy" decoding="async"></div>
+        <div class="brand" aria-hidden="true"><img src="assets/brands/acc-cement.png" alt="" loading="lazy" decoding="async"></div>
+        <div class="brand" aria-hidden="true"><img src="assets/brands/jagdish-store.png" alt="" loading="lazy" decoding="async"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= WHY US ======================= -->
+<section class="sec" id="why">
+  <div class="wrap">
+    <div class="center rv">
+      <span class="eyebrow">Why Jain Signature Studio</span>
+      <h2 class="sec-h">One Company, Start to Finish</h2>
+      <p class="sec-sub">Six reasons to plan your interiors with a single, accountable team.</p>
+    </div>
+    <div class="why">
+      <div class="why-card rv">
+        <div class="why-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V8l7-5 7 5v13"></path><path d="M10 21v-6h4v6"></path></svg></div>
+        <h3>Design to Execution</h3>
+        <p>Design, production and installation handled by one company — no coordinating between separate vendors.</p>
+      </div>
+      <div class="why-card rv">
+        <div class="why-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg></div>
+        <h3>300+ 3D Renders Delivered</h3>
+        <p>See photorealistic 3D visualization of your space before a single material is ordered.</p>
+      </div>
+      <div class="why-card rv">
+        <div class="why-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"></path></svg></div>
+        <h3>55+ Expert Team</h3>
+        <p>Designers, architects and site supervisors on staff, not subcontracted out per project.</p>
+      </div>
+      <div class="why-card rv">
+        <div class="why-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l7.1-1.01z"></path></svg></div>
+        <h3>Rated 4.9/5 by Clients</h3>
+        <p>Based on 4200+ reviews, with a 98% client satisfaction rate.</p>
+      </div>
+      <div class="why-card rv">
+        <div class="why-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg></div>
+        <h3>Timely Project Delivery</h3>
+        <p>Milestone-tracked schedules with a dedicated project manager keeping your handover date on course.</p>
+      </div>
+      <div class="why-card rv">
+        <div class="why-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg></div>
+        <h3>250+ Material &amp; Vendor Partners</h3>
+        <p>A vetted vendor network means wider material choice and better pricing passed on to you.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= PROCESS ======================= -->
+<section class="sec sec--tint" id="process">
+  <div class="wrap">
+    <div class="center rv">
+      <span class="eyebrow">How It Works</span>
+      <h2 class="sec-h">Design, Production &amp; Execution By Just One Company</h2>
+      <p class="sec-sub">No contractors to chase, no blame games. Design, production and execution are handled by one company, start to finish.</p>
+    </div>
+
+    <div class="flow">
+      <!-- 1 — consultation -->
+      <div class="fstep fstep--on rv">
+        <div class="fstep__ico"><span class="fstep__n" aria-hidden="true">1</span>
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="24" cy="12" r="4.5"></circle>
+            <path d="M17.5 22.5h13"></path>
+            <circle cx="10" cy="19" r="4"></circle>
+            <circle cx="38" cy="19" r="4"></circle>
+            <path d="M6 33v-3.5a4 4 0 0 1 4-4h2"></path>
+            <path d="M42 33v-3.5a4 4 0 0 0-4-4h-2"></path>
+            <rect x="12" y="25.5" width="24" height="3" rx="1.5"></rect>
+            <path d="M16 28.5V38M32 28.5V38"></path>
+            <path d="M4 38h40"></path>
+          </svg>
+        </div>
+        <p><b>Talk to our Interior Designer</b>&amp; Get an Estimate</p>
+      </div>
+
+      <!-- 2 — drawing & approval -->
+      <div class="fstep fstep--on rv">
+        <div class="fstep__ico"><span class="fstep__n" aria-hidden="true">2</span>
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M11 6h18l8 8v28H11z"></path>
+            <path d="M29 6v8h8"></path>
+            <path d="M16 20h12M16 26h8"></path>
+            <circle cx="30" cy="30" r="5"></circle>
+            <path d="M30 35v6"></path>
+            <path d="M25.5 41h9l-1.5 3h-6z"></path>
+          </svg>
+        </div>
+        <p><b>Detailed Drawing</b>and Approval</p>
+      </div>
+
+      <!-- 3 — production -->
+      <div class="fstep fstep--on rv">
+        <div class="fstep__ico"><span class="fstep__n" aria-hidden="true">3</span>
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="22" y="8" width="20" height="26" rx="2"></rect>
+            <path d="M22 15h20"></path>
+            <path d="M27 22h10M27 27h6"></path>
+            <circle cx="12" cy="13" r="4"></circle>
+            <path d="M6 42v-9a6 6 0 0 1 6-6h4"></path>
+            <path d="M16 27l4 5"></path>
+            <path d="M6 42h14"></path>
+          </svg>
+        </div>
+        <p><b>Production at Our</b>Own Factory</p>
+      </div>
+
+      <!-- 4 — delivery -->
+      <div class="fstep rv">
+        <div class="fstep__ico"><span class="fstep__n" aria-hidden="true">4</span>
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 13h22v21H4z"></path>
+            <path d="M26 20h8l6 6v8h-14z"></path>
+            <circle cx="14" cy="36" r="3.5"></circle>
+            <circle cx="33" cy="36" r="3.5"></circle>
+            <path d="M17.5 36h12M4 34h6.5M36.5 34H44"></path>
+          </svg>
+        </div>
+        <p><b>Material Delivery</b>&amp; Execution</p>
+      </div>
+
+      <!-- 5 — handover -->
+      <div class="fstep rv">
+        <div class="fstep__ico"><span class="fstep__n" aria-hidden="true">5</span>
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M24 10l10 8v3H14v-3z"></path>
+            <path d="M18 21v7M24 21v7M30 21v7"></path>
+            <path d="M14 28h20"></path>
+            <path d="M8 40c3-3.5 6.5-5 10.5-5H26a3 3 0 0 0 0-6h-6"></path>
+            <path d="M20 29c-3 0-5.5 1-7.5 3L8 36"></path>
+            <path d="M40 34l-6 4"></path>
+          </svg>
+        </div>
+        <p><b>On Time Project</b>Hand Over</p>
+      </div>
+    </div>
+    <div class="flow__cta rv">
+      <button class="btn btn--p" data-open>Start with Step 1: Free Consultation <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= REVIEWS ======================= -->
+<!-- The original page showed three identical placeholder quotes (its own TODO says they are placeholders).
+     They are removed rather than presented as real testimonials. When the client supplies real, approved
+     review text, add cards here using the markup below:
+<article class="rev rv">
+  <div class="stars" aria-label="5 out of 5 stars"> ...5 star svgs... </div>
+  <p>REAL REVIEW TEXT</p>
+  <div class="rev__who"><span class="av">AB</span><div><b>Reviewer name</b><small>Homeowner</small></div></div>
+</article>
+-->
+<section class="sec" id="reviews">
+  <div class="wrap">
+    <div class="center rv">
+      <span class="eyebrow">Client Reviews</span>
+      <h2 class="sec-h">Rated 4.9/5 Across 4200+ Reviews</h2>
+      <p class="sec-sub">See our latest work and client updates on social media, or talk to a designer directly.</p>
+    </div>
+    <div class="rate rv">
+      <div class="rate__score">
+        <div><b>4.9</b><span class="out">/5</span></div>
+        <div class="stars" aria-label="Rated 4.9 out of 5"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l7.1-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l7.1-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l7.1-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l7.1-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l7.1-1.01z"/></svg></div>
+        <p>from 4200+ reviews</p>
+      </div>
+      <ul class="rate__pts">
+        <li><b>98%</b><span>client satisfaction</span></li>
+        <li><b>4200+</b><span>client reviews</span></li>
+        <li><b>250+</b><span>projects completed</span></li>
+      </ul>
+      <div class="rate__cta">
+        <p>Want to see more of our work before you decide? Follow us, or book a free call and ask for examples similar to your space.</p>
+        <div class="rate__btns">
+          <a class="btn btn--o" href="https://www.instagram.com/jainsignaturestudio" target="_blank" rel="noopener">Instagram</a>
+          <a class="btn btn--o" href="https://www.facebook.com/share/1AoK1swyGt/" target="_blank" rel="noopener">Facebook</a>
+          <button class="btn btn--p" data-open>Book Free Consultation</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= FINAL CTA ======================= -->
+<section class="fcta">
+  <div class="wrap fcta__in">
+    <h2>Your Dream Home Starts With One Free Call</h2>
+    <p>Talk to our interior designer, see your space in 3D and get an estimate — with no obligation to proceed.</p>
+    <div class="fcta__btns">
+      <button class="btn btn--light" data-open>
+        Book Free Consultation
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+      </button>
+        <a class="btn btn--o" href="tel:+919643431551">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        Call +91 96434 31551
+      </a>
+    </div>
+    <p class="fcta__studio">Or visit our studio: L-08, GNB Mall, Raj Nagar Extension, Ghaziabad. <a href="https://www.google.com/maps/search/?api=1&query=Jain+Signature+Studio+GNB+Mall+Raj+Nagar+Extension+Ghaziabad" target="_blank" rel="noopener">Get directions</a></p>
+  </div>
+</section>
+
+<!-- ======================= FAQ ======================= -->
+<section class="sec sec--tint" id="faq">
+  <div class="wrap">
+    <div class="center rv">
+      <span class="eyebrow">FAQs</span>
+      <h2 class="sec-h">Questions Before You Start</h2>
+      <p class="sec-sub">Straight answers on cost, timelines and what is actually covered.</p>
+    </div>
+    <div class="faq rv">
+      <details open>
+        <summary>What does an interior project cost?</summary>
+        <div class="ans">Cost depends on carpet area, the scope you choose and the materials you select — a modular kitchen alone sits in a very different range to a full turnkey home. Share your layout and we will give you an itemised, no-obligation estimate.</div>
+      </details>
+      <details>
+        <summary>Is the design consultation free?</summary>
+        <div class="ans">Yes. Talking to our interior designer and getting an initial estimate costs you nothing and carries no obligation.</div>
+      </details>
+      <details>
+        <summary>Do I get to see the design before work starts?</summary>
+        <div class="ans">Yes. We produce detailed drawings and 3D visualization for your approval before anything goes into production — we have delivered 300+ 3D renders to date.</div>
+      </details>
+      <details>
+        <summary>Which areas do you serve?</summary>
+        <div class="ans">Our studio is in Raj Nagar Extension, Ghaziabad, and we take on residential and commercial projects across Ghaziabad and Delhi NCR.</div>
+      </details>
+      <details>
+        <summary>Do you handle renovation and civil work?</summary>
+        <div class="ans">Yes. Alongside interiors we take on renovation and construction, bathroom and kitchen renovation, false ceiling, wallpaper and wall decor, and complete building design.</div>
+      </details>
+      <details>
+        <summary>Do you do commercial and office interiors?</summary>
+        <div class="ans">Yes. Office interiors and commercial space interiors are a core part of what we do, in addition to full home interiors.</div>
+      </details>
+      <details>
+        <summary>What should I share to get an accurate estimate?</summary>
+        <div class="ans">Your floor plan or room measurements, which rooms you want designed, the style you like and a rough budget range. If you do not have a plan yet, tell us your property type and locality and we will guide you from there.</div>
+      </details>
+      <details>
+        <summary>How long will my project take?</summary>
+        <div class="ans">Timelines depend on scope and site conditions. Your project manager will commit to a milestone-tracked schedule at the time of approval.</div>
+      </details>
+    </div>
+    <div class="center rv" style="margin-top:34px">
+      <p class="sec-sub" style="margin-top:0">Still have a question?</p>
+      <div class="rate__btns" style="justify-content:center;margin-top:16px">
+        <button class="btn btn--p" data-open>Ask a Designer, Free</button>
+        <a class="btn btn--o" href="https://wa.me/919643431551?text=Hi%2C%20I%27d%20like%20an%20interior%20design%20quote" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.9-.95 1.08-.17.18-.35.2-.65.07-.3-.15-1.13-.42-2.15-1.33-.8-.71-1.33-1.59-1.49-1.89-.15-.3-.02-.47.13-.62.15-.15.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.38-.03-.53-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.01-1.04 2.47s1.06 2.87 1.21 3.07c.15.2 2.08 3.32 5.05 4.53 2.97 1.21 2.97.81 3.51.76.54-.05 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.42-.07-.12-.27-.2-.57-.35zM12 22a9.94 9.94 0 0 1-5.08-1.39L2 22l1.42-4.84A9.94 9.94 0 0 1 2 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10z"/></svg> WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ======================= FOOTER ======================= -->
+<footer class="ft">
+  <div class="wrap">
+
+    <!-- CTA strip -->
+    <div class="ft-cta">
+      <div>
+        <h3>Ready to start your interior project?</h3>
+        <p>Talk to our interior designer, see your space in 3D and get an estimate — with no obligation.</p>
+      </div>
+      <div class="ft-cta__btns">
+        <button class="btn btn--p" data-open>Book Free Consultation <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></button>
+        <a class="btn btn--o" href="https://wa.me/919643431551?text=Hi%2C%20I%27d%20like%20an%20interior%20design%20quote" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.9-.95 1.08-.17.18-.35.2-.65.07-.3-.15-1.13-.42-2.15-1.33-.8-.71-1.33-1.59-1.49-1.89-.15-.3-.02-.47.13-.62.15-.15.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.38-.03-.53-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.01-1.04 2.47s1.06 2.87 1.21 3.07c.15.2 2.08 3.32 5.05 4.53 2.97 1.21 2.97.81 3.51.76.54-.05 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.42-.07-.12-.27-.2-.57-.35zM12 22a9.94 9.94 0 0 1-5.08-1.39L2 22l1.42-4.84A9.94 9.94 0 0 1 2 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10z"></path></svg> WhatsApp</a>
+      </div>
+    </div>
+
+    <!-- columns -->
+    <div class="ft__in">
+      <div>
+        <a href="#top" class="logo" aria-label="Jain Signature Studio - back to top"><img src="assets/logo.svg" alt="Jain Signature Studio" width="250" height="50"></a>
+        <p class="ft__about">Jain Signature Studio LLP — full home interiors, modular kitchens and wardrobes, renovation and construction, and office interiors across Ghaziabad and Delhi NCR. Design, production and execution by one company.</p>
+        <div class="ft__social">
+          <a href="https://www.instagram.com/jainsignaturestudio" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"></circle></svg></a>
+          <a href="https://www.facebook.com/share/1AoK1swyGt/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+          <a href="https://wa.me/919643431551" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.9-.95 1.08-.17.18-.35.2-.65.07-.3-.15-1.13-.42-2.15-1.33-.8-.71-1.33-1.59-1.49-1.89-.15-.3-.02-.47.13-.62.15-.15.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.38-.03-.53-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.01-1.04 2.47s1.06 2.87 1.21 3.07c.15.2 2.08 3.32 5.05 4.53 2.97 1.21 2.97.81 3.51.76.54-.05 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.42-.07-.12-.27-.2-.57-.35zM12 22a9.94 9.94 0 0 1-5.08-1.39L2 22l1.42-4.84A9.94 9.94 0 0 1 2 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10z"></path></svg></a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Services</h4>
+        <ul class="ft__links">
+          <li><a href="#services">Full Home Interior</a></li>
+          <li><a href="#services">Modular Kitchen</a></li>
+          <li><a href="#services">Modular Wardrobe</a></li>
+          <li><a href="#services">Renovation &amp; Construction</a></li>
+          <li><a href="#services">Office &amp; Commercial Interiors</a></li>
+          <li><a href="#services">False Ceiling &amp; Wall Decor</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Get in Touch</h4>
+        <div class="ft__c">
+          <span class="ft__c-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></span>
+          <span><small>Call us</small><b><a href="tel:+919643431551">+91 96434 31551</a></b></span>
+        </div>
+        <div class="ft__c">
+          <span class="ft__c-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-10 6L2 7"></path></svg></span>
+          <span><small>Email</small><b><a href="mailto:info@jainstudio.co.in">info@jainstudio.co.in</a></b></span>
+        </div>
+        <div class="ft__c">
+          <span class="ft__c-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></span>
+          <span><small>Studio</small><address>L-08, GNB Mall, Raj Nagar Extension,<br>Ghaziabad 201017, Uttar Pradesh</address><a class="ft__dir" href="https://www.google.com/maps/search/?api=1&query=Jain+Signature+Studio+GNB+Mall+Raj+Nagar+Extension+Ghaziabad" target="_blank" rel="noopener">Get directions</a></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="ft__bar">
+      <span>© <span id="yr">2026</span> Jain Signature Studio LLP. All rights reserved.</span>
+      <nav><a href="#">Privacy Policy</a><a href="#">Terms &amp; Conditions</a></nav>
+    </div>
+  </div>
+</footer>
+
+<!-- ======================= MOBILE STICKY BAR ======================= -->
+<div class="mbar">
+  <a class="btn btn--o" href="tel:+919643431551" aria-label="Call now"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Call</a>
+  <a class="btn btn--wa" href="https://wa.me/919643431551?text=Hi%2C%20I%27d%20like%20an%20interior%20design%20quote" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.9-.95 1.08-.17.18-.35.2-.65.07-.3-.15-1.13-.42-2.15-1.33-.8-.71-1.33-1.59-1.49-1.89-.15-.3-.02-.47.13-.62.15-.15.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.38-.03-.53-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.01-1.04 2.47s1.06 2.87 1.21 3.07c.15.2 2.08 3.32 5.05 4.53 2.97 1.21 2.97.81 3.51.76.54-.05 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.42-.07-.12-.27-.2-.57-.35zM12 22a9.94 9.94 0 0 1-5.08-1.39L2 22l1.42-4.84A9.94 9.94 0 0 1 2 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10z"/></svg> Chat</a>
+  <button class="btn btn--p" data-open>Free Quote</button>
+</div>
+
+<a class="wa-float" href="https://wa.me/919643431551?text=Hi%2C%20I%27d%20like%20an%20interior%20design%20quote" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.9-.95 1.08-.17.18-.35.2-.65.07-.3-.15-1.13-.42-2.15-1.33-.8-.71-1.33-1.59-1.49-1.89-.15-.3-.02-.47.13-.62.15-.15.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.38-.03-.53-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.01-1.04 2.47s1.06 2.87 1.21 3.07c.15.2 2.08 3.32 5.05 4.53 2.97 1.21 2.97.81 3.51.76.54-.05 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.42-.07-.12-.27-.2-.57-.35zM12 22a9.94 9.94 0 0 1-5.08-1.39L2 22l1.42-4.84A9.94 9.94 0 0 1 2 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10z"/></svg></a>
+
+<!-- ======================= MODAL ======================= -->
+<div class="ovl" id="ovl" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div class="ovl__box">
+    <button class="x" id="xbtn" aria-label="Close">&times;</button>
+    <div class="lead" id="modalcard">
+      <div class="lead__hd">
+        <h3 id="modal-title">Book Your Free Consultation</h3>
+        <p>Talk to our interior designer and get an estimate. No obligation.</p>
+      </div>
+      <div class="ctx" id="modalCtx"></div>
+      <div class="lead__bd">
+        <form id="modalform" novalidate>
+          <input type="hidden" name="interest" id="m-interest" value="">
+          <div class="fld" data-f>
+            <label for="m-name">Full Name *</label>
+            <input id="m-name" name="name" type="text" placeholder="e.g. Rahul Sharma" autocomplete="name" required>
+            <span class="err">Please enter your name.</span>
+          </div>
+          <div class="fld" data-f>
+            <label for="m-phone">Mobile Number *</label>
+            <input id="m-phone" name="phone" type="tel" inputmode="tel" maxlength="16" placeholder="10-digit mobile number" autocomplete="tel" required>
+            <span class="err">Enter a valid 10-digit Indian mobile number.</span>
+          </div>
+          <div class="fld--2">
+            <div class="fld" data-f>
+              <label for="m-type">Property Type *</label>
+              <select id="m-type" name="property" required>
+                <option value="">Select</option>
+                <option>1 BHK Apartment</option>
+                <option>2 BHK Apartment</option>
+                <option>3 BHK Apartment</option>
+                <option>4 BHK / Penthouse</option>
+                <option>Independent House</option>
+                <option>Villa / Bungalow</option>
+              </select>
+              <span class="err">Please select one.</span>
+            </div>
+            <div class="fld" data-f>
+              <label for="m-scope">What do you need? <span class="opt">(optional)</span></label>
+              <select id="m-scope" name="scope">
+                <option value="">Select</option>
+                <option>Full home interiors</option>
+                <option>Modular kitchen only</option>
+                <option>Wardrobes / storage</option>
+                <option>Living &amp; dining</option>
+                <option>Renovation</option>
+              </select>
+            </div>
+          </div>
+          <div class="fld--2">
+            <div class="fld" data-f>
+              <label for="m-city">Locality <span class="opt">(optional)</span></label>
+              <input id="m-city" name="city" type="text" placeholder="e.g. Raj Nagar Ext." autocomplete="address-level2">
+            </div>
+            <div class="fld" data-f>
+              <label for="m-start">Start planned <span class="opt">(optional)</span></label>
+              <select id="m-start" name="timeline">
+                <option value="">Select</option>
+                <option>Within 1 month</option>
+                <option>1 - 3 months</option>
+                <option>3 - 6 months</option>
+                <option>Just exploring</option>
+              </select>
+            </div>
+          </div>
+          <button type="submit" class="btn btn--p btn--wide">
+            Get My Free Quote
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+          <p class="lead__note">&#128274; Your details stay private. We never share or sell your data.</p>
+          <p class="lead__consent">By submitting, you agree to be contacted by phone or WhatsApp about your enquiry.</p>
+        </form>
+      </div>
+      <div class="lead__ok" role="status">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+        <h3>Thank you!</h3>
+        <p>Your request is in. One of our interior designers will call you shortly.</p>
+        <div class="lead__act">
+          <a class="btn btn--o" href="https://wa.me/919643431551?text=Hi%2C%20I%27d%20like%20an%20interior%20design%20quote" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.9-.95 1.08-.17.18-.35.2-.65.07-.3-.15-1.13-.42-2.15-1.33-.8-.71-1.33-1.59-1.49-1.89-.15-.3-.02-.47.13-.62.15-.15.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.38-.03-.53-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.01-1.04 2.47s1.06 2.87 1.21 3.07c.15.2 2.08 3.32 5.05 4.53 2.97 1.21 2.97.81 3.51.76.54-.05 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.42-.07-.12-.27-.2-.57-.35zM12 22a9.94 9.94 0 0 1-5.08-1.39L2 22l1.42-4.84A9.94 9.94 0 0 1 2 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10z"/></svg> Chat on WhatsApp now</a>
+          <button type="button" class="lead__again">Send another enquiry</button>
+        </div>
+        <p class="lead__demo">Preview build: this form shows the success flow only and sends no data.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ EXPLORE DRAWER
+     Ported from iconictravel.in/lp (dialog.xp / explore-panel.php).
+     Styles: css/style.css (dialog.xp block) · Script: js/main.js (explore drawer) -->
+<dialog class="xp" id="xp-dlg" aria-labelledby="xp-title" data-xp data-tab="company">
+  <div class="xp__panel">
+    <div class="xp__top">
+      <div class="xp__bar">
+        <h2 class="xp__title" id="xp-title" tabindex="-1">Explore More</h2>
+        <button type="button" class="xp__x" data-xp-close aria-label="Close Explore More">
+          <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6 6 18"></path></svg>
+        </button>
+      </div>
+      <div class="xp__tabs" role="tablist" aria-label="Explore More">
+        <button type="button" role="tab" id="xp-t-company" aria-controls="xp-p-company" aria-selected="true" tabindex="0" data-xp-tab="company">Company</button>
+        <button type="button" role="tab" id="xp-t-services" aria-controls="xp-p-services" aria-selected="false" tabindex="-1" data-xp-tab="services">Services</button>
+        <button type="button" role="tab" id="xp-t-work" aria-controls="xp-p-work" aria-selected="false" tabindex="-1" data-xp-tab="work">Our Work</button>
+        <button type="button" role="tab" id="xp-t-enquire" aria-controls="xp-p-enquire" aria-selected="false" tabindex="-1" data-xp-tab="enquire">Enquire</button>
+      </div>
+    </div>
+
+    <div class="xp__body" data-xp-body>
+
+      <!-- ---------------------------------------------------------- COMPANY -->
+      <section class="xp-p" role="tabpanel" id="xp-p-company" aria-labelledby="xp-t-company" data-xp-panel="company">
+        <p class="xp-eyebrow">About Jain Signature Studio</p>
+        <h3 class="xp-h">Design, production and execution by one company</h3>
+        <p class="xp-lead">
+          We deliver full home interiors, modular kitchens, wardrobes and renovation for
+          apartments, independent homes and villas across Ghaziabad and Delhi NCR — designed,
+          built and installed by a single in-house team.
+        </p>
+        <dl class="xp-facts">
+          <div><dt>300+</dt><dd>3D renders delivered</dd></div>
+          <div><dt>55+</dt><dd>expert in-house team</dd></div>
+          <div><dt>4.9/5</dt><dd>across 4200+ reviews</dd></div>
+        </dl>
+
+        <h4 class="xp-h4">Why plan with us</h4>
+        <ol class="xp-why">
+          <li><b>One team, start to finish</b><span>Design, factory production and on-site execution stay with us — no handoffs between vendors and no gaps in accountability.</span></li>
+          <li><b>See it before you build it</b><span>Approve your space in 3D first. We deliver detailed renders so nothing is a surprise on site.</span></li>
+          <li><b>Timely project delivery</b><span>A written schedule with staged milestones, so you know what happens next and when.</span></li>
+        </ol>
+
+        <div class="xp-cta-box">
+          <h4>Not sure where to start?</h4>
+          <p>Tell us your space, scope and timeline — we’ll come back with a plan and an estimate.</p>
+          <button type="button" class="btn btn--light" data-xp-tab-go="enquire">Book a free consultation</button>
+        </div>
+      </section>
+
+      <!-- ---------------------------------------------------------- SERVICES -->
+      <section class="xp-p" role="tabpanel" id="xp-p-services" aria-labelledby="xp-t-services" data-xp-panel="services" hidden>
+        <p class="xp-eyebrow">What we do</p>
+        <h3 class="xp-h">Interiors, modular and renovation under one roof</h3>
+        <p class="xp-lead">Open any service to jump to the detail on this page.</p>
+        <ul class="xp-list">
+          <li>
+            <button type="button" class="xp-row" data-xp-go="#services">
+              <img class="xp-row__img" src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=240&q=70" alt="" loading="lazy">
+              <span class="xp-row__txt">
+                <span class="xp-row__t">Full Home Interior</span>
+                <span class="xp-row__s">Living, bedrooms, kitchen and storage — designed and executed end to end.</span>
+              </span>
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="xp-row" data-xp-go="#services">
+              <img class="xp-row__img" src="https://images.unsplash.com/photo-1600489000022-c2086d79f9d4?auto=format&fit=crop&w=240&q=70" alt="" loading="lazy">
+              <span class="xp-row__txt">
+                <span class="xp-row__t">Modular Kitchen &amp; Wardrobe</span>
+                <span class="xp-row__s">Factory-finished modular units built to your exact space.</span>
+              </span>
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="xp-row" data-xp-go="#services">
+              <img class="xp-row__img" src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=240&q=70" alt="" loading="lazy">
+              <span class="xp-row__txt">
+                <span class="xp-row__t">Renovation &amp; Construction</span>
+                <span class="xp-row__s">Civil work, flooring, false ceiling and finishing, managed in one schedule.</span>
+              </span>
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+            </button>
+          </li>
+        </ul>
+
+        <h4 class="xp-h4">Jump to a section</h4>
+        <ul class="xp-list">
+          <li>
+            <button type="button" class="xp-row xp-row--plain" data-xp-go="#process">
+              <span class="xp-row__txt">
+                <span class="xp-row__t">Our Process</span>
+                <span class="xp-row__s">How a project runs, step by step</span>
+              </span>
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="xp-row xp-row--plain" data-xp-go="#why">
+              <span class="xp-row__txt">
+                <span class="xp-row__t">Why Choose Us</span>
+                <span class="xp-row__s">One company, start to finish</span>
+              </span>
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="xp-row xp-row--plain" data-xp-go="#reviews">
+              <span class="xp-row__txt">
+                <span class="xp-row__t">Reviews</span>
+                <span class="xp-row__s">Rated 4.9/5 across 4200+ reviews</span>
+              </span>
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="xp-row xp-row--plain" data-xp-go="#faq">
+              <span class="xp-row__txt">
+                <span class="xp-row__t">FAQs</span>
+                <span class="xp-row__s">Questions before you start</span>
+              </span>
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+            </button>
+          </li>
+        </ul>
+      </section>
+
+      <!-- ---------------------------------------------------------- OUR WORK -->
+      <section class="xp-p" role="tabpanel" id="xp-p-work" aria-labelledby="xp-t-work" data-xp-panel="work" hidden>
+        <p class="xp-eyebrow">Our Work</p>
+        <h3 class="xp-h">Spaces we designed and delivered</h3>
+        <p class="xp-lead">A selection from our project gallery.</p>
+        <div class="xp-grid">
+          <img src="assets/projects/project-1.jpg" alt="Ivory Gallery Kitchen" loading="lazy">
+          <img src="assets/projects/project-6.jpg" alt="The Zen Rest Bedroom" loading="lazy">
+          <img src="assets/projects/project-4.jpg" alt="The Horizon Slide Closet" loading="lazy">
+          <img src="assets/projects/project-12.jpg" alt="The CalmNest Suite" loading="lazy">
+        </div>
+        <button type="button" class="btn btn--p btn--wide xp-mt" data-xp-go="#work">
+          See all our work
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+        </button>
+        <div class="xp-cta-box">
+          <h4>Want something like this?</h4>
+          <p>Share your space and we’ll show you what’s possible within your budget.</p>
+          <button type="button" class="btn btn--light" data-xp-tab-go="enquire">Get a free quote</button>
+        </div>
+      </section>
+
+      <!-- ---------------------------------------------------------- ENQUIRE -->
+      <section class="xp-p" role="tabpanel" id="xp-p-enquire" aria-labelledby="xp-t-enquire" data-xp-panel="enquire" hidden>
+        <p class="xp-eyebrow">Enquire</p>
+        <h3 class="xp-h">Book your free consultation</h3>
+        <p class="xp-lead">Reach us whichever way suits you, or fill in the form below.</p>
+        <ul class="xp-ways">
+          <li>
+            <a href="tel:+919643431551">
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <span>Call us<small>+91 96434 31551</small></span>
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/919643431551?text=Hi%2C%20I%27d%20like%20an%20interior%20design%20quote" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.9-.95 1.08-.17.18-.35.2-.65.07-.3-.15-1.13-.42-2.15-1.33-.8-.71-1.33-1.59-1.49-1.89-.15-.3-.02-.47.13-.62.15-.15.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.38-.03-.53-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.01-1.04 2.47s1.06 2.87 1.21 3.07c.15.2 2.08 3.32 5.05 4.53 2.97 1.21 2.97.81 3.51.76.54-.05 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.42-.07-.12-.27-.2-.57-.35zM12 22a9.94 9.94 0 0 1-5.08-1.39L2 22l1.42-4.84A9.94 9.94 0 0 1 2 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10z"></path></svg>
+              <span>WhatsApp us<small>Quick reply during working hours</small></span>
+            </a>
+          </li>
+        </ul>
+        <div class="lead xp-form" id="xpcard">
+          <div class="lead__bd">
+            <form id="xpform" novalidate>
+              <div class="fld" data-f>
+            <label for="x-name">Full Name *</label>
+            <input id="x-name" name="name" type="text" placeholder="e.g. Rahul Sharma" autocomplete="name" required>
+            <span class="err">Please enter your name.</span>
+          </div>
+          <div class="fld" data-f>
+            <label for="x-phone">Mobile Number *</label>
+            <input id="x-phone" name="phone" type="tel" inputmode="tel" maxlength="16" placeholder="10-digit mobile number" autocomplete="tel" required>
+            <span class="err">Enter a valid 10-digit Indian mobile number.</span>
+          </div>
+          <div class="fld--2">
+            <div class="fld" data-f>
+              <label for="x-type">Property Type *</label>
+              <select id="x-type" name="property" required>
+                <option value="">Select</option>
+                <option>1 BHK Apartment</option>
+                <option>2 BHK Apartment</option>
+                <option>3 BHK Apartment</option>
+                <option>4 BHK / Penthouse</option>
+                <option>Independent House</option>
+                <option>Villa / Bungalow</option>
+              </select>
+              <span class="err">Please select one.</span>
+            </div>
+            <div class="fld" data-f>
+              <label for="x-scope">What do you need? <span class="opt">(optional)</span></label>
+              <select id="x-scope" name="scope">
+                <option value="">Select</option>
+                <option>Full home interiors</option>
+                <option>Modular kitchen only</option>
+                <option>Wardrobes / storage</option>
+                <option>Living &amp; dining</option>
+                <option>Renovation</option>
+              </select>
+            </div>
+          </div>
+          <div class="fld--2">
+            <div class="fld" data-f>
+              <label for="x-city">Locality <span class="opt">(optional)</span></label>
+              <input id="x-city" name="city" type="text" placeholder="e.g. Raj Nagar Ext." autocomplete="address-level2">
+            </div>
+            <div class="fld" data-f>
+              <label for="x-start">Start planned <span class="opt">(optional)</span></label>
+              <select id="x-start" name="timeline">
+                <option value="">Select</option>
+                <option>Within 1 month</option>
+                <option>1 - 3 months</option>
+                <option>3 - 6 months</option>
+                <option>Just exploring</option>
+              </select>
+            </div>
+          </div>
+              <button type="submit" class="btn btn--p btn--wide">
+                Get My Free Quote
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </button>
+              <p class="lead__note">&#128274; Your details stay private. We never share or sell your data.</p>
+            </form>
+          </div>
+          <div class="lead__ok" role="status">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+        <h3>Thank you!</h3>
+        <p>Your request is in. One of our interior designers will call you shortly.</p>
+        <div class="lead__act">
+          <a class="btn btn--o" href="https://wa.me/919643431551?text=Hi%2C%20I%27d%20like%20an%20interior%20design%20quote" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.9-.95 1.08-.17.18-.35.2-.65.07-.3-.15-1.13-.42-2.15-1.33-.8-.71-1.33-1.59-1.49-1.89-.15-.3-.02-.47.13-.62.15-.15.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.38-.03-.53-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.01-1.04 2.47s1.06 2.87 1.21 3.07c.15.2 2.08 3.32 5.05 4.53 2.97 1.21 2.97.81 3.51.76.54-.05 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.42-.07-.12-.27-.2-.57-.35zM12 22a9.94 9.94 0 0 1-5.08-1.39L2 22l1.42-4.84A9.94 9.94 0 0 1 2 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10z"/></svg> Chat on WhatsApp now</a>
+          <button type="button" class="lead__again">Send another enquiry</button>
+        </div>
+        <p class="lead__demo">Preview build: this form shows the success flow only and sends no data.</p>
+      </div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</dialog>
+
+<!-- ============================================================ SERVICE DRAWER
+     Opened by the "Explore Service" button inside each .svc__ft.
+     One dialog serves all three services: the trigger carries data-sd="<key>" and
+     js/main.js (service drawer) fills this shell from its SERVICES map.
+     Styles: css/style.css (dialog.sd block, reusing the .xp-* content bits) -->
+<dialog class="xp sd" id="sd-dlg" aria-labelledby="sd-title" data-sd-dlg data-tab="about">
+  <div class="xp__panel">
+    <div class="xp__top">
+      <div class="xp__bar">
+        <div class="sd__head">
+          <p class="sd__kicker" data-sd-kicker>Residential</p>
+          <h2 class="xp__title" id="sd-title" tabindex="-1" data-sd-title>Full Home Interior</h2>
+        </div>
+        <button type="button" class="xp__x" data-sd-close aria-label="Close service details">
+          <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6 6 18"></path></svg>
+        </button>
+      </div>
+      <div class="xp__tabs xp__tabs--5" role="tablist" aria-label="Service details">
+        <button type="button" role="tab" id="sd-t-about" aria-controls="sd-p-about" aria-selected="true" tabindex="0" data-sd-tab="about">About</button>
+        <button type="button" role="tab" id="sd-t-why" aria-controls="sd-p-why" aria-selected="false" tabindex="-1" data-sd-tab="why">Why Us</button>
+        <button type="button" role="tab" id="sd-t-gallery" aria-controls="sd-p-gallery" aria-selected="false" tabindex="-1" data-sd-tab="gallery">Gallery</button>
+        <button type="button" role="tab" id="sd-t-process" aria-controls="sd-p-process" aria-selected="false" tabindex="-1" data-sd-tab="process">Process</button>
+        <button type="button" role="tab" id="sd-t-enquire" aria-controls="sd-p-enquire" aria-selected="false" tabindex="-1" data-sd-tab="enquire">Enquiry</button>
+      </div>
+    </div>
+
+    <div class="xp__body" data-sd-body>
+
+      <!-- ------------------------------------------------------------ ABOUT -->
+      <section class="xp-p" role="tabpanel" id="sd-p-about" aria-labelledby="sd-t-about" data-sd-panel="about">
+        <img class="sd__hero" alt="" loading="lazy" data-sd-hero>
+        <p class="sd__cap">Representative image</p>
+        <p class="xp-eyebrow">About this service</p>
+        <h3 class="xp-h" data-sd-h></h3>
+        <p class="xp-lead" data-sd-lead></p>
+
+        <h4 class="xp-h4">What is included</h4>
+        <ul class="sd-inc" data-sd-includes></ul>
+
+        <dl class="xp-facts" data-sd-facts></dl>
+
+        <h4 class="xp-h4">Popular add-ons</h4>
+        <ul class="sd-chips" data-sd-chips></ul>
+
+        <div class="xp-cta-box">
+          <h4>Want a price for your space?</h4>
+          <p>Share your layout and scope — we’ll come back with a plan and a written estimate.</p>
+          <button type="button" class="btn btn--light" data-sd-tab-go="enquire">Get a free quote</button>
+        </div>
+      </section>
+
+      <!-- ------------------------------------------------------- WHY CHOOSE US -->
+      <section class="xp-p" role="tabpanel" id="sd-p-why" aria-labelledby="sd-t-why" data-sd-panel="why" hidden>
+        <p class="xp-eyebrow">Why choose us</p>
+        <h3 class="xp-h" data-sd-why-h></h3>
+        <p class="xp-lead" data-sd-why-lead></p>
+        <ol class="xp-why xp-mt" data-sd-why></ol>
+
+        <h4 class="xp-h4">What you get in writing</h4>
+        <ul class="sd-inc" data-sd-promise></ul>
+
+        <div class="xp-cta-box">
+          <h4>Talk to a designer first</h4>
+          <p>No pressure and no charge — just an honest read on what your space needs.</p>
+          <button type="button" class="btn btn--light" data-sd-tab-go="enquire">Book a free consultation</button>
+        </div>
+      </section>
+
+      <!-- ---------------------------------------------------------- GALLERY -->
+      <section class="xp-p" role="tabpanel" id="sd-p-gallery" aria-labelledby="sd-t-gallery" data-sd-panel="gallery" hidden>
+        <p class="xp-eyebrow">Our work</p>
+        <h3 class="xp-h" data-sd-gal-h></h3>
+        <p class="xp-lead" data-sd-gal-lead></p>
+        <div class="xp-grid" data-sd-gallery></div>
+        <button type="button" class="btn btn--p btn--wide xp-mt" data-sd-go="#work">
+          See all our projects
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+        </button>
+        <div class="xp-cta-box">
+          <h4>Want something like this?</h4>
+          <p>Tell us what you liked and we’ll show you what is possible in your budget.</p>
+          <button type="button" class="btn btn--light" data-sd-tab-go="enquire">Get a free quote</button>
+        </div>
+      </section>
+
+      <!-- ------------------------------------------------------- OUR PROCESS -->
+      <section class="xp-p" role="tabpanel" id="sd-p-process" aria-labelledby="sd-t-process" data-sd-panel="process" hidden>
+        <p class="xp-eyebrow">Our process</p>
+        <h3 class="xp-h">From first call to handover</h3>
+        <p class="xp-lead" data-sd-proc-lead></p>
+        <ol class="sd-steps" data-sd-steps></ol>
+        <button type="button" class="btn btn--o btn--wide xp-mt" data-sd-go="#process">
+          See the full process on this page
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+        </button>
+        <div class="xp-cta-box">
+          <h4>Ready to start step one?</h4>
+          <p>Step one is a free consultation and an estimate. Everything else follows from there.</p>
+          <button type="button" class="btn btn--light" data-sd-tab-go="enquire">Start with a free call</button>
+        </div>
+      </section>
+
+      <!-- ----------------------------------------------------------- ENQUIRY -->
+      <section class="xp-p" role="tabpanel" id="sd-p-enquire" aria-labelledby="sd-t-enquire" data-sd-panel="enquire" hidden>
+        <p class="xp-eyebrow">Enquiry</p>
+        <h3 class="xp-h">Get a free quote for <span data-sd-name>this service</span></h3>
+        <p class="xp-lead">Reach us whichever way suits you, or fill in the form — we reply the same working day.</p>
+        <ul class="xp-ways">
+          <li>
+            <a href="tel:+919643431551">
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <span>Call us<small>+91 96434 31551</small></span>
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/919643431551?text=Hi%2C%20I%27d%20like%20an%20interior%20design%20quote" target="_blank" rel="noopener" data-sd-wa>
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.9-.95 1.08-.17.18-.35.2-.65.07-.3-.15-1.13-.42-2.15-1.33-.8-.71-1.33-1.59-1.49-1.89-.15-.3-.02-.47.13-.62.15-.15.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.38-.03-.53-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.01-1.04 2.47s1.06 2.87 1.21 3.07c.15.2 2.08 3.32 5.05 4.53 2.97 1.21 2.97.81 3.51.76.54-.05 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.42-.07-.12-.27-.2-.57-.35zM12 22a9.94 9.94 0 0 1-5.08-1.39L2 22l1.42-4.84A9.94 9.94 0 0 1 2 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10z"></path></svg>
+              <span>WhatsApp us<small>Quick reply during working hours</small></span>
+            </a>
+          </li>
+        </ul>
+
+        <div class="lead xp-form" id="sdcard">
+          <div class="lead__bd">
+            <form id="sdform" novalidate>
+              <input type="hidden" name="service" data-sd-service value="">
+              <div class="fld" data-f>
+                <label for="s-name">Full Name *</label>
+                <input id="s-name" name="name" type="text" placeholder="e.g. Rahul Sharma" autocomplete="name" required>
+                <span class="err">Please enter your name.</span>
+              </div>
+              <div class="fld" data-f>
+                <label for="s-phone">Mobile Number *</label>
+                <input id="s-phone" name="phone" type="tel" inputmode="tel" maxlength="16" placeholder="10-digit mobile number" autocomplete="tel" required>
+                <span class="err">Enter a valid 10-digit Indian mobile number.</span>
+              </div>
+              <div class="fld" data-f>
+                <label for="s-scope">What do you need? *</label>
+                <select id="s-scope" name="scope" required data-sd-scope>
+                  <option value="">Select</option>
+                </select>
+                <span class="err">Please select one.</span>
+              </div>
+              <div class="fld" data-f>
+                <label for="s-type">Property Type *</label>
+                <select id="s-type" name="property" required>
+                  <option value="">Select</option>
+                  <option>1 BHK Apartment</option>
+                  <option>2 BHK Apartment</option>
+                  <option>3 BHK Apartment</option>
+                  <option>4 BHK / Penthouse</option>
+                  <option>Independent House</option>
+                  <option>Villa / Bungalow</option>
+                  <option>Office / Commercial</option>
+                </select>
+                <span class="err">Please select one.</span>
+              </div>
+              <div class="fld" data-f>
+                <label for="s-city">Locality <span class="opt">(optional)</span></label>
+                <input id="s-city" name="city" type="text" placeholder="e.g. Raj Nagar Extension, Ghaziabad" autocomplete="address-level2">
+              </div>
+              <div class="fld" data-f>
+                <label for="s-start">When do you plan to start? <span class="opt">(optional)</span></label>
+                <select id="s-start" name="timeline">
+                  <option value="">Select</option>
+                <option>Within 1 month</option>
+                <option>1 - 3 months</option>
+                <option>3 - 6 months</option>
+                <option>Just exploring</option>
+                </select>
+              </div>
+              <div class="fld" data-f>
+                <label for="s-msg">Anything we should know?</label>
+                <textarea id="s-msg" name="message" rows="3" placeholder="Timeline, budget range, or a reference you liked"></textarea>
+              </div>
+              <button type="submit" class="btn btn--p btn--wide">
+                Get My Free Quote
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+              </button>
+              <p class="lead__note">🔒 Your details stay private. We never share or sell your data.</p>
+            </form>
+          </div>
+          <div class="lead__ok" role="status">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+        <h3>Thank you!</h3>
+        <p>Your request is in. One of our interior designers will call you shortly.</p>
+        <div class="lead__act">
+          <a class="btn btn--o" href="https://wa.me/919643431551?text=Hi%2C%20I%27d%20like%20an%20interior%20design%20quote" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.9-.95 1.08-.17.18-.35.2-.65.07-.3-.15-1.13-.42-2.15-1.33-.8-.71-1.33-1.59-1.49-1.89-.15-.3-.02-.47.13-.62.15-.15.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.38-.03-.53-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.01-1.04 2.47s1.06 2.87 1.21 3.07c.15.2 2.08 3.32 5.05 4.53 2.97 1.21 2.97.81 3.51.76.54-.05 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.42-.07-.12-.27-.2-.57-.35zM12 22a9.94 9.94 0 0 1-5.08-1.39L2 22l1.42-4.84A9.94 9.94 0 0 1 2 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10z"/></svg> Chat on WhatsApp now</a>
+          <button type="button" class="lead__again">Send another enquiry</button>
+        </div>
+        <p class="lead__demo">Preview build: this form shows the success flow only and sends no data.</p>
+      </div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</dialog>
+<script src="main.js"></script>
+
+</body></html>
