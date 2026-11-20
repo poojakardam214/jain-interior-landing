@@ -814,6 +814,17 @@
     render();
   })();
 
+  /* ---------- phone fields: digits only, max 10 (strips +91 / 0 prefix on paste or autofill) ---------- */
+  document.addEventListener('input', function(e){
+    var el = e.target;
+    if (!el || el.tagName !== 'INPUT' || el.type !== 'tel') return;
+    var d = el.value.replace(/\D/g, '');
+    if (d.length === 12 && d.slice(0, 2) === '91') d = d.slice(2);
+    else if (d.length === 11 && d.charAt(0) === '0') d = d.slice(1);
+    d = d.slice(0, 10);
+    if (el.value !== d) el.value = d;
+  });
+
   /* ---------- image fallback: local assets/ -> live image host ---------- */
   (function(){
     var LIVE = 'https://digitalmarketingdoctor.in/lp/2026/oct/jain-interior/images/';
